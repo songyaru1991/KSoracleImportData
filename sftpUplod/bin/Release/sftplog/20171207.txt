@@ -1,0 +1,259 @@
+08:00:13:7716411 Raw To Progress===================
+08:00:17:8902879 -->Query 111ClassSum:51212
+08:00:22:2135010 -->Query ProgressEmpClassSum:73073
+08:01:23:0740397 Raw To Progress===================
+08:01:24:1476594 -->Query 111ClassSum:51212
+08:01:27:6745647 -->Query ProgressEmpClassSum:73073
+08:02:31:6624365 -->insert111_EmpClassError,Rollback :ORA-00928: 缺失 SELECT 关键字
+08:11:23:7223189 Raw To Progress===================
+08:11:24:7961718 -->Query 111ClassSum:51212
+08:11:28:5811669 -->Query ProgressEmpClassSum:73073
+08:11:41:3571122 Raw To Progress===================
+08:11:42:5000334 -->Query 111ClassSum:51212
+08:11:46:0161597 -->Query ProgressEmpClassSum:73073
+08:12:45:5352663 -->insert111_EmpClassError,Rollback :ORA-00928: 缺失 SELECT 关键字
+08:13:44:7407293 Raw To Progress===================
+08:13:45:8517786 -->Query 111ClassSum:51212
+08:13:49:3698519 -->Query ProgressEmpClassSum:73073
+08:14:49:5298701 -->insert111_EmpClassError,Rollback :ORA-00928: 缺失 SELECT 关键字
+08:20:55:5700450 Raw To Progress===================
+08:20:56:6956558 -->Query 111ClassSum:51212
+08:21:00:3952324 -->Query ProgressEmpClassSum:73073
+09:54:38:7953237 Raw To Progress===================
+09:54:43:5197370 -->Query 111ClassSum:51213
+09:54:48:9365306 -->Query ProgressEmpClassSum:73073
+09:55:42:0971482 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+09:57:18:3108350 Raw To Progress===================
+09:57:19:3639821 -->Query 111ClassSum:51213
+09:57:22:8967708 -->Query ProgressEmpClassSum:73073
+09:58:13:9418639 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+10:00:39:8807560 Raw To Progress===================
+10:00:42:9521424 -->Query 111ClassSum:51213
+10:00:46:2336052 -->Query ProgressEmpClassSum:73073
+10:37:10:6306670 Raw To Progress===================
+10:37:13:2699447 -->Query 111ClassSum:0
+10:37:17:8127609 -->Query ProgressEmpClassSum:73073
+10:40:06:5800705 Raw To Progress===================
+10:40:07:3173822 -->Query 111ClassSum:0
+10:40:11:5096212 -->Query ProgressEmpClassSum:73073
+10:47:10:2629021 Raw To Progress===================
+10:47:12:7521894 -->Query 111ClassSum:77660
+10:47:16:5873392 -->Query ProgressEmpClassSum:73073
+10:50:03:2151864 Raw To Progress===================
+10:50:04:5658073 -->Query 111ClassSum:77660
+10:50:07:7552756 -->Query ProgressEmpClassSum:73073
+10:51:03:1603169 Raw To Progress===================
+10:51:04:7427787 -->Query 111ClassSum:77660
+10:51:08:2932070 -->Query ProgressEmpClassSum:73073
+10:51:36:2308878 -->insert111_EmpClassError,Rollback :ORA-00907: 缺失右括号
+10:51:59:5133419 Raw To Progress===================
+10:52:00:7980188 -->Query 111ClassSum:77660
+10:52:03:7982671 -->Query ProgressEmpClassSum:73073
+10:52:31:3566692 -->insert111_EmpClassError,Rollback :ORA-00907: 缺失右括号
+10:52:57:2344313 Raw To Progress===================
+10:52:58:7229407 -->Query 111ClassSum:77660
+10:53:01:6811499 -->Query ProgressEmpClassSum:73073
+10:53:29:1555774 -->insert111_EmpClassError,Rollback :ORA-00907: 缺失右括号
+10:53:48:9555962 Raw To Progress===================
+10:53:50:3480303 -->Query 111ClassSum:77660
+10:53:54:4284039 -->Query ProgressEmpClassSum:73073
+10:54:21:6265437 -->insert111_EmpClassError,Rollback :ORA-00907: 缺失右括号
+10:54:59:4716383 Raw To Progress===================
+10:54:59:9534205 -->Query 111ClassSum:0
+10:55:03:1615911 -->Query ProgressEmpClassSum:73073
+10:55:56:8092761 Raw To Progress===================
+10:55:58:1424563 -->Query 111ClassSum:77660
+10:56:01:4814728 -->Query ProgressEmpClassSum:73073
+10:56:26:8194182 Raw To Progress===================
+10:56:28:1203932 -->Query 111ClassSum:77660
+10:56:31:9313615 -->Query ProgressEmpClassSum:73073
+10:56:54:1842018 Raw To Progress===================
+10:56:55:5165820 -->Query 111ClassSum:77660
+10:56:58:7403333 -->Query ProgressEmpClassSum:73073
+10:57:42:7208311 Raw To Progress===================
+10:57:44:0080774 -->Query 111ClassSum:77660
+10:57:47:7803763 -->Query ProgressEmpClassSum:73073
+10:57:54:8940478 Raw To Progress===================
+10:57:56:1787059 -->Query 111ClassSum:77660
+10:57:59:3739562 -->Query ProgressEmpClassSum:73073
+10:59:35:9219290 Raw To Progress===================
+10:59:37:2767720 -->Query 111ClassSum:77660
+10:59:41:1957770 -->Query ProgressEmpClassSum:73073
+11:00:23:9738052 Raw To Progress===================
+11:00:25:2993513 -->Query 111ClassSum:80567
+11:00:28:2583111 -->Query ProgressEmpClassSum:73073
+11:01:21:1448459 Raw To Progress===================
+11:01:22:4802432 -->Query 111ClassSum:80567
+11:01:25:4449419 -->Query ProgressEmpClassSum:73073
+11:07:25:4381794 Raw To Progress===================
+11:07:26:8889545 -->Query 111ClassSum:80567
+11:07:30:3875954 -->Query ProgressEmpClassSum:73073
+11:08:01:1112522 -->insert111_EmpClassError,Rollback :ORA-00907: 缺失右括号
+11:10:15:6113826 Raw To Progress===================
+11:10:16:9484137 -->Query 111ClassSum:80567
+11:10:20:1910744 -->Query ProgressEmpClassSum:73073
+11:10:49:2726676 -->insert111_EmpClassError,Rollback :ORA-00907: 缺失右括号
+11:11:08:4151542 Raw To Progress===================
+11:11:09:7063649 -->Query 111ClassSum:80567
+11:11:12:6655673 -->Query ProgressEmpClassSum:73073
+11:11:41:6653013 -->insert111_EmpClassError,Rollback :ORA-00907: 缺失右括号
+11:11:59:6791263 Raw To Progress===================
+11:12:00:9852052 -->Query 111ClassSum:80567
+11:12:03:9565836 -->Query ProgressEmpClassSum:73073
+11:12:33:8852964 -->insert111_EmpClassError,Rollback :ORA-00907: 缺失右括号
+11:16:41:3333819 Raw To Progress===================
+11:16:42:7265382 -->Query 111ClassSum:80567
+11:16:46:9692132 -->Query ProgressEmpClassSum:73073
+11:17:16:6260391 -->insert111_EmpClassError,Rollback :ORA-00907: 缺失右括号
+11:19:10:2106048 Raw To Progress===================
+11:19:10:6450828 -->Query 111ClassSum:0
+11:19:13:6274047 -->Query ProgressEmpClassSum:73073
+11:20:32:4592547 Raw To Progress===================
+11:20:32:9172386 -->Query 111ClassSum:0
+11:20:36:6255855 -->Query ProgressEmpClassSum:73073
+11:21:12:5231289 -->insert111_EmpClassError,Rollback :ORA-00907: 缺失右括号
+11:21:24:2974848 Raw To Progress===================
+11:21:24:7108147 -->Query 111ClassSum:0
+11:21:28:1097775 -->Query ProgressEmpClassSum:73073
+11:24:46:9538783 Raw To Progress===================
+11:24:47:3182901 -->Query 111ClassSum:0
+11:24:50:6530243 -->Query ProgressEmpClassSum:73073
+11:26:35:2672012 -->Update111_EmpClassOK:0
+11:26:36:9833663 -->insert111_EmpClassOK:77660
+14:33:11:0729110 Raw To Progress===================
+14:33:14:3901868 -->Query Oracle_ClassSum:18119
+14:33:18:7102055 -->Query ProgressEmpClassSum:73073
+14:33:19:1292309 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:33:48:3432658 Raw To Progress===================
+14:33:49:0055982 -->Query Oracle_ClassSum:18119
+14:33:53:4101211 -->Query ProgressEmpClassSum:73073
+14:33:53:7222250 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:36:50:9917219 Raw To Progress===================
+14:36:51:5955065 -->Query Oracle_ClassSum:18119
+14:36:55:4428397 -->Query ProgressEmpClassSum:73073
+14:36:55:5833039 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:42:01:7648306 Raw To Progress===================
+14:42:02:3570551 -->Query Oracle_ClassSum:18119
+14:42:05:5388693 -->Query ProgressEmpClassSum:73073
+14:42:05:7183462 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:46:16:2927258 Raw To Progress===================
+14:46:16:9148412 -->Query Oracle_ClassSum:18119
+14:46:20:6737965 -->Query ProgressEmpClassSum:73073
+14:46:20:8442476 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:46:27:6689675 Raw To Progress===================
+14:46:28:2506193 -->Query Oracle_ClassSum:18119
+14:46:32:1089713 -->Query ProgressEmpClassSum:73073
+14:46:32:2784183 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:47:14:6115767 Raw To Progress===================
+14:47:15:1969450 -->Query 111ClassSum:18119
+14:47:18:9376002 -->Query ProgressEmpClassSum:73073
+14:47:19:1075043 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:47:19:4303624 -->Query Oracle_ClassSum:18119
+14:47:22:8886911 -->Query ProgressEmpClassSum:73073
+14:47:22:9358165 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:47:34:6948029 Raw To Progress===================
+14:47:35:3080755 -->Query 111ClassSum:18119
+14:47:39:1309831 -->Query ProgressEmpClassSum:73073
+14:47:39:3786572 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:48:37:9129989 Raw To Progress===================
+14:48:38:5126653 -->Query 111ClassSum:18119
+14:48:41:6148463 -->Query ProgressEmpClassSum:73073
+14:48:41:8615677 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:50:47:5486964 Raw To Progress===================
+14:50:48:1349174 -->Query 111ClassSum:18119
+14:50:52:2926488 -->Query ProgressEmpClassSum:73073
+14:50:52:5633766 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:51:29:5508497 Raw To Progress===================
+14:51:30:1515840 -->Query 111ClassSum:18119
+14:51:33:8188953 -->Query ProgressEmpClassSum:73073
+14:51:34:1228928 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:52:23:3136019 Raw To Progress===================
+14:52:23:9162624 -->Query 111ClassSum:18119
+14:52:26:8341654 -->Query ProgressEmpClassSum:73073
+14:52:26:9996082 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:52:47:3132641 Raw To Progress===================
+14:52:47:8933254 -->Query 111ClassSum:18119
+14:52:51:2834674 -->Query ProgressEmpClassSum:73073
+14:52:51:4720781 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:54:47:1843266 Raw To Progress===================
+14:54:47:7717253 -->Query 111ClassSum:18119
+14:54:51:5714313 -->Query ProgressEmpClassSum:73073
+14:54:51:7328586 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:55:11:5355083 Raw To Progress===================
+14:55:12:1203547 -->Query 111ClassSum:18119
+14:55:16:1157037 -->Query ProgressEmpClassSum:73073
+14:55:16:3345047 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:57:41:2232062 Raw To Progress===================
+14:57:41:8204724 -->Query 111ClassSum:18119
+14:57:45:5627966 -->Query ProgressEmpClassSum:73073
+14:57:45:7365465 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:58:06:3073482 Raw To Progress===================
+14:58:06:8917365 -->Query 111ClassSum:18119
+14:58:09:7263967 -->Query ProgressEmpClassSum:73073
+14:58:09:9017965 -->insert111_EmpClassError,Rollback :ORA-00907: 缺失右括号
+14:58:15:6221609 Raw To Progress===================
+14:58:16:2461345 -->Query 111ClassSum:18119
+14:58:19:9199346 -->Query ProgressEmpClassSum:73073
+14:58:20:1266828 -->insert111_EmpClassError,Rollback :ORA-00907: 缺失右括号
+14:58:25:8342553 Raw To Progress===================
+14:58:26:4215814 -->Query 111ClassSum:18119
+14:58:29:8880357 -->Query ProgressEmpClassSum:73073
+14:58:30:0845606 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:58:46:0844987 Raw To Progress===================
+14:58:46:7008487 -->Query 111ClassSum:18119
+14:58:50:1444350 -->Query ProgressEmpClassSum:73073
+14:58:50:3781802 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+15:00:12:8579894 Raw To Progress===================
+15:00:13:3376290 -->Query 111ClassSum:0
+15:00:16:4809082 -->Query ProgressEmpClassSum:73073
+15:00:31:4777977 -->Update111_EmpClassOK:0
+15:00:31:4978571 -->insert111_EmpClassOK:77660
+15:16:08:1358680 Raw To Progress===================
+15:16:09:6686136 -->Query 111ClassSum:95545
+15:16:12:4543872 -->Query ProgressEmpClassSum:73310
+15:16:12:6230393 -->insert_ORACLE_EmpClassError,Rollback :ORA-00942: 表或视图不存在
+15:16:43:0729444 Raw To Progress===================
+15:16:44:5723543 -->Query 111ClassSum:95545
+15:16:48:1105551 -->Query ProgressEmpClassSum:73310
+15:16:48:3313477 -->insert_ORACLE_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+15:17:15:4334408 Raw To Progress===================
+15:17:15:8526702 -->Query 111ClassSum:0
+15:17:18:6331763 -->Query ProgressEmpClassSum:73310
+15:18:09:3785151 -->Update_ORACLE_EmpClassOK:0
+15:18:09:3940871 -->insert_ORACLE_EmpClassOK:78134
+15:18:56:7758036 Raw To Progress===================
+15:18:57:1759248 -->Query 111ClassSum:0
+15:19:00:7551626 -->Query ProgressEmpClassSum:73310
+15:19:17:3785408 -->Update111_EmpClassOK:0
+15:19:17:3925771 -->insert111_EmpClassOK:78134
+15:19:23:8582916 Raw To Progress===================
+15:19:25:4350352 -->Query 111ClassSum:78134
+15:19:28:1827018 -->Query ProgressEmpClassSum:73310
+15:19:56:4818802 -->Update_ORACLE_EmpClassOK:0
+15:19:56:4929097 -->insert_ORACLE_EmpClassOK:0
+15:28:33:0353593 Raw To Progress===================
+15:28:33:4264900 -->Query 111ClassSum:0
+15:28:36:4415000 -->Query ProgressEmpClassSum:73310
+15:28:36:6462810 -->insert111_EmpClassError,Rollback :ORA-01810: 格式代码出现两次
+15:29:32:3981308 Raw To Progress===================
+15:29:32:7864077 -->Query 111ClassSum:0
+15:29:36:1328155 -->Query ProgressEmpClassSum:73310
+15:29:36:3566114 -->insert111_EmpClassError,Rollback :ORA-01810: 格式代码出现两次
+15:29:57:7460721 Raw To Progress===================
+15:29:58:1172243 -->Query 111ClassSum:0
+15:30:01:1695938 -->Query ProgressEmpClassSum:73310
+15:30:16:8648552 -->Update111_EmpClassOK:0
+15:30:16:8873120 -->insert111_EmpClassOK:78134
+15:31:12:5395430 Raw To Progress===================
+15:31:12:9531539 -->Query 111ClassSum:0
+15:31:16:1079233 -->Query ProgressEmpClassSum:73310
+15:31:16:3064522 -->insert111_EmpClassError,Rollback :ORA-01810: 格式代码出现两次
+15:31:30:1051596 Raw To Progress===================
+15:31:30:5100344 -->Query 111ClassSum:0
+15:31:33:3801037 -->Query ProgressEmpClassSum:73310
+15:31:33:5977611 -->insert111_EmpClassError,Rollback :ORA-01810: 格式代码出现两次
+15:31:40:1140592 Raw To Progress===================
+15:31:40:5506552 -->Query 111ClassSum:0
+15:31:43:2675348 -->Query ProgressEmpClassSum:73310
+15:32:24:9126912 -->Update111_EmpClassOK:0
+15:32:24:9387605 -->insert111_EmpClassOK:78134

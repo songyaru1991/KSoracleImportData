@@ -1,0 +1,57 @@
+D:\Net\sftpUplod\sftpUplod\bin\Release\sftpUplod.exe
+D:\Net\sftpUplod\sftpUplod\bin\Release\sftpUplod.pdb
+D:\Net\sftpUplod\sftpUplod\bin\Release\Renci.SshNet.dll
+D:\Net\sftpUplod\sftpUplod\obj\x86\Release\sftpUplod.Configure.resources
+D:\Net\sftpUplod\sftpUplod\obj\x86\Release\sftpUplod.Form1.resources
+D:\Net\sftpUplod\sftpUplod\obj\x86\Release\sftpUplod.Properties.Resources.resources
+D:\Net\sftpUplod\sftpUplod\obj\x86\Release\sftpUplod.csproj.GenerateResource.Cache
+D:\Net\sftpUplod\sftpUplod\obj\x86\Release\sftpUplod.exe
+D:\Net\sftpUplod\sftpUplod\obj\x86\Release\sftpUplod.pdb
+D:\Net\sftpUplod\sftpUplod\bin\Release\MySql.Data.dll
+D:\Net\sftpUplod - emp_class\sftpUplod\bin\Release\sftpUplod.exe
+D:\Net\sftpUplod - emp_class\sftpUplod\bin\Release\sftpUplod.pdb
+D:\Net\sftpUplod - emp_class\sftpUplod\bin\Release\MySql.Data.dll
+D:\Net\sftpUplod - emp_class\sftpUplod\bin\Release\Renci.SshNet.dll
+D:\Net\sftpUplod - emp_class\sftpUplod\obj\x86\Release\sftpUplod.Configure.resources
+D:\Net\sftpUplod - emp_class\sftpUplod\obj\x86\Release\sftpUplod.Form1.resources
+D:\Net\sftpUplod - emp_class\sftpUplod\obj\x86\Release\sftpUplod.Properties.Resources.resources
+D:\Net\sftpUplod - emp_class\sftpUplod\obj\x86\Release\sftpUplod.csproj.GenerateResource.Cache
+D:\Net\sftpUplod - emp_class\sftpUplod\obj\x86\Release\sftpUplod.exe
+D:\Net\sftpUplod - emp_class\sftpUplod\obj\x86\Release\sftpUplod.pdb
+D:\Net\sftpUplod - empclass\sftpUplod\bin\Release\sftpUplod.exe
+D:\Net\sftpUplod - empclass\sftpUplod\bin\Release\sftpUplod.pdb
+D:\Net\sftpUplod - empclass\sftpUplod\bin\Release\MySql.Data.dll
+D:\Net\sftpUplod - empclass\sftpUplod\obj\x86\Release\sftpUplod.Form1.resources
+D:\Net\sftpUplod - empclass\sftpUplod\obj\x86\Release\sftpUplod.Properties.Resources.resources
+D:\Net\sftpUplod - empclass\sftpUplod\obj\x86\Release\sftpUplod.csproj.GenerateResource.Cache
+D:\Net\sftpUplod - empclass\sftpUplod\obj\x86\Release\sftpUplod.exe
+D:\Net\sftpUplod - empclass\sftpUplod\obj\x86\Release\sftpUplod.pdb
+D:\Net\sftpUplod - empclass\sftpUplod\obj\x86\Release\sftpUplod.csprojResolveAssemblyReference.cache
+D:\Net\sftpUplod - empclass -study\sftpUplod\obj\x86\Release\sftpUplod.exe
+D:\Net\sftpUplod - empclass -study\sftpUplod\obj\x86\Release\sftpUplod.pdb
+D:\Net\sftpUplod - empclass -study\sftpUplod\bin\Release\sftpUplod.exe
+D:\Net\sftpUplod - empclass -study\sftpUplod\bin\Release\sftpUplod.pdb
+D:\Net\sftpUplod - empclass -study\sftpUplod\bin\Release\MySql.Data.dll
+D:\Net\sftpUplod - empclass -study\sftpUplod\obj\x86\Release\sftpUplod.csprojResolveAssemblyReference.cache
+D:\Net\sftpUplod - empclass -study\sftpUplod\obj\x86\Release\sftpUplod.Form1.resources
+D:\Net\sftpUplod - empclass -study\sftpUplod\obj\x86\Release\sftpUplod.Properties.Resources.resources
+D:\Net\sftpUplod - empclass -study\sftpUplod\obj\x86\Release\sftpUplod.csproj.GenerateResource.Cache
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\obj\x86\Release\sftpUplod.exe
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\obj\x86\Release\sftpUplod.pdb
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\bin\Release\sftpUplod.exe
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\bin\Release\sftpUplod.pdb
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\obj\x86\Release\sftpUplod.Form1.resources
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\obj\x86\Release\sftpUplod.Properties.Resources.resources
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\obj\x86\Release\sftpUplod.csproj.GenerateResource.Cache
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\bin\Release\sftpUplod.exe.config
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\obj\x86\Release\sftpUplod.csprojResolveAssemblyReference.cache
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\sftpUplod\bin\Release\sftpUplod.exe.config
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\sftpUplod\bin\Release\sftpUplod.exe
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\sftpUplod\bin\Release\sftpUplod.pdb
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Release\sftpUplod.csprojResolveAssemblyReference.cache
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Release\sftpUplod.Form1.resources
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Release\sftpUplod.Properties.Resources.resources
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Release\sftpUplod.csproj.GenerateResource.Cache
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Release\sftpUplod.csproj.CoreCompileInputs.cache
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Release\sftpUplod.exe
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Release\sftpUplod.pdb

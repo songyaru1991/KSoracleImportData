@@ -1,0 +1,43 @@
+08:29:25:9207586 Raw To Progress===================
+08:29:26:6783057 -->Query 111ClassSum:12640
+08:29:30:4032180 -->Query ProgressEmpClassSum:63882
+08:32:07:4825753 Raw To Progress===================
+08:32:08:0500834 -->Query 111ClassSum:12640
+08:32:11:3689942 -->Query ProgressEmpClassSum:63882
+08:33:35:6105508 Raw To Progress===================
+08:33:36:2136614 -->Query 111ClassSum:12640
+08:33:39:1118862 -->Query ProgressEmpClassSum:63882
+08:34:57:7915920 Raw To Progress===================
+08:34:58:3756967 -->Query 111ClassSum:12640
+08:35:01:3462571 -->Query ProgressEmpClassSum:63882
+08:35:02:0901695 -->insert111_EmpClassError,Rollback :ORA-00911: 无效字符
+08:35:22:2841367 Raw To Progress===================
+08:35:22:8556770 -->Query 111ClassSum:12640
+08:35:26:1112048 -->Query ProgressEmpClassSum:63882
+08:48:44:9280132 Raw To Progress===================
+08:48:45:5399822 -->Query 111ClassSum:12640
+08:48:49:1425849 -->Query ProgressEmpClassSum:63882
+08:59:57:6468325 Raw To Progress===================
+08:59:58:2350705 -->Query 111ClassSum:12640
+09:00:01:5975593 -->Query ProgressEmpClassSum:63882
+09:02:49:6079228 Raw To Progress===================
+09:02:50:2105673 -->Query 111ClassSum:12640
+09:02:53:5192468 -->Query ProgressEmpClassSum:63882
+09:13:39:6351605 Raw To Progress===================
+09:13:40:2239983 -->Query 111ClassSum:12640
+09:13:43:2567643 -->Query ProgressEmpClassSum:63882
+09:54:00:4014918 Raw To Progress===================
+09:54:00:9614003 -->Query 111ClassSum:12640
+09:54:04:2411567 -->Query ProgressEmpClassSum:63882
+11:03:17:7381866 Raw To Progress===================
+11:03:18:3159048 -->Query 111ClassSum:12640
+11:03:21:3294548 -->Query ProgressEmpClassSum:63882
+11:05:32:1107380 Raw To Progress===================
+11:05:32:6533865 -->Query 111ClassSum:12640
+11:05:35:3529959 -->Query ProgressEmpClassSum:63882
+11:24:38:0162764 Raw To Progress===================
+11:24:38:5929273 -->Query 111ClassSum:12640
+11:24:41:8083305 -->Query ProgressEmpClassSum:63882
+11:27:07:2446586 Raw To Progress===================
+11:27:07:8600273 -->Query 111ClassSum:12640
+11:27:11:6453199 -->Query ProgressEmpClassSum:63882

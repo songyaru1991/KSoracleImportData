@@ -1,0 +1,13 @@
+10:56:24:2975805 Raw To Progress===================
+11:05:24:8944734 Raw To Progress===================
+11:05:36:6314496 -->Query 111ClassSum:0
+11:05:44:6616476 -->Query ProgressEmpClassSum:72702
+11:06:13:7910486 Raw To Progress===================
+11:06:14:2400422 -->Query 111ClassSum:0
+11:06:17:3765672 -->Query ProgressEmpClassSum:72702
+11:17:44:1882530 Raw To Progress===================
+11:17:44:7760710 -->Query 111ClassSum:0
+11:17:48:8348569 -->Query ProgressEmpClassSum:72702
+11:20:22:7667194 Raw To Progress===================
+11:20:23:1949548 -->Query 111ClassSum:0
+11:20:27:2979009 -->Query ProgressEmpClassSum:72702

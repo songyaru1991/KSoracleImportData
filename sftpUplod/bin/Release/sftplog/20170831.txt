@@ -1,0 +1,69 @@
+08:14:19:8104338 Open Auto======================
+08:14:20:3164627 -->Query 111ClassSum:0
+08:14:24:0026735 -->Query ProgressEmpClassSum:0
+08:14:34:0702494 -->Update111_EmpClassOK:0
+08:14:34:0842502 -->insert111_EmpClassOK:74186
+08:30:48:3929775 Open Auto======================
+08:30:49:3750336 -->Query 111ClassSum:74186
+08:30:53:2122531 -->Query ProgressEmpClassSum:37093
+08:31:15:6535367 -->Update111_EmpClassOK:0
+08:31:15:6575369 -->insert111_EmpClassOK:0
+14:45:12:1018281 Open Auto======================
+2017-08-31 14:45:12 2017-08-31 14:45:12-->Query 111 Error:Table 'mysql.testemployee' doesn't exist
+14:45:12:3538425 -->Query 111TestemployeeError
+14:45:39:8874173 Open Auto======================
+14:45:47:7738684 -->Query ProgressEMPRSum:37829
+14:45:47:8618735 -->insert111_EmpClassError,Rollback :表没有主键。
+14:50:07:5977295 Open Auto======================
+14:50:15:2111650 -->Query ProgressEMPRSum:37829
+14:50:16:1752201 -->insert111_EmpClassError,Rollback :You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '00005','劉惠嫻','3341','光電-消費-O一-採購-採購課','I','cardid','33' at line 1
+14:50:53:0863313 Open Auto======================
+14:51:00:6367632 -->Query ProgressEMPRSum:37829
+14:53:58:6979477 Open Auto======================
+14:54:06:2793813 -->Query ProgressEMPRSum:37829
+14:54:07:2144348 -->insert111_EmpClassError,Rollback :Column count doesn't match value count at row 1
+14:59:00:8752312 Open Auto======================
+14:59:08:5086678 -->Query ProgressEMPRSum:37829
+14:59:10:8188000 -->insert111_EmpClassError,Rollback :Unknown column 'Name' in 'field list'
+15:00:46:1652535 Open Auto======================
+15:00:53:7056848 -->Query ProgressEMPRSum:37829
+15:19:00:2638323 Open Auto======================
+15:19:08:3462946 -->Query ProgressEMPRSum:37829
+15:19:08:5043037 -->insert111_EmpClassError,Rollback :Unknown column 'Name' in 'field list'
+15:19:15:8487237 Open Auto======================
+15:19:23:5231627 -->Query ProgressEMPRSum:37829
+15:37:56:0097933 -->insert111_EmpClassError,Rollback :Duplicate entry '00002' for key 'PRIMARY'
+15:41:49:2721351 Open Auto======================
+15:41:57:3235956 -->Query ProgressEMPRSum:37829
+15:41:57:4866050 -->insert111_EmpClassError,Rollback :Unknown column 'Name' in 'field list'
+15:43:48:6849652 Open Auto======================
+15:43:56:7584269 -->Query ProgressEMPRSum:37829
+15:43:56:9134358 -->insert111_EmpClassError,Rollback :Unknown column 'Name' in 'field list'
+15:44:17:6986246 Open Auto======================
+15:44:25:6600800 -->Query ProgressEMPRSum:37829
+15:44:27:2121688 -->Update111_EmployeeOK:0
+15:44:27:2181691 -->insert111_EmployeeOK:37829
+15:45:32:3868966 Open Auto======================
+15:45:40:6103669 -->Query ProgressEMPRSum:37829
+15:45:40:8203789 -->Update111_EmployeeOK:0
+15:45:40:8343797 -->insert111_EmployeeOK:0
+15:46:48:7572647 Open Auto======================
+15:46:56:9227317 -->Query ProgressEMPRSum:37829
+15:46:57:1527449 -->Update111_EmployeeOK:1
+15:46:57:1657456 -->insert111_EmployeeOK:0
+16:36:33:1099599 Open Auto======================
+16:36:41:0634148 -->Query ProgressEMPRSum:37829
+16:36:42:0564716 -->Update111_EmployeeOK:0
+16:36:42:0734726 -->insert111_EmployeeOK:37829
+16:38:46:7276024 Open Auto======================
+16:38:54:8830689 -->Query ProgressEMPRSum:37829
+16:38:55:1100819 -->Update111_EmployeeOK:2
+16:38:55:1260828 -->insert111_EmployeeOK:0
+16:59:17:5980042 Open Auto======================
+16:59:25:5064565 -->Query ProgressEMPRSum:37829
+16:59:32:2428418 -->Update111_EmployeeOK:0
+16:59:32:2468420 -->insert111_EmployeeOK:37829
+17:01:31:4426596 Open Auto======================
+17:01:39:3291107 -->Query ProgressEMPRSum:37829
+17:01:41:2692217 -->Update111_EmployeeOK:0
+17:01:41:2742220 -->insert111_EmployeeOK:37829

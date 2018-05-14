@@ -1,0 +1,47 @@
+10:36:20:3592723 Emp Update Insert===================
+10:36:23:4944516 -->SelectSqlServerSum:12228
+10:36:32:4239623 -->Query ProgressEMPRSum:40306
+10:36:32:4459636 -->Update111_EmpIswork=1OK:0
+10:36:32:5019668 -->insert111_EmpClassError,Rollback :You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''00236' at line 1
+10:36:36:4421922 -->SelectSqlServerSum:19570
+10:36:44:4476501 -->Query ProgressEMPRSum:40306
+10:36:44:4796519 -->Update111_EmpIswork=1OK:0
+10:36:44:5376552 -->insert112_EmpClassError,Rollback :You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''01362' at line 1
+10:37:43:1720089 Emp Update Insert===================
+10:37:46:1631800 -->SelectSqlServerSum:12228
+10:37:54:7306700 -->Query ProgressEMPRSum:40306
+10:37:54:7526713 -->Update111_EmpIswork=1OK:0
+10:37:54:8156749 -->insert111_EmpClassError,Rollback :You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''00236' at line 1
+10:37:58:6468940 -->SelectSqlServerSum:19570
+10:38:06:6593523 -->Query ProgressEMPRSum:40306
+10:38:06:6673528 -->Update111_EmpIswork=1OK:0
+10:38:06:7203558 -->insert112_EmpClassError,Rollback :You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''01362' at line 1
+10:38:48:2707323 Emp Update Insert===================
+10:38:51:5699210 -->SelectSqlServerSum:12228
+10:38:59:5123753 -->Query ProgressEMPRSum:40306
+13:49:57:7087467 Emp Update Insert===================
+13:50:00:5639100 -->SelectSqlServerSum:12296
+13:50:08:5663677 -->Query ProgressEMPRSum:40306
+14:45:32:1854678 Emp Update Insert===================
+14:45:35:6046634 -->SelectSqlServerSum:12329
+14:45:43:4231106 -->Query ProgressEMPRSum:40314
+14:45:52:2566158 -->insert111_EmpClassError,Rollback :输入字符串的格式不正确。
+14:45:55:8938239 -->SelectSqlServerSum:19589
+14:46:03:6802692 -->Query ProgressEMPRSum:40314
+14:46:12:5967792 -->insert112_EmpClassError,Rollback :输入字符串的格式不正确。
+14:46:43:5185478 Emp Update Insert===================
+14:46:46:4127134 -->SelectSqlServerSum:12329
+14:46:54:2791633 -->Query ProgressEMPRSum:40314
+14:51:33:4041283 Emp Update Insert===================
+14:51:36:3942994 -->SelectSqlServerSum:12329
+14:51:44:3137523 -->Query ProgressEMPRSum:40314
+14:51:53:8782994 -->insert111_EmpClassError,Rollback :输入字符串的格式不正确。
+14:51:57:6215135 -->SelectSqlServerSum:19589
+14:52:05:4599618 -->Query ProgressEMPRSum:40314
+14:52:14:7064907 -->insert112_EmpClassError,Rollback :输入字符串的格式不正确。
+14:53:08:8885897 Emp Update Insert===================
+14:53:11:8587596 -->SelectSqlServerSum:12329
+14:53:20:4332501 -->Query ProgressEMPRSum:40314
+14:54:03:1796950 Emp Update Insert===================
+14:54:06:2778722 -->SelectSqlServerSum:12329
+14:54:14:3713351 -->Query ProgressEMPRSum:40314

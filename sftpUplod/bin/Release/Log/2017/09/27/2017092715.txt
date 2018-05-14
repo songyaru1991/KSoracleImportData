@@ -1,0 +1,2 @@
+2017-09-27 15:20:59-->Query SqlServer Error:The SELECT permission was denied on the object 'V_RYBZ_TX', database 'stxt001041228', schema 'dbo'.
+

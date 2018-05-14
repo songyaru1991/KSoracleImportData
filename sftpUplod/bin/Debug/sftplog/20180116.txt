@@ -1,0 +1,71 @@
+16:13:01:2329952 Raw To Progress===================
+16:13:03:1689658 -->SelectSqlServerSum:15757
+16:13:06:4924070 -->Query ProgressEMPRSum:34080
+16:13:31:8015834 -->Update111_EmployeeOK:0
+16:13:31:8111584 -->insert111_EmployeeOK:32639
+16:13:32:6577526 -->SelectSqlServerSum:15757
+16:13:35:4028940 -->Query ProgressEMPRSum:34080
+16:13:35:4777881 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+16:16:35:8941036 Raw To Progress===================
+16:16:37:2987147 -->SelectSqlServerSum:15757
+16:16:40:8636897 -->Query ProgressEMPRSum:34080
+16:16:41:0419277 -->insert_Progress_EmpClassError,Rollback :列“COSTID”不属于表 datatable1。
+16:16:42:2915707 -->SelectSqlServerSum:15757
+16:16:46:1992748 -->Query ProgressEMPRSum:34080
+16:16:46:2337668 -->insert_Progress_EmpClassError,Rollback :列“COSTID”不属于表 datatable1。
+16:16:58:8031759 Raw To Progress===================
+16:17:00:1527711 -->SelectSqlServerSum:15757
+16:17:03:2445816 -->Query ProgressEMPRSum:34080
+16:17:03:3871789 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+16:17:04:2081710 -->SelectSqlServerSum:15757
+16:17:07:1978383 -->Query ProgressEMPRSum:34080
+16:17:07:2279019 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+16:23:26:0476588 Raw To Progress===================
+16:23:27:4093498 -->SelectSqlServerSum:15757
+16:23:30:3127308 -->Query ProgressEMPRSum:34080
+16:23:30:4610473 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+16:23:31:2994759 -->SelectSqlServerSum:15757
+16:23:34:0337623 -->Query ProgressEMPRSum:34080
+16:23:34:0611691 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+16:24:12:0325401 Raw To Progress===================
+16:24:13:3897498 -->SelectSqlServerSum:15757
+16:24:16:7759132 -->Query ProgressEMPRSum:34080
+16:24:16:9413750 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+16:24:17:7879862 -->SelectSqlServerSum:15757
+16:24:21:0350163 -->Query ProgressEMPRSum:34080
+16:24:21:0560465 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+16:25:16:0556882 Raw To Progress===================
+16:25:16:8167144 -->SelectSqlServerSum:15757
+16:25:19:5842817 -->Query ProgressEMPRSum:34080
+16:25:48:1899055 -->Update111_EmployeeOK:0
+16:25:48:2009346 -->insert111_EmployeeOK:32639
+16:25:49:0890294 -->SelectSqlServerSum:15757
+16:25:51:8928178 -->Query ProgressEMPRSum:34080
+16:25:51:9158838 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+16:34:31:6720418 Raw To Progress===================
+16:34:33:3318503 -->SelectSqlServerSum:15757
+16:34:37:0520054 -->Query ProgressEMPRSum:34080
+16:34:37:1976762 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+16:34:38:0190959 -->SelectSqlServerSum:15757
+16:34:41:3331713 -->Query ProgressEMPRSum:34080
+16:34:41:3572375 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+16:35:22:6440438 Raw To Progress===================
+16:35:23:9907361 -->SelectSqlServerSum:15757
+16:35:26:8969395 -->Query ProgressEMPRSum:34080
+16:35:27:0437059 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+16:36:36:3833408 Raw To Progress===================
+16:36:37:7260882 -->SelectSqlServerSum:15757
+16:36:40:8197437 -->Query ProgressEMPRSum:34080
+16:36:40:9621706 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+16:40:39:0781632 Raw To Progress===================
+16:40:40:3782674 -->SelectSqlServerSum:15757
+16:40:43:2982947 -->Query ProgressEMPRSum:34080
+16:40:43:4295395 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 Table。
+16:45:29:2386519 Raw To Progress===================
+16:45:30:6225883 -->SelectSqlServerSum:15757
+16:45:34:0192544 -->Query ProgressEMPRSum:34080
+16:45:34:1709926 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 CSR_EMPLOYEE_ONE。
+16:46:21:1232631 Raw To Progress===================
+16:46:22:4887473 -->SelectSqlServerSum:15757
+16:46:27:1360734 -->Query ProgressEMPRSum:34080
+16:46:27:2975938 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。

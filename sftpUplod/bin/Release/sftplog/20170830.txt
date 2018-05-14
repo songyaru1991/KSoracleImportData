@@ -1,0 +1,86 @@
+16:09:44:1511354 Open Auto======================
+16:09:46:0962467 -->Query 111ClassSum:26236
+16:09:48:4033786 -->SelectSqlServerEmpSum:13006
+2017-08-30 16:09:49 2017-08-30 16:09:49-->Query Progress Error:ERROR [08S01] [DataDirect][ODBC Progress OpenEdge Wire Protocol driver]Socket closed.
+ERROR [08S01] [DataDirect][ODBC Progress OpenEdge Wire Protocol driver]Socket closed.
+16:09:49:2454268 -->Query ProgressEmpClassSumError
+16:10:12:8817787 Open Auto======================
+16:10:14:5708753 -->Query 111ClassSum:26236
+16:10:16:6779958 -->SelectSqlServerEmpSum:13006
+2017-08-30 16:10:16 2017-08-30 16:10:16-->Query Progress Error:ERROR [08S01] [DataDirect][ODBC Progress OpenEdge Wire Protocol driver]Socket closed.
+ERROR [08S01] [DataDirect][ODBC Progress OpenEdge Wire Protocol driver]Socket closed.
+16:10:16:7500000 -->Query ProgressEmpClassSumError
+16:12:03:7951226 Open Auto======================
+16:12:05:2182040 -->Query 111ClassSum:26236
+16:12:16:7568640 -->SelectSqlServerEmpSum:13006
+2017-08-30 16:12:16 2017-08-30 16:12:16-->Query Progress Error:ERROR [08S01] [DataDirect][ODBC Progress OpenEdge Wire Protocol driver]Socket closed.
+ERROR [08S01] [DataDirect][ODBC Progress OpenEdge Wire Protocol driver]Socket closed.
+16:12:16:8488692 -->Query ProgressEmpClassSumError
+16:13:14:4721651 Open Auto======================
+16:13:16:1682621 -->Query 111ClassSum:26236
+16:13:18:3363861 -->SelectSqlServerEmpSum:13006
+16:23:44:0171730 Open Auto======================
+16:23:45:7512722 -->Query 111ClassSum:26236
+16:23:49:4534839 -->Query ProgressEmpClassSum:26236
+16:27:39:7636569 Open Auto======================
+16:27:41:1817380 -->Query 111ClassSum:26236
+16:27:44:6999393 -->Query ProgressEmpClassSum:26236
+16:33:20:4501431 Open Auto======================
+16:33:22:1962429 -->Query 111ClassSum:26236
+16:33:25:9024549 -->Query ProgressEmpClassSum:26236
+16:38:36:6882309 Open Auto======================
+16:38:38:1193127 -->Query 111ClassSum:26236
+16:38:41:7405198 -->Query ProgressEmpClassSum:26236
+16:38:41:9475317 -->insert111_EmpClassError,Rollback :索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+16:39:00:0125649 Open Auto======================
+16:39:01:3726427 -->Query 111ClassSum:26236
+16:39:04:9708485 -->Query ProgressEmpClassSum:26236
+16:42:15:7347596 Open Auto======================
+16:42:17:4048551 -->Query 111ClassSum:26236
+16:42:21:1390687 -->Query ProgressEmpClassSum:26236
+16:42:59:6732727 Open Auto======================
+16:43:01:3543689 -->Query 111ClassSum:26236
+16:43:04:8725701 -->Query ProgressEmpClassSum:26236
+16:48:19:3285560 Open Auto======================
+16:48:20:8256416 -->Query 111ClassSum:26236
+16:48:24:5148526 -->Query ProgressEmpClassSum:26236
+16:48:55:3766178 Open Auto======================
+16:48:57:1307181 -->Query 111ClassSum:26236
+16:49:00:5389131 -->Query ProgressEmpClassSum:26236
+16:59:56:8414514 Open Auto======================
+16:59:58:3255363 -->Query 111ClassSum:26236
+17:00:01:8897402 -->Query ProgressEmpClassSum:26236
+17:02:31:9133210 Open Auto======================
+17:02:33:6414199 -->Query 111ClassSum:26236
+17:02:37:1466204 -->Query ProgressEmpClassSum:26236
+17:03:33:7158559 Open Auto======================
+17:03:35:3989522 -->Query 111ClassSum:26236
+17:03:39:3391776 -->Query ProgressEmpClassSum:26236
+18:03:55:4760088 Open Auto======================
+18:03:57:3071135 -->Query 111ClassSum:26236
+18:04:01:4593510 -->Query ProgressEmpClassSum:26236
+18:04:02:0213831 -->insert111_EmpClassError,Rollback :索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+18:06:48:4969050 Open Auto======================
+18:06:49:9049855 -->Query 111ClassSum:26236
+18:06:53:5951966 -->Query ProgressEmpClassSum:26236
+18:06:54:1542286 -->insert111_EmpClassError,Rollback :索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+18:07:14:7534068 Open Auto======================
+18:07:16:7315199 -->Query 111ClassSum:26236
+18:07:20:4127305 -->Query ProgressEmpClassSum:26236
+18:09:22:4137085 Open Auto======================
+18:09:24:1418074 -->Query 111ClassSum:26236
+18:09:27:8370187 -->Query ProgressEmpClassSum:26236
+18:10:16:7768179 -->insert111_EmpClassError,Rollback :索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+18:13:34:7401408 Open Auto======================
+18:13:36:4752400 -->Query 111ClassSum:26236
+18:13:36:5442440 -->Query ProgressEmpClassSum:26236
+18:14:59:0749645 Open Auto======================
+18:15:00:6910569 -->Query 111ClassSum:26236
+18:15:00:7730616 -->Query ProgressEmpClassSum:26236
+18:16:44:2989829 Open Auto======================
+18:16:45:9700785 -->Query 111ClassSum:26236
+18:16:46:0440827 -->Query ProgressEmpClassSum:26236

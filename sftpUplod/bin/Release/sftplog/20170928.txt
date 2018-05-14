@@ -1,0 +1,21 @@
+10:41:15:1173556 Testemployee===================
+10:41:16:6804450 -->Query 112ClassSum:0
+10:41:23:7538495 -->Query ProgressEmpClassSum:54295
+10:48:26:9370542 Testemployee===================
+10:48:28:1031209 -->Query 112ClassSum:82084
+10:48:34:5514898 -->Query ProgressEmpClassSum:54295
+10:49:03:6351533 -->Update112_EmpClassOK:0
+10:49:03:6481540 -->insert112_EmpClassOK:0
+10:54:48:3348690 Testemployee===================
+10:54:49:6949467 -->Query 112ClassSum:96207
+10:54:55:9563049 -->Query ProgressEmpClassSum:54295
+10:55:31:8163559 -->Update112_EmpClassOK:0
+10:55:31:8253565 -->insert112_EmpClassOK:0
+11:12:39:3831294 Testemployee===================
+11:12:41:0132226 -->Update155_EmpClass4:15824
+11:15:14:4329978 Testemployee===================
+11:15:16:0400897 -->Update155_EmpClass4:15824
+14:21:08:8339930 To empclass===================
+14:21:16:1234099 -->Update111_EmpClassOK:
+14:26:52:6456579 To empclass===================
+14:26:58:5809974 -->Update111_EmpClassOK:

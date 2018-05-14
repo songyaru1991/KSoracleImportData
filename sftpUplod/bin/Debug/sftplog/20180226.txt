@@ -1,0 +1,24 @@
+10:18:04:7102657 Raw To Progress===================
+10:18:07:6344196 -->Query 111ClassSum:33396
+10:18:14:0800863 -->Query ProgressEmpClassSum:86274
+10:18:14:6402139 -->insert_ORACLE_EmpClassError,Rollback :ORA-01810: 格式代码出现两次
+10:21:26:6222391 Raw To Progress===================
+10:21:27:5260766 -->Query 111ClassSum:33396
+10:21:32:6382763 -->Query ProgressEmpClassSum:86274
+10:24:29:1922750 Raw To Progress===================
+10:24:30:1660482 -->Query 111ClassSum:33396
+10:24:34:5650171 -->Query ProgressEmpClassSum:86274
+10:24:34:8990837 -->insert_ORACLE_EmpClassError,Rollback :ORA-01810: 格式代码出现两次
+10:25:56:3297818 Raw To Progress===================
+10:25:57:2341887 -->Query 111ClassSum:33396
+10:26:01:5094296 -->Query ProgressEmpClassSum:86274
+10:35:55:9712159 Raw To Progress===================
+10:35:56:9667468 -->Query 111ClassSum:33402
+10:36:02:4312192 -->Query ProgressEmpClassSum:86274
+10:39:14:2270307 Raw To Progress===================
+10:39:15:1405798 -->Query 111ClassSum:33402
+10:39:19:9499859 -->Query ProgressEmpClassSum:86274
+10:40:11:7576009 Raw To Progress===================
+10:40:12:6178900 -->Query 111ClassSum:33402
+10:40:17:0880130 -->Query ProgressEmpClassSum:86274
+10:40:17:4169166 -->insert_ORACLE_EmpClassError,Rollback :ORA-01810: 格式代码出现两次

@@ -1,0 +1,169 @@
+13:45:22:2029295 Raw To Progress===================
+2017-10-30 下午 01:45:49 2017-10-30 下午 01:45:43-->Query 111 Error:Authentication to host '' for user '' using method 'mysql_native_password' failed with message: Access denied for user ''@'L0187-PC01' (using password: NO)
+13:46:31:5618966 -->Query 111ClassError
+13:48:06:8663477 Raw To Progress===================
+2017-10-30 下午 01:48:10 2017-10-30 下午 01:48:10-->Query 111 Error:Authentication to host '' for user '' using method 'mysql_native_password' failed with message: Access denied for user ''@'L0187-PC01' (using password: NO)
+13:48:10:1405350 -->Query 111ClassError
+13:57:53:8779229 Raw To Progress===================
+14:28:08:5420331 Raw To Progress===================
+14:28:08:9160582 连??接??成??功|
+15:07:27:0066489 Raw To Progress===================
+15:07:27:4327694 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000745): ORA-01861: 文字与格式字符串不匹配
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 240
+15:07:57:3885244 Raw To Progress===================
+15:07:57:7490116 连接成功|
+15:08:04:9092748 Raw To Progress===================
+15:08:05:3480722 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000745): ORA-01861: 文字与格式字符串不匹配
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 240
+15:10:36:5019004 Raw To Progress===================
+15:10:36:9018566 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000391): ORA-00913: 值过多
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 240
+15:13:18:1896965 Raw To Progress===================
+15:13:18:6114673 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000391): ORA-00913: 值过多
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 240
+15:16:59:6201706 Raw To Progress===================
+15:17:00:0172479 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000745): ORA-01861: 文字与格式字符串不匹配
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 240
+15:19:51:1582053 Raw To Progress===================
+15:19:51:5502790 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000745): ORA-01861: 文字与格式字符串不匹配
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 240
+15:20:41:7654765 Raw To Progress===================
+15:20:42:1804260 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000745): ORA-01861: 文字与格式字符串不匹配
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 240
+15:21:37:7790320 Raw To Progress===================
+15:21:38:1896259 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000745): ORA-01861: 文字与格式字符串不匹配
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 241
+15:21:46:3146879 Raw To Progress===================
+15:21:46:6924792 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000745): ORA-01861: 文字与格式字符串不匹配
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 241
+15:39:06:0838741 Raw To Progress===================
+15:39:06:4810024 连接失败System.InvalidOperationException: 连接已打开
+   在 Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 245
+15:39:51:9926257 Raw To Progress===================
+15:39:52:4257798 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000745): ORA-01861: 文字与格式字符串不匹配
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 247
+15:40:55:3598456 Raw To Progress===================
+15:40:55:8097013 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000745): ORA-01861: 文字与格式字符串不匹配
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 247
+15:47:04:3907254 Raw To Progress===================
+15:47:04:8267080 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000745): ORA-01861: 文字与格式字符串不匹配
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 249
+15:53:02:0177388 Raw To Progress===================
+15:53:02:3075099 连接失败System.Exception: System.Data.OracleClient 需要 Oracle 客户端软件 version 8.1.7 或更高版本。
+   在 System.Data.OracleClient.OCI.DetermineClientVersion()
+   在 System.Data.OracleClient.OracleInternalConnection.OpenOnLocalTransaction(String userName, String password, String serverName, Boolean integratedSecurity, Boolean unicode, Boolean omitOracleConnectionName)
+   在 System.Data.OracleClient.OracleInternalConnection..ctor(OracleConnectionString connectionOptions)
+   在 System.Data.OracleClient.OracleConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OracleClient.OracleConnection.Open()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 241
+15:53:50:3043308 Raw To Progress===================
+15:53:50:7475657 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000745): ORA-01861: 文字与格式字符串不匹配
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 250
+15:56:16:9899053 Raw To Progress===================
+15:56:17:5152865 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000745): ORA-01861: 文字与格式字符串不匹配
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 250
+15:57:34:1206416 Raw To Progress===================
+15:57:34:5839055 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000745): ORA-01861: 文字与格式字符串不匹配
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 250
+15:58:39:4708506 Raw To Progress===================
+15:58:39:8716659 连接失败Oracle.ManagedDataAccess.Client.OracleException (0x00000745): ORA-01861: 文字与格式字符串不匹配
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean bFirstIterationDone)
+   在 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isFromEF)
+   在 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   在 sftpUplod.Form1.InsertOrcale_empClass() 位置 E:\C#程序\sftpUplod - empclass -study\sftpUplod\Form1.cs:行号 244
+16:05:47:1234842 Raw To Progress===================
+16:05:47:5059769 连接成功|
+16:16:55:4737491 Raw To Progress===================
+16:16:55:8316269 连接成功|
+16:21:46:5957791 Raw To Progress===================
+16:21:46:9688488 连接成功|
+16:22:13:4067581 Raw To Progress===================
+16:22:13:7829996 连接成功|
+16:23:18:0383910 Raw To Progress===================
+16:23:18:4404774 连接成功|
+16:24:42:8438613 Raw To Progress===================
+16:24:43:2227135 连接成功|
+16:24:55:7686726 Raw To Progress===================
+16:24:56:1501897 连接成功|
+16:25:30:8126870 Raw To Progress===================
+16:25:31:2031481 连接成功|
+16:25:58:1789570 Raw To Progress===================
+16:25:58:5346014 successful
+16:26:01:1429665 -->Query ProgressEmpClassSum:63389
+16:26:41:7177263 Raw To Progress===================
+16:26:42:0937323 successful
+16:26:45:3120525 -->Query ProgressEmpClassSum:63389
+16:27:19:3928953 Raw To Progress===================
+16:27:19:7589568 successful
+16:27:22:4115054 -->Query ProgressEmpClassSum:63389
+16:28:11:7643565 Raw To Progress===================
+16:28:12:1060669 successful
+16:28:15:5217170 -->Query ProgressEmpClassSum:63389

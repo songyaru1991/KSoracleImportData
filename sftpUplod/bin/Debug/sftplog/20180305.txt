@@ -1,0 +1,112 @@
+08:27:38:4608980 Raw To Progress===================
+08:27:41:9603489 -->SelectSqlServerSum:18851
+08:27:49:3443495 -->Query ProgressEMPRSum:79689
+08:30:56:8267066 Raw To Progress===================
+08:30:57:8853513 Raw To Progress===================
+08:30:58:3975817 -->SelectSqlServerSum:18851
+08:30:59:4216203 -->SelectSqlServerSum:18851
+08:31:04:8080109 -->Query ProgressEMPRSum:79689
+08:31:06:3658095 -->Query ProgressEMPRSum:79689
+08:34:24:3972102 -->Update111_EmployeeOK:26578
+08:34:24:4092387 -->insert111_EmployeeOK:41127
+08:38:29:2603101 -->Update111_EmployeeOK:26578
+08:38:29:2643198 -->insert111_EmployeeOK:41127
+08:39:03:0357924 Raw To Progress===================
+08:39:03:8456252 -->SelectSqlServerSum:18851
+08:39:09:8302091 -->Query ProgressEMPRSum:79689
+08:40:06:0220410 -->Update111_EmployeeOK:0
+08:40:06:0310651 -->insert111_EmployeeOK:76459
+08:49:59:3658442 Raw To Progress===================
+08:50:01:0225757 -->SelectSqlServerSum:18851
+08:50:07:1463967 -->Query ProgressEMPRSum:79689
+08:50:36:5939882 -->Update111_EmployeeOK:64
+08:50:36:6080525 -->insert111_EmployeeOK:40973
+08:51:53:8776392 Raw To Progress===================
+08:51:55:3918310 -->SelectSqlServerSum:18851
+08:52:01:6529948 -->Query ProgressEMPRSum:79689
+08:52:13:9996416 -->Update111_EmployeeOK:65
+08:52:14:0212800 -->insert111_EmployeeOK:40973
+08:52:26:8664574 Raw To Progress===================
+08:52:28:3734334 -->SelectSqlServerSum:18851
+08:52:34:6003279 -->Query ProgressEMPRSum:79689
+08:52:47:3157651 -->Update111_EmployeeOK:65
+08:52:47:3197431 -->insert111_EmployeeOK:40973
+08:54:53:2085556 Raw To Progress===================
+08:56:32:6750060 Raw To Progress===================
+08:56:33:4418683 -->SelectSqlServerSum:18851
+08:56:39:5430395 -->Query ProgressEMPRSum:79689
+08:57:08:5314611 -->Update111_EmployeeOK:0
+08:57:08:5495386 -->insert111_EmployeeOK:76459
+08:57:12:6122421 Raw To Progress===================
+08:57:15:0027079 -->SelectSqlServerSum:18851
+08:57:21:2363870 -->Query ProgressEMPRSum:79689
+08:58:31:0546992 Raw To Progress===================
+08:58:33:4172244 -->SelectSqlServerSum:18851
+08:58:39:5638704 -->Query ProgressEMPRSum:79689
+09:02:22:0969240 Raw To Progress===================
+09:02:23:6095371 -->SelectSqlServerSum:18851
+09:02:29:6618563 -->Query ProgressEMPRSum:79689
+09:03:08:3654509 -->Update111_EmployeeOK:61
+09:03:08:3744753 -->insert111_EmployeeOK:40973
+09:04:35:2343477 Raw To Progress===================
+09:04:37:6631559 -->SelectSqlServerSum:18851
+09:04:44:0002537 -->Query ProgressEMPRSum:79689
+09:07:21:2861885 Raw To Progress===================
+09:07:23:7745555 -->SelectSqlServerSum:18851
+09:07:30:0058899 -->Query ProgressEMPRSum:79689
+09:17:31:8829376 Raw To Progress===================
+09:17:32:6976921 -->SelectSqlServerSum:18851
+09:17:38:6913344 -->Query ProgressEMPRSum:79689
+09:18:08:5206585 -->Update111_EmployeeOK:0
+09:18:08:5326898 -->insert111_EmployeeOK:76459
+09:18:19:8280494 Raw To Progress===================
+09:18:22:3004238 -->SelectSqlServerSum:18851
+09:18:28:4177149 -->Query ProgressEMPRSum:79689
+09:24:18:7509554 Raw To Progress===================
+09:24:21:1565748 -->SelectSqlServerSum:18851
+09:24:29:0526743 -->Query ProgressEMPRSum:79689
+09:34:00:0843990 Raw To Progress===================
+09:34:00:8627005 -->SelectSqlServerSum:18856
+09:34:07:0345128 -->Query ProgressEMPRSum:79689
+09:34:37:0570792 -->Update111_EmployeeOK:0
+09:34:37:0650784 -->insert111_EmployeeOK:76459
+09:35:26:8268448 Raw To Progress===================
+09:35:29:2145128 -->SelectSqlServerSum:18856
+09:35:35:4543536 -->Query ProgressEMPRSum:79689
+09:38:56:7340723 Raw To Progress===================
+09:38:57:5198385 -->SelectSqlServerSum:18857
+09:39:00:9523520 -->Query ProgressEMPRSum:36868
+09:39:25:5965790 -->Update111_EmployeeOK:0
+09:39:25:6116201 -->insert111_EmployeeOK:35425
+09:39:33:0521260 Raw To Progress===================
+09:39:34:5266838 -->SelectSqlServerSum:18861
+09:39:37:9178450 -->Query ProgressEMPRSum:36868
+10:22:23:9992339 Raw To Progress===================
+10:22:25:6081115 -->SelectSqlServerSum:18881
+10:22:28:6121420 -->Query ProgressEMPRSum:36870
+10:27:12:8542804 -->Update111_EmployeeOK:26514
+10:27:12:8583187 -->insert111_EmployeeOK:2
+10:28:05:7492365 Raw To Progress===================
+10:28:07:3730224 -->SelectSqlServerSum:18882
+10:28:10:5614618 -->Query ProgressEMPRSum:36870
+10:28:11:4616640 -->Update111_EmployeeOK:2
+10:28:11:4669300 -->insert111_EmployeeOK:0
+10:28:21:4834041 Raw To Progress===================
+10:28:22:9872202 -->SelectSqlServerSum:18882
+10:28:26:1506438 -->Query ProgressEMPRSum:36870
+10:28:26:9786410 -->Update111_EmployeeOK:0
+10:28:26:9826812 -->insert111_EmployeeOK:0
+15:30:51:8556958 Raw To Progress===================
+15:30:55:7334621 -->SelectSqlServerSum:19024
+15:30:59:5859509 -->Query ProgressEMPRSum:36870
+15:31:03:5439320 -->Update111_EmployeeOK:240
+15:31:03:5629507 -->insert111_EmployeeOK:0
+15:42:40:4592016 Raw To Progress===================
+15:42:40:9590452 -->Query 111ClassSum:0
+15:42:45:7834920 -->Query ProgressEmpClassSum:88500
+15:42:46:2895698 -->insert_ORACLE_EmpClassError,Rollback :ORA-00904: "UPDATE_TIME": 标识符无效
+15:44:18:6627979 Raw To Progress===================
+15:44:19:1881789 -->Query 111ClassSum:0
+15:44:24:1085556 -->Query ProgressEmpClassSum:88500
+15:44:50:3018080 -->Update_ORACLE_EmpClassOK:0
+15:44:50:3123358 -->insert_ORACLE_EmpClassOK:58612

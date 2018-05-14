@@ -1,0 +1,244 @@
+08:01:52:4244833 Raw To Progress===================
+08:01:53:7304210 -->Query 111ClassSum:78134
+08:01:57:2908852 -->Query ProgressEmpClassSum:73310
+08:02:44:9432442 Raw To Progress===================
+08:02:46:3909040 -->SelectSqlServerSum:16846
+08:02:49:3395293 -->Query ProgressEMPRSum:31688
+08:02:50:0837601 -->insert111_EmpClassError,Rollback :ORA-00925: 缺失 INTO 关键字
+08:04:11:9511591 Raw To Progress===================
+08:04:12:5849430 -->SelectSqlServerSum:16846
+08:04:15:1265149 -->Query ProgressEMPRSum:31688
+08:04:15:8134640 -->insert111_EmpClassError,Rollback :ORA-00925: 缺失 INTO 关键字
+08:04:35:5836788 Raw To Progress===================
+08:04:36:2270618 -->SelectSqlServerSum:16846
+08:04:39:1317812 -->Query ProgressEMPRSum:31688
+08:04:39:8316615 -->insert_Progress_EmpClassError,Rollback :ORA-00925: 缺失 INTO 关键字
+08:05:00:6701723 Raw To Progress===================
+08:05:01:3435249 -->SelectSqlServerSum:16846
+08:05:04:3099145 -->Query ProgressEMPRSum:31688
+08:05:26:7551953 Raw To Progress===================
+08:05:27:3898842 -->SelectSqlServerSum:16846
+08:05:30:3170376 -->Query ProgressEMPRSum:31688
+08:05:44:7972315 Raw To Progress===================
+08:05:45:4333355 -->SelectSqlServerSum:16846
+08:05:47:9513669 -->Query ProgressEMPRSum:31688
+08:06:51:5680945 Raw To Progress===================
+08:06:52:1913986 -->SelectSqlServerSum:16846
+08:06:55:0339505 -->Query ProgressEMPRSum:31688
+08:06:55:1843288 -->insert_Progress_EmpClassError,Rollback :ORA-00904: "CARID": 标识符无效
+08:07:17:3922402 Raw To Progress===================
+08:07:17:9898310 -->SelectSqlServerSum:16846
+08:07:20:6037789 -->Query ProgressEMPRSum:31688
+08:07:21:0259023 -->insert_Progress_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+08:23:16:2461427 Raw To Progress===================
+08:23:17:1946637 -->SelectSqlServerSum:16471
+08:23:20:2307330 -->Query ProgressEMPRSum:31688
+08:28:48:7462827 Raw To Progress===================
+08:28:49:3764616 -->SelectSqlServerSum:16471
+08:28:52:2942453 -->Query ProgressEMPRSum:31688
+08:29:13:5750309 Raw To Progress===================
+08:29:14:2445868 -->SelectSqlServerSum:16471
+08:29:16:7530391 -->Query ProgressEMPRSum:31688
+08:29:16:9104320 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+08:30:11:4440368 Raw To Progress===================
+08:30:12:0722083 -->SelectSqlServerSum:16471
+08:30:15:0501228 -->Query ProgressEMPRSum:31688
+08:30:15:1564062 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+08:37:46:6266225 Raw To Progress===================
+08:37:47:4808548 -->SelectSqlServerSum:16471
+08:37:50:4509234 -->Query ProgressEMPRSum:31688
+08:37:50:5641955 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+08:57:05:0288225 Raw To Progress===================
+08:57:05:7778195 -->SelectSqlServerSum:16472
+08:57:08:6268525 -->Query ProgressEMPRSum:31689
+08:57:08:7538383 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+09:06:19:8795405 Raw To Progress===================
+09:06:20:6340747 -->SelectSqlServerSum:16472
+09:06:23:3357823 -->Query ProgressEMPRSum:31689
+09:06:23:4385572 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 Table。
+09:07:36:6466280 Raw To Progress===================
+2017/12/8 9:07:37 2017/12/8 9:07:37-->Query 111 Error:无法找到表 0。
+09:07:37:1199150 -->Query 111TestemployeeError
+09:11:52:2956244 Raw To Progress===================
+09:11:53:0135360 -->SelectSqlServerSum:16472
+09:11:55:9342977 -->Query ProgressEMPRSum:31689
+09:11:56:0496060 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+09:15:26:0089906 Raw To Progress===================
+09:15:26:9024649 -->SelectSqlServerSum:16472
+09:15:29:7751003 -->Query ProgressEMPRSum:31689
+09:15:29:8944224 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+09:23:08:9507593 Raw To Progress===================
+09:23:09:6466373 -->SelectSqlServerSum:16472
+09:23:12:3347846 -->Query ProgressEMPRSum:31689
+09:23:12:7308073 -->insert_Progress_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+09:24:07:4316898 Raw To Progress===================
+09:24:08:0613649 -->SelectSqlServerSum:16472
+09:24:10:6843360 -->Query ProgressEMPRSum:31689
+09:24:59:1285687 -->insert_Progress_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+09:26:23:1411483 Raw To Progress===================
+09:26:23:7663672 -->SelectSqlServerSum:16472
+09:26:26:5637721 -->Query ProgressEMPRSum:31689
+09:26:26:6620342 -->insert_Progress_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+09:27:05:7240807 Raw To Progress===================
+09:27:06:3464137 -->SelectSqlServerSum:16472
+09:27:08:9483325 -->Query ProgressEMPRSum:31689
+09:27:09:2160445 -->insert_Progress_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+09:34:14:2641387 Raw To Progress===================
+09:34:14:8857913 -->SelectSqlServerSum:16472
+09:34:17:6431197 -->Query ProgressEMPRSum:31689
+09:34:39:8783269 -->Update111_EmployeeOK:0
+09:34:39:8833375 -->insert111_EmployeeOK:31689
+09:37:05:1979763 Raw To Progress===================
+09:37:05:8167317 -->SelectSqlServerSum:16472
+09:37:08:5570157 -->Query ProgressEMPRSum:31689
+09:37:08:9269989 -->insert_Progress_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+09:39:56:4279249 Raw To Progress===================
+09:39:57:1077371 -->SelectSqlServerSum:16472
+09:39:59:6368006 -->Query ProgressEMPRSum:31689
+09:40:18:6328595 -->insert_Progress_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+09:42:11:5884975 Raw To Progress===================
+09:42:12:2273405 -->SelectSqlServerSum:16472
+09:42:14:7971708 -->Query ProgressEMPRSum:31689
+09:42:15:0598694 -->insert_Progress_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+09:42:29:4360366 Raw To Progress===================
+09:42:30:0887117 -->SelectSqlServerSum:16472
+09:42:32:7533465 -->Query ProgressEMPRSum:31689
+09:42:33:0140323 -->insert_Progress_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+09:43:13:1769170 Raw To Progress===================
+09:43:13:7930546 -->SelectSqlServerSum:16472
+09:43:16:4970858 -->Query ProgressEMPRSum:31689
+09:47:10:0917468 Raw To Progress===================
+09:47:10:7525015 -->SelectSqlServerSum:16472
+09:47:13:2010368 -->Query ProgressEMPRSum:31689
+09:47:13:4777482 -->insert_Progress_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+09:50:02:0288546 Raw To Progress===================
+09:50:02:6760814 -->SelectSqlServerSum:16472
+09:50:05:4574889 -->Query ProgressEMPRSum:31689
+09:50:05:7171668 -->insert_Progress_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+09:50:15:4809238 Raw To Progress===================
+09:50:16:1171276 -->SelectSqlServerSum:16472
+09:50:18:7811965 -->Query ProgressEMPRSum:31689
+09:56:59:0971799 -->insert_Progress_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+10:03:52:3253717 Raw To Progress===================
+10:03:52:9714135 -->SelectSqlServerSum:16473
+10:03:55:6103656 -->Query ProgressEMPRSum:31689
+10:03:55:8620356 -->insert_Progress_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+10:39:21:5610007 Raw To Progress===================
+10:39:22:0533369 -->SelectSqlServerSum:906
+10:41:05:5945501 Raw To Progress===================
+10:41:06:1586326 -->SelectSqlServerSum:906
+10:41:07:0272163 -->insert111_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+10:42:32:7895239 Raw To Progress===================
+10:42:33:3196078 -->SelectSqlServerSum:906
+10:42:34:0857709 -->insert111_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+10:45:18:8269130 Raw To Progress===================
+10:45:20:7381681 -->SelectSqlServerSum:906
+10:45:21:4873200 -->insert111_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+10:46:38:8207475 Raw To Progress===================
+10:46:39:3310265 -->SelectSqlServerSum:906
+10:46:40:1016249 -->Update111_EmployeeOK:0
+10:46:40:1216111 -->insert111_EmployeeOK:906
+10:47:45:3302360 Raw To Progress===================
+10:47:45:9995237 -->SelectSqlServerSum:16473
+10:47:50:0237019 -->Query ProgressEMPRSum:31754
+10:48:16:2382346 -->Update111_EmployeeOK:0
+10:48:16:2447517 -->insert111_EmployeeOK:31754
+10:51:59:3772482 Raw To Progress===================
+10:51:59:8872663 -->SelectSqlServerSum:906
+10:52:00:1587279 -->Update111_EmployeeOK:0
+10:52:00:1647429 -->insert111_EmployeeOK:906
+10:58:20:9903459 Raw To Progress===================
+10:58:21:5148412 -->SelectSqlServerSum:906
+10:58:22:2666426 -->Update111_EmployeeOK:0
+10:58:22:2756664 -->insert111_EmployeeOK:906
+10:58:52:9663089 Raw To Progress===================
+10:58:53:5227554 -->SelectSqlServerSum:906
+10:58:54:4772936 -->insert111_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+11:00:11:0769366 Raw To Progress===================
+11:00:11:6279028 -->SelectSqlServerSum:906
+11:00:57:5250347 Raw To Progress===================
+11:00:58:0073186 -->SelectSqlServerSum:906
+14:04:58:8400674 Raw To Progress===================
+14:05:01:3171309 -->SelectSqlServerSum:906
+14:05:02:1001498 -->insert111_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+14:12:08:7416340 Raw To Progress===================
+14:12:09:2448650 -->SelectSqlServerSum:906
+14:12:10:0293509 -->insert111_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+14:14:47:6514333 Raw To Progress===================
+14:14:49:0968036 -->Query 111ClassSum:78134
+14:14:53:1284930 -->Query ProgressEmpClassSum:74012
+14:14:55:5549423 -->insert111_EmpClassError,Rollback :ORA-01861: 文字与格式字符串不匹配
+14:16:28:0824862 Raw To Progress===================
+14:16:28:4880645 -->Query 111ClassSum:0
+14:16:32:5518694 -->Query ProgressEmpClassSum:74012
+14:17:17:6982039 -->Update111_EmpClassOK:0
+14:17:17:7162528 -->insert111_EmpClassOK:79103
+14:17:24:8520029 Raw To Progress===================
+14:17:26:2032724 -->Query 111ClassSum:79103
+14:17:29:5721992 -->Query ProgressEmpClassSum:74012
+14:18:00:9535490 -->Update111_EmpClassOK:0
+14:18:00:9615691 -->insert111_EmpClassOK:0
+14:28:34:7228129 Raw To Progress===================
+14:28:36:0756672 -->Query 111ClassSum:79103
+14:28:39:6220662 -->Query ProgressEmpClassSum:74012
+14:29:11:0158894 -->Update111_EmpClassOK:0
+14:29:11:0239098 -->insert111_EmpClassOK:0
+14:29:29:0927740 Raw To Progress===================
+14:29:29:6061394 -->SelectSqlServerSum:906
+14:29:29:7585457 -->insert111_EmpClassError,Rollback :ORA-00900: 无效 SQL 语句
+14:30:06:6373347 Raw To Progress===================
+14:30:07:1314222 -->SelectSqlServerSum:906
+14:30:07:7380349 -->insert111_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+14:32:28:5009245 Raw To Progress===================
+14:32:28:9892238 -->SelectSqlServerSum:906
+14:35:30:7825962 Raw To Progress===================
+14:35:31:2749074 -->SelectSqlServerSum:906
+14:35:31:7070664 -->insert111_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+14:37:09:6509819 Raw To Progress===================
+14:37:10:1204447 -->SelectSqlServerSum:906
+14:37:43:6686754 Raw To Progress===================
+14:37:44:1725169 -->SelectSqlServerSum:906
+14:37:44:3289368 -->insert111_EmpClassError,Rollback :ORA-00925: 缺失 INTO 关键字
+14:38:01:7573504 Raw To Progress===================
+14:38:02:2853248 -->SelectSqlServerSum:906
+14:38:02:7134616 -->insert111_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+14:41:07:4239203 Raw To Progress===================
+14:41:07:9054362 -->SelectSqlServerSum:906
+14:43:13:5311363 Raw To Progress===================
+14:43:14:0646076 -->SelectSqlServerSum:906
+14:43:14:4847243 -->insert111_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+14:46:47:1384202 Raw To Progress===================
+14:46:47:6688304 -->SelectSqlServerSum:906
+14:46:48:4895210 -->Update111_EmployeeOK:0
+14:46:48:4920277 -->insert111_EmployeeOK:906
+14:49:13:5793662 Raw To Progress===================
+14:49:14:2167008 -->SelectSqlServerSum:16475
+14:49:17:0302097 -->Query ProgressEMPRSum:31754
+14:49:38:8968252 -->Update111_EmployeeOK:0
+14:49:38:9158757 -->insert111_EmployeeOK:31754
+14:56:06:7023904 Raw To Progress===================
+14:56:07:2164715 -->SelectSqlServerSum:906
+14:56:07:9614520 -->insert111_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+14:56:45:8022799 Raw To Progress===================
+14:56:46:3134145 -->SelectSqlServerSum:906
+14:56:46:7450647 -->insert111_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+14:57:16:2829011 Raw To Progress===================
+14:57:16:8073313 -->SelectSqlServerSum:906
+14:57:17:3648880 -->Update111_EmployeeOK:0
+14:57:17:3673948 -->insert111_EmployeeOK:904
+14:59:29:9771225 Raw To Progress===================
+14:59:30:5832357 -->SelectSqlServerSum:906
+14:59:30:7176188 -->insert111_EmpClassError,Rollback :列“costID”不属于表 datatable1。
+15:00:21:4553232 Raw To Progress===================
+15:00:21:9573063 -->SelectSqlServerSum:906
+15:00:22:4251031 -->Update111_EmployeeOK:0
+15:00:22:4291137 -->insert111_EmployeeOK:904
+15:00:41:8084037 Raw To Progress===================
+15:00:42:5032445 -->SelectSqlServerSum:16475
+15:00:45:1813626 -->Query ProgressEMPRSum:31754
+15:00:45:4901834 -->insert_Progress_EmpClassError,Rollback :ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
+15:02:39:6900187 Raw To Progress===================
+15:02:40:4055583 -->SelectSqlServerSum:16475
+15:02:43:6672001 -->Query ProgressEMPRSum:31754
+15:03:06:5037729 -->Update111_EmployeeOK:0
+15:03:06:5097866 -->insert111_EmployeeOK:30318

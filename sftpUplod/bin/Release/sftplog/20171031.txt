@@ -1,0 +1,85 @@
+08:49:11:6529653 Raw To Progress===================
+08:49:13:7313476 连接成功
+08:49:17:9989240 -->Query ProgressEmpClassSum:63389
+09:17:33:4609911 Raw To Progress===================
+09:17:33:8310032 连接成功
+09:17:40:3977856 -->Query ProgressEmpClassSum:63389
+09:18:01:4402582 Raw To Progress===================
+09:18:01:7935726 连接成功
+09:18:08:0166089 -->Query ProgressEmpClassSum:63389
+09:18:35:7920469 Raw To Progress===================
+09:18:36:1570337 连接成功
+09:18:42:1677071 -->Query ProgressEmpClassSum:63389
+09:32:18:3638322 Raw To Progress===================
+09:32:18:7085559 连接成功
+09:32:25:0375951 -->Query ProgressEmpClassSum:63389
+09:33:12:0970883 Raw To Progress===================
+09:33:12:4613010 连接成功
+09:33:18:9177639 -->Query ProgressEmpClassSum:63389
+09:51:09:9152783 Raw To Progress===================
+09:51:10:3204119 连接成功
+09:51:16:3124865 -->Query ProgressEmpClassSum:63389
+09:59:13:1861273 Raw To Progress===================
+09:59:13:5656371 连接成功
+09:59:19:2281566 -->Query ProgressEmpClassSum:63389
+10:00:54:6110480 Raw To Progress===================
+10:00:55:0040549 连接成功
+10:01:00:8177926 -->Query ProgressEmpClassSum:63389
+10:02:23:3059871 Raw To Progress===================
+10:02:23:7009788 连接成功
+10:02:29:2449429 -->Query ProgressEmpClassSum:63389
+10:03:27:3891169 Raw To Progress===================
+10:03:27:7917162 连接成功
+10:03:33:5901827 -->Query ProgressEmpClassSum:63389
+10:39:08:3452873 Raw To Progress===================
+10:39:10:7190791 连接成功
+10:40:38:1320397 Raw To Progress===================
+10:40:38:5245847 连接成功
+10:40:45:1417125 -->Query ProgressEmpClassSum:63389
+14:46:23:9312703 Raw To Progress===================
+14:46:26:0995180 连接成功
+14:46:33:0389181 -->Query ProgressEmpClassSum:63389
+14:49:09:0713381 Raw To Progress===================
+14:49:09:4569916 连接成功
+14:49:15:6122985 -->Query ProgressEmpClassSum:63389
+14:57:49:7715756 Raw To Progress===================
+14:57:50:2347433 连接成功
+14:57:57:0618231 -->Query ProgressEmpClassSum:63389
+14:58:27:2222397 Raw To Progress===================
+14:58:27:6192964 连接成功
+14:58:34:3224490 -->Query ProgressEmpClassSum:63389
+15:34:18:2606067 Raw To Progress===================
+15:34:21:0260434 连接成功
+15:34:27:3148216 -->Query ProgressEmpClassSum:63590
+15:38:49:5422359 Raw To Progress===================
+15:38:49:9404514 连接成功
+15:39:01:6583949 Raw To Progress===================
+15:39:02:0105111 连接成功
+15:39:08:6828718 -->Query ProgressEmpClassSum:63590
+15:39:53:8974090 Raw To Progress===================
+15:39:54:3057542 连接成功
+15:40:00:5971049 -->Query ProgressEmpClassSum:63590
+15:42:02:6309692 Raw To Progress===================
+15:42:03:0180650 连接成功
+15:42:09:8491151 -->Query ProgressEmpClassSum:63590
+15:42:40:3836402 Raw To Progress===================
+15:42:40:8194004 连接成功
+15:42:47:2687820 -->Query ProgressEmpClassSum:63590
+15:43:58:4787731 Raw To Progress===================
+15:43:58:8541886 连接成功
+15:44:04:8991570 -->Query ProgressEmpClassSum:63590
+15:44:20:4706552 Raw To Progress===================
+15:44:20:8787412 连接成功
+15:44:27:2488887 -->Query ProgressEmpClassSum:63590
+15:44:51:9854330 Raw To Progress===================
+15:44:52:3819932 连接成功
+15:44:58:6594445 -->Query ProgressEmpClassSum:63590
+15:46:06:9681777 Raw To Progress===================
+15:46:07:3351531 连接成功
+15:46:13:1024880 -->Query ProgressEmpClassSum:63590
+15:48:06:0057552 Raw To Progress===================
+15:48:06:4023137 连接成功
+15:48:12:6330772 -->Query ProgressEmpClassSum:63590
+16:50:07:3103987 Raw To Progress===================
+16:50:07:7505758 连接成功
+16:50:13:9483386 -->Query ProgressEmpClassSum:63590

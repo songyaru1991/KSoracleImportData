@@ -1,0 +1,28 @@
+D:\Net\sftpUplod\sftpUplod\bin\Debug\sftpUplod.exe
+D:\Net\sftpUplod\sftpUplod\bin\Debug\sftpUplod.pdb
+D:\Net\sftpUplod\sftpUplod\obj\x86\Debug\sftpUplod.Configure.resources
+D:\Net\sftpUplod\sftpUplod\obj\x86\Debug\sftpUplod.Form1.resources
+D:\Net\sftpUplod\sftpUplod\obj\x86\Debug\sftpUplod.Properties.Resources.resources
+D:\Net\sftpUplod\sftpUplod\obj\x86\Debug\sftpUplod.csproj.GenerateResource.Cache
+D:\Net\sftpUplod\sftpUplod\obj\x86\Debug\sftpUplod.exe
+D:\Net\sftpUplod\sftpUplod\obj\x86\Debug\sftpUplod.pdb
+D:\Net\sftpUplod\sftpUplod\bin\Debug\Renci.SshNet.dll
+D:\Net\sftpUplod\sftpUplod\obj\x86\Debug\sftpUplod.csprojResolveAssemblyReference.cache
+D:\Net\sftpUplod\sftpUplod\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Net\sftpUplod\sftpUplod\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\bin\Debug\sftpUplod.exe.config
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\obj\x86\Debug\sftpUplod.exe
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\obj\x86\Debug\sftpUplod.pdb
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\obj\x86\Debug\sftpUplod.csprojResolveAssemblyReference.cache
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\obj\x86\Debug\sftpUplod.Form1.resources
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\obj\x86\Debug\sftpUplod.Properties.Resources.resources
+E:\C#程序\sftpUplod - empclass -study\sftpUplod\obj\x86\Debug\sftpUplod.csproj.GenerateResource.Cache
+E:\C#程序\sftpUplod - empclass -study(Oracle)\sftpUplod\bin\Debug\sftpUplod.exe.config
+E:\C#程序\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Debug\sftpUplod.exe
+E:\C#程序\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Debug\sftpUplod.pdb
+E:\C#程序\sftpUplod - empclass -study(Oracle)\sftpUplod\bin\Debug\sftpUplod.exe
+E:\C#程序\sftpUplod - empclass -study(Oracle)\sftpUplod\bin\Debug\sftpUplod.pdb
+E:\C#程序\sftpUplod - empclass -study(Oracle)\sftpUplod\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\C#程序\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Debug\sftpUplod.Form1.resources
+E:\C#程序\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Debug\sftpUplod.Properties.Resources.resources
+E:\C#程序\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Debug\sftpUplod.csproj.GenerateResource.Cache

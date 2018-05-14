@@ -1,0 +1,6 @@
+16:02:48:8505907 EmpClass Tomorrow===================
+16:02:52:2327842 -->Query 111wipecardSum:75
+16:02:54:0098858 -->111WipToProgressOK
+16:02:54:3089029 -->Query 112wipecardSum:21
+16:02:54:5259153 -->112WipToProgressOK
+16:03:02:0533459 -->Query 230wipecardSum:0

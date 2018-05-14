@@ -1,0 +1,6 @@
+16:52:37:3942342 EmpClass Tomorrow===================
+16:52:39:4673528 -->Query 230wipecardSum:2322
+16:52:59:4034931 -->230WipToProgressError表没有主键。
+16:56:01:5649121 EmpClass Tomorrow===================
+16:56:02:5579689 -->Query 230wipecardSum:2322
+16:56:43:2192946 -->230WipToProgressOK
