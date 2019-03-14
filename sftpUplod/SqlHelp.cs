@@ -13,7 +13,7 @@ namespace sftpUplod
     {
         public DataTable QuerySqlServerDB(string sqlStr)
         {
-            String connsql = "server=192.168.78.234;database=fghr;user id=user ;password=user;Connect Timeout=60";
+            String connsql = "server=192.168.78.234;database=FGHR;user id=user ;password=user;Connect Timeout=60";
             try
             {
                 using (SqlConnection conn = new SqlConnection())
@@ -145,8 +145,8 @@ namespace sftpUplod
             }
             catch (Exception ex)
             {
-                //do nothing
-                //MessageBox.Show("WriteLog Error: " + ex.Message);
+                Console.WriteLine("WriteLog Error: " + ex.Message);
+               // MessageBox.Show("WriteLog Error: " + ex.Message);
             }
             
         }

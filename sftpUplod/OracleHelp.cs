@@ -15,7 +15,8 @@ namespace sftpUplod
         {
             try
             {
-                string connString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.72.1.172)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=SCARD)));Persist Security Info=True;User ID=swipe;Password=mis_swipe";
+                //Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.64.224)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=RTODB)));Persist Security Info=True;User ID=usyn;Password=mis_syn
+                string connString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.78.154)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=SSGSDB)));Persist Security Info=True;User ID=swipe;Password=a2#ks#ssgs";
                 using (OracleConnection con = new OracleConnection(connString))
                 {
                     con.Open();
@@ -42,7 +43,7 @@ namespace sftpUplod
         {
             try
             {
-                string connString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.72.1.172)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=SCARD)));Persist Security Info=True;User ID=swipe;Password=mis_swipe";
+                string connString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.78.154)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=SSGSDB)));Persist Security Info=True;User ID=swipe;Password=a2#ks#ssgs";
                 using (OracleConnection con = new OracleConnection(connString))
                 {
                     con.Open();

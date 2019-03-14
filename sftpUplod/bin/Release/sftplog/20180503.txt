@@ -1,5 +1,0 @@
-14:51:15:0513622 Raw To Progress===================
-14:52:31:1431491 -->Query 111ClassSum:0
-14:53:22:4827276 -->Query ProgressEmpClassSum:42709
-14:55:16:9549889 -->Update_ORACLE_EmpClassOK:0
-14:55:16:9790655 -->insert_ORACLE_EmpClassOK:18978

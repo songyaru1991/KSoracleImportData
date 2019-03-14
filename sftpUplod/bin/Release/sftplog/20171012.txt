@@ -1,6 +1,0 @@
-12:13:10:7900779 Wip To Progress===================
-2017-10-12 12:13:28 2017-10-12 12:13:28-->Query 111 Error:Unable to connect to any of the specified MySQL hosts.
-12:13:28:1740723 -->Query 230wipecardError
-12:16:11:8884362 Wip To Progress===================
-12:16:13:4975282 -->Query 230wipecardSum:2157
-12:16:34:6317370 -->230WipToProgressOK

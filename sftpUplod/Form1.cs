@@ -8,7 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 //using ICSharpCode.SharpZipLib.Zip;
-using MySql.Data.MySqlClient;
 using System.Data.Odbc;
 using Oracle.ManagedDataAccess.Client;
 using System.Globalization;
@@ -43,68 +42,16 @@ namespace sftpUplod
             //Wip To Progress
             WriteLog("Raw To Progress===================" + '\r', 1);
 
-            //dataGridView1.AllowUserToAddRows = false;
-            //dataGridView1.AllowUserToResizeColumns = false;
-            ////EMP_CD START_DATE CLASS_CD
-            //dataGridView1.Columns.Add("工號", "工號");
-            //dataGridView1.Columns.Add("更新時間", "更新時間");
-            //dataGridView1.Columns.Add("班別", "班別");
-            //dataGridView1.DefaultCellStyle.SelectionBackColor = Color.YellowGreen;
+            
 
-            ////InsertMySql_empClass("CSBG");
-            ////InsertMySql_empClass("ASBG");
-            ////InsertMySql_LmtDept("CSBG");
-            ////InsertMySql_LmtDept("ASBG");
-            //MySql_testswipecardtimeTOprogress_CARDSR("CSBG");
-            //MySql_testswipecardtimeTOprogress_CARDSR("ASBG");
-            //MySql_testswipecardtimeTOprogress_CARDSR("BBBB");
-            //Mysql_rawToProgress("CSBG");
-            //Mysql_rawToProgress("ASBG");
-            //Mysql_rawToProgress("BBBB");
-            //InsertOrcale_empClass();
+            #region 抛转资料到Oracle中       
 
-            #region 抛转资料到Oracle中
-            //抛转资料到Oracle中
-            //凌晨三点半抛转资料
-            // InsertMySql_empClass0330("CSBG");
-            //下午三点半抛转资料
-            //   InsertMySql_empClass1530("CSBG");
+           // InsertOracle_dept_relation_Progress("CSBG");
 
-            //从progress中抛转资料到Oracle
-            //  InsertMySql_testemployee_Progress3("CSBG");
-
-            //从Progress中pub.deptment2表的资料抛转到SWIPE.DEPT_RELATION中
-            //  InsertOracle_dept_relation_Progress("CSBG");
-
-
-            //从SqlServer中抛转资料到Oracle中
-            //   InsertMySql_testemployee_SqlServer("CSBG");
-
-            //Progress中PUB.deptcsr表的数据到LMT_DEPT
-            //   InsertOracle_LMT_DEPT_Progress("CSBG");
-            //更新oracle数据库中星期天班别为502的人员班别为星期六的班别
-              InsertMysql_empClassNull("CSBG");
             #endregion
-            //InsertMySql_empClass0330("ASBG");
-            //InsertMySql_LmtDept("CSBG");
-            //InsertMySql_LmtDept("ASBG");
-            //InsertMySql_testemployee_SqlServer("CSBG");
-            //InsertMySql_testemployee_SqlServer("ASBG");
-            //InsertMySql_testemployee_Progress3("CSBG");
-            //InsertMySql_testemployee_Progress3("ASBG");
+           
 
-            //InsertMysql_empClass4("CSBG");
-            //InsertMysql_empClass4("ASBG");
-
-            //InsertKK("CSBG");
-            //InsertKK("ASBG");
-            //haha("CSBG");
-            //woriwori("ASBG");
-            //Raw("ASBG");
-
-            //nima();
-
-            //this.Close();
+         //   this.Close();
 
 
         }
@@ -124,7 +71,7 @@ namespace sftpUplod
                 //if (!CheckPath()) return;
 
                 btnStart.Text = "Pause";
-                WriteLog("01:00 InsertMySQL，10:00 InsertProgress" + '\r',1);
+                WriteLog("timer1_Tick定时器开始工作:" + '\r', 1);
                 timer1.Enabled = true;
             }
             else
@@ -228,103 +175,57 @@ namespace sftpUplod
         /// <param name="e"></param>
         private void timer1_Tick(object sender, EventArgs e)
         {
-
-            timer1.Enabled = false;
+           
+         //   timer1.Enabled = false;
             if (DateTime.Now.ToString("HH:mm") == "03:30")
             //|| DateTime.Now.ToString("HH:mm") == "09:00" || DateTime.Now.ToString("HH:mm") == "13:00" || DateTime.Now.ToString("HH:mm") == "17:00"
             {
-                InsertMySql_empClass0330("CSBG");
-               // InsertMySql_empClass0330("ASBG");
-
-                //InsertMySql_empClass1530("CSBG");
-                //InsertMySql_empClass1530("ASBG");
-
-                // InsertMySql_LmtDept("CSBG");
-                // InsertMySql_LmtDept("ASBG");
+                InsertOracle_empClass0330("CSBG");
+     
 
                 InsertOracle_LMT_DEPT_Progress("CSBG");
 
+                InsertOracle_dept_relation_Progress("CSBG");
             }
 
             if (DateTime.Now.ToString("HH:mm") == "15:30")
             //|| DateTime.Now.ToString("HH:mm") == "09:00" || DateTime.Now.ToString("HH:mm") == "13:00" || DateTime.Now.ToString("HH:mm") == "17:00"
             {
-                //InsertMySql_empClass0330("CSBG");
-                //InsertMySql_empClass0330("ASBG");
 
-                InsertMySql_empClass1530("CSBG");
-              //  InsertMySql_empClass1530("ASBG");
-                // InsertMySql_LmtDept("CSBG");
-                //InsertMySql_LmtDept("ASBG");
+                InsertOracle_empClass1530("CSBG");
+             
                 InsertOracle_LMT_DEPT_Progress("CSBG");
+
+                InsertOracle_dept_relation_Progress("CSBG");
             }
-//#endregion
 
             if (DateTime.Now.ToString("HH:mm") == "10:00")
             {
               //  MySql_testswipecardtimeTOprogress_CARDSR("CSBG");
-              //  MySql_testswipecardtimeTOprogress_CARDSR("ASBG");
-
-
 
             }
             if (DateTime.Now.ToString("HH:mm") == "10:20")
             {
-              //  Mysql_rawToProgress("CSBG");
+               // Mysql_rawToProgress("CSBG");
               //  Mysql_rawToProgress("ASBG");
             }
 
             if (DateTime.Now.Minute == 30 || DateTime.Now.Minute == 00)
             {
-                InsertMySql_testemployee_Progress3("CSBG");
+                InsertOracle_employee_Progress3("CSBG");
 
-                // InsertMySql_testemployee_SqlServer("CSBG");
-                // InsertMySql_testemployee_SqlServer("ASBG");
-                // InsertMysql_empClass4("CSBG");
-                // InsertMysql_empClass4("ASBG");
             }
             if ((Int32)DateTime.Now.DayOfWeek == 0 && DateTime.Now.ToString("HH:mm") == "14:06")
             {
 
               //  InsertMysql_empClassNull("CSBG");
-               // InsertMysql_empClassNull("ASBG");
+
             }
             
 
 
 
-            /* if (DateTime.Now.ToString("HH:mm") =="12:00") {
-                 InsertMySql_LmtDept("CSBG");
-                 InsertMySql_LmtDept("ASBG");
-             }
-             */
-
-            //#region 01:00 
-            //if (DateTime.Now.ToString("HH:mm") == "01:00")
-            //{
-
-            //    InsertMySql_empClass("CSBG");
-            //    InsertMySql_empClass("ASBG");
-            //    InsertMySql_LmtDept("CSBG");
-            //    InsertMySql_LmtDept("ASBG");
-
-
-
-
-
-            //}
-            //#endregion
-
-            //if (DateTime.Now.ToString("HH:mm") == "10:00")
-            //{
-            //    MySql_testswipecardtimeTOprogress_CARDSR("CSBG");
-            //    MySql_testswipecardtimeTOprogress_CARDSR("ASBG");
-            //}
-
-
-
-
-            //timer1.Enabled = true;
+           
         }
 
         #region test
@@ -355,7 +256,6 @@ namespace sftpUplod
 
             //連接progress數據庫
             SqlHelp sqlHelp = new SqlHelp();
-            MySqlHelper MySqlHelp = new MySqlHelper();
             ProgressHelp ProHelp = new ProgressHelp();
 
             string SQL = "SELECT EMP_CD, START_DATE, CLASS_CD from PUB.EMPCLASSR";
@@ -378,77 +278,70 @@ namespace sftpUplod
 
                 //dt = Convert.ToDateTime("2011/05/26", dtFormat);
                 if(date  == DateTime.Now.ToString("yy/MM/dd hh:mm:ss")){
-                
+
                 }
-                string dateDiff=null;
+                string dateDiff = null;
 
-try
+                try
+                {
 
-{
+                    TimeSpan ts1 = new TimeSpan(dt.Ticks);
 
-TimeSpan ts1=new TimeSpan(dt.Ticks);
+                    TimeSpan ts2 = new TimeSpan(dt.Ticks);
 
-TimeSpan ts2=new TimeSpan(dt.Ticks);
+                    TimeSpan ts = ts1.Subtract(ts2).Duration();
 
-TimeSpan ts=ts1.Subtract(ts2).Duration();
+                    dateDiff = ts.Days.ToString() + "天";
 
-dateDiff=ts.Days.ToString()+"天";
+                }
 
-}
+                catch
+                {
 
-catch
-
-{
-
-}
+                }
 
 
 
 
             }
-           
-              if (DT3 == null)
-                {
-                    WriteLog("-->Query ProgressEmpClassSumError" + '\r', 2);
-                    return;
-                }
-                else if (DT3.Rows.Count == 0)
-                {
-                    WriteLog("-->Query ProgressEmpClassSum:0" + '\r', 2);
-                    return;
-                }
-              WriteLog("-->Query ProgressEmpClassSum:" + DT3.Rows.Count.ToString() + '\r', 1);
-        
-           
-          
-        
+
+            if (DT3 == null)
+            {
+                WriteLog("-->Query ProgressEmpClassSumError" + '\r', 2);
+                return;
+            }
+            else if (DT3.Rows.Count == 0)
+            {
+                WriteLog("-->Query ProgressEmpClassSum:0" + '\r', 2);
+                return;
+            }
+            WriteLog("-->Query ProgressEmpClassSum:" + DT3.Rows.Count.ToString() + '\r', 1);
+
+
+
+
         }
         #endregion
 
         //下午三点半抛数据到Oracle
-        private void InsertMySql_empClass1530(string strBG)
+        private void InsertOracle_empClass1530(string strBG)
         {
             //如果Mysql有当天资料但是班别为空，则update，如果Mysql不存在当天资料则Insert
             //Update和Insert明天资料。
             SqlHelp sqlHelp = new SqlHelp();
-            MySqlHelper MySqlHelp = new MySqlHelper();
             ProgressHelp ProHelp = new ProgressHelp();
             OracleHelp oraclehelp = new OracleHelp();
-            //mysql查询语句
-            string strSqlMySqlEmp = "select ID, emp_date, class_no FROM swipecard.emp_class where emp_date>=curdate() and emp_date<date_add(CURDATE(),interval 2 day) order by ID, emp_date";
+            //mysql查询语句         
             //oracle查询语句
             string strSqlOracleEmp = " select ID, EMP_DATE, CLASS_NO FROM emp_class where emp_date>=to_date(to_char(SYSDATE - 1,'YYYY/MM/DD'),'YYYY/MM/DD')and emp_date<to_date(to_char(sysdate+2,'YYYY/MM/DD') ,'YYYY/MM/DD') order by ID, EMP_DATE"; 
             //string strSqlMySqlEmp = "select ID, emp_date, class_no FROM swipecard.emp_class where  emp_date=date_add(CURDATE(),interval 1 day) order by ID, emp_date";
             if (strBG == "CSBG")
             {
                 #region CSBG
-                //60.111
-
-                //DataTable DT1 = MySqlHelp.QueryDBC(strSqlMySqlEmp);
                 DataTable DT1 = oraclehelp.OrcaleQuery(strSqlOracleEmp);
                 if (DT1 == null)
                 {
-                    WriteLog("-->Query 111ClassError" + '\r', 2);
+                    WriteLog("-->Query 155ClassError" + '\r', 2);
                     return;
                 }
 
@@ -462,7 +355,7 @@ catch
                 {
                     ClassArray2.Add(dr[0].ToString() + Convert.ToDateTime(dr[1].ToString()).ToString("yyyyMMdd", System.Globalization.DateTimeFormatInfo.InvariantInfo));
                 }
-                WriteLog("-->Query 111ClassSum:" + DT1.Rows.Count.ToString() + '\r', 1);
+                WriteLog("-->Query 155ClassSum:" + DT1.Rows.Count.ToString() + '\r', 1);
 
                 //String sql = "SELECT DISTINCT 編號  FROM V_RYBZ_TX"; // 查询语句
                 ////String sql = "select ygbh,fdate,bc from KQ_RECORD_BC where fdate>=CONVERT(varchar(100), GETDATE()-3, 111) and fdate<CONVERT(varchar(100), GETDATE()+2, 111) and ( " + strEMP + " )"; // 查询语句
@@ -508,7 +401,7 @@ catch
                 //cmd.Connection = MySqlConn;
                 //cmd.Transaction = tx;
                 //连接oracle的数据库
-                String connsql = "data source=10.72.1.172/SCARD ;User Id=swipe;Password=mis_swipe;";
+                String connsql = "data source=192.168.78.154/SSGSDB ;User Id=swipe;Password=a2#ks#ssgs;";
                 OracleConnection OracleConn = new OracleConnection(connsql);
                 OracleConn.Open();
                 OracleTransaction ortx = OracleConn.BeginTransaction();
@@ -616,172 +509,14 @@ catch
                 }
                 #endregion
             }
-            //else if (strBG == "ASBG")
-            //{
-            //    #region ASBG
-            //    //60.112
-
-            //    DataTable DT1 = MySqlHelp.QueryDbAsbg(strSqlMySqlEmp);
-            //    if (DT1 == null)
-            //    {
-            //        WriteLog("-->Query 112ClassError" + '\r', 2);
-            //        return;
-            //    }
-
-            //    List<string> ClassArray3 = new List<string>();
-            //    foreach (DataRow dr in DT1.Rows)
-            //    {
-            //        ClassArray3.Add(dr[0].ToString() + Convert.ToDateTime(dr[1].ToString()).ToString("yyyyMMdd", System.Globalization.DateTimeFormatInfo.InvariantInfo) + dr[2].ToString());
-            //    }
-            //    List<string> ClassArray2 = new List<string>();
-            //    foreach (DataRow dr in DT1.Rows)
-            //    {
-            //        ClassArray2.Add(dr[0].ToString() + Convert.ToDateTime(dr[1].ToString()).ToString("yyyyMMdd", System.Globalization.DateTimeFormatInfo.InvariantInfo));
-            //    }
-            //    WriteLog("-->Query 112ClassSum:" + DT1.Rows.Count.ToString() + '\r', 1);
-
-            //    //String sql = "SELECT DISTINCT 編號  FROM V_RYBZ_TX"; // 查询语句
-            //    ////String sql = "select ygbh,fdate,bc from KQ_RECORD_BC where fdate>=CONVERT(varchar(100), GETDATE()-3, 111) and fdate<CONVERT(varchar(100), GETDATE()+2, 111) and ( " + strEMP + " )"; // 查询语句
-            //    //DataTable DT2 = sqlHelp.QuerySqlServerDB(sql);
-            //    //if (DT2 == null)
-            //    //{
-            //    //    WriteLog("-->Query SqlServerdeptError" + '\r', 2);
-            //    //    return;
-            //    //}
-            //    //else if (DT2.Rows.Count == 0)
-            //    //{
-            //    //    WriteLog("-->Query SqlServerdeptSum:0" + '\r', 2);
-            //    //    return;
-            //    //}
-            //    //string strEMP = "";
-            //    //foreach (DataRow dr in DT2.Rows)
-            //    //{
-            //    //    strEMP += " EMP_CD='" + dr[0].ToString() + "' OR";
-            //    //}
-            //    //strEMP = strEMP.Substring(0, strEMP.Length - 2);
-            //    //WriteLog("-->SelectSqlServerEmpSum:" + DT2.Rows.Count.ToString() + '\r', 1);
-
-            //    string SQL = "SELECT EMP_CD, START_DATE, CLASS_CD from PUB.EMPCLASSR ";
-            //    DataTable DT3 = ProHelp.QueryProgress(SQL);
-            //    if (DT3 == null)
-            //    {
-            //        WriteLog("-->Query ProgressEmpClassSumError" + '\r', 2);
-            //        return;
-            //    }
-            //    else if (DT3.Rows.Count == 0)
-            //    {
-            //        WriteLog("-->Query ProgressEmpClassSum:0" + '\r', 2);
-            //        return;
-            //    }
-            //    WriteLog("-->Query ProgressEmpClassSum:" + DT3.Rows.Count.ToString() + '\r', 1);
-
-            //    String connsql = "server=192.168.60.112;userid=root;password=foxlink;database=;charset=utf8";
-            //    MySqlConnection MySqlConn = new MySqlConnection(connsql);
-            //    MySqlConn.Open();
-            //    MySqlTransaction tx = MySqlConn.BeginTransaction();
-            //    MySqlCommand cmd = new MySqlCommand();
-            //    //cmd.CommandTimeout = 300;
-            //    cmd.Connection = MySqlConn;
-            //    cmd.Transaction = tx;
-
-            //    int UpdateSumk = 0;
-            //    int InsertSumk = 0;
-            //    string strSQLUpdate = "";
-            //    string strSQLInsert = "insert into swipecard.emp_class VALUES ";
-            //    try
-            //    {
-            //        foreach (DataRow dr in DT3.Rows)
-            //        {
-
-            //            TimeSpan ts = DateTime.Now.Date - Convert.ToDateTime(dr[1].ToString());
-            //            int d = ts.Days;
-            //            string strClass = dr[2].ToString().Substring(0, dr[2].ToString().Length - 1);
-            //            List<string> list = strClass.Split(new string[] { "," }, StringSplitOptions.None).ToList<string>();
-            //            for (int i = 0; i < 2; i++)
-            //            {
-            //                if ((d + i) >= list.Count) continue;
-            //                if (!ClassArray3.Contains(dr[0].ToString() + DateTime.Now.AddDays(i).ToString("yyyyMMdd", System.Globalization.DateTimeFormatInfo.InvariantInfo) + list[d + i]))
-            //                {
-            //                    if (ClassArray2.Contains(dr[0].ToString() + DateTime.Now.AddDays(i).ToString("yyyyMMdd", System.Globalization.DateTimeFormatInfo.InvariantInfo)))
-            //                    {
-            //                        string sa = list[d + i] == "\\" ? "\\\\" : list[d + i];
-            //                        if (i == 0)
-            //                        { strSQLUpdate = "update swipecard.emp_class SET class_no ='" + sa + "',update_time=curdate() where (class_no ='' or class_no='39') and ID='" + dr[0].ToString() + "'and emp_date='" + DateTime.Now.AddDays(i).ToString("yyyy/MM/dd", System.Globalization.DateTimeFormatInfo.InvariantInfo) + "'"; }
-            //                        else
-            //                        { strSQLUpdate = "update swipecard.emp_class SET class_no ='" + sa + "',update_time=curdate() where ID='" + dr[0].ToString() + "'and emp_date='" + DateTime.Now.AddDays(i).ToString("yyyy/MM/dd", System.Globalization.DateTimeFormatInfo.InvariantInfo) + "'"; }
-            //                        cmd.CommandText = strSQLUpdate;
-            //                        int it = cmd.ExecuteNonQuery();
-            //                        if (it > 0) UpdateSumk++;
-            //                        //WriteLog("-->Update111_EmpClassOK:" + k + strSQLUpdate + '\r', 1);
-            //                    }
-            //                    else
-            //                    {
-            //                        ++InsertSumk;
-            //                        string sb = list[d + i] == "\\" ? "\\\\" : list[d + i];
-            //                        strSQLInsert += " ('" + dr[0].ToString() + "','"
-            //                                             + DateTime.Now.AddDays(i).ToString("yyyy/MM/dd", System.Globalization.DateTimeFormatInfo.InvariantInfo) + "','"
-            //                                             + sb + "',"
-            //                                             + "curdate()" + "),";
-
-            //                        if (InsertSumk > 0 && InsertSumk % 2000 == 0)
-            //                        {
-            //                            strSQLInsert = strSQLInsert.Substring(0, strSQLInsert.Length - 1);
-            //                            cmd.CommandText = strSQLInsert;
-            //                            cmd.ExecuteNonQuery();
-
-            //                            strSQLInsert = "insert into swipecard.emp_class  VALUES ";
-            //                        }
-
-            //                    }
-            //                }
-            //            }
-
-            //        }
-            //        if (InsertSumk % 2000 != 0)
-            //        {
-            //            strSQLInsert = strSQLInsert.Substring(0, strSQLInsert.Length - 1);
-            //            cmd.CommandText = strSQLInsert;
-            //            cmd.ExecuteNonQuery();
-
-            //            //tx.Commit();
-            //        }
-            //        //else
-            //        //{
-
-            //        //    tx.Commit();
-            //        //}
-            //        //如果emp_class有資料，但是班別為空，則給默認班別4
-            //        //如果emp_class有資料，但是班別為空，則給默認班別39 2017-10-18
-            //        strSQLUpdate = "update swipecard.emp_class set class_no='39' where emp_date>=curdate() and emp_date<date_add(CURDATE(),interval 2 day) and class_no=''";
-            //        cmd.CommandText = strSQLUpdate;
-            //        cmd.ExecuteNonQuery();
-
-
-            //        tx.Commit();
-
-            //        WriteLog("-->Update112_EmpClassOK:" + UpdateSumk + '\r', 1);
-            //        WriteLog("-->insert112_EmpClassOK:" + InsertSumk + '\r', 1);
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        tx.Rollback();
-            //        WriteLog("-->insert112_EmpClassError,Rollback :" + ex.Message + '\r', 2);
-            //    }
-            //    finally
-            //    {
-            //        tx.Dispose();
-            //        MySqlConn.Close();
-            //    }
-            //    #endregion
-            //}
+           
 
         }
         //凌晨三点半抛数据到Oracle
-        private void InsertMySql_empClass0330(string strBG)
+        private void InsertOracle_empClass0330(string strBG)
         {
             //今天和明天的都会Update和Insert.
             SqlHelp sqlHelp = new SqlHelp();
-            MySqlHelper MySqlHelp = new MySqlHelper();
             OracleHelp oracleHelp = new OracleHelp();
             ProgressHelp ProHelp = new ProgressHelp();
           
@@ -790,7 +525,7 @@ catch
             string strSqlOracleEmp = " select ID, EMP_DATE, CLASS_NO FROM emp_class where emp_date>=to_date(to_char(SYSDATE - 1,'YYYY/MM/DD'),'YYYY/MM/DD')and emp_date<to_date(to_char(sysdate+2,'YYYY/MM/DD') ,'YYYY/MM/DD') order by ID, EMP_DATE"; 
             //string strSqlMySqlEmp = "select ID, emp_date, class_no FROM swipecard.emp_class where emp_date>=curdate() and emp_date<date_add(CURDATE(),interval 2 day) order by ID, emp_date";
             //string strSqlOracleEmp = "select * from emp_class";
-            string strSqlMySqlEmp = "select ID, emp_date, class_no FROM swipecard.emp_class where  emp_date=date_add(CURDATE(),interval 1 day) order by ID, emp_date";
+       
             if (strBG == "CSBG")
             {
                 #region CSBG
@@ -802,7 +537,7 @@ catch
                 //沒数据的时候返回的
                 if (DT1 == null)
                 {
-                    WriteLog("-->Query 111ClassError" + '\r', 2);
+                    WriteLog("-->Query 155ClassError" + '\r', 2);
                     return;
                 }
 
@@ -821,28 +556,9 @@ catch
                     //把数据库中的工号和更新日期存到数组中
                     ClassArray2.Add(dr[0].ToString() + Convert.ToDateTime(dr[1].ToString()).ToString("yyyyMMdd", System.Globalization.DateTimeFormatInfo.InvariantInfo));
                 }
-                WriteLog("-->Query 111ClassSum:" + DT1.Rows.Count.ToString() + '\r', 1);
+                WriteLog("-->Query 155ClassSum:" + DT1.Rows.Count.ToString() + '\r', 1);
 
-                //String sql = "SELECT DISTINCT 編號  FROM V_RYBZ_TX"; // 查询语句
-                ////String sql = "select ygbh,fdate,bc from KQ_RECORD_BC where fdate>=CONVERT(varchar(100), GETDATE()-3, 111) and fdate<CONVERT(varchar(100), GETDATE()+2, 111) and ( " + strEMP + " )"; // 查询语句
-                //DataTable DT2 = sqlHelp.QuerySqlServerDB(sql);
-                //if (DT2 == null)
-                //{
-                //    WriteLog("-->Query SqlServerdeptError" + '\r', 2);
-                //    return;
-                //}
-                //else if (DT2.Rows.Count == 0)
-                //{
-                //    WriteLog("-->Query SqlServerdeptSum:0" + '\r', 2);
-                //    return;
-                //}
-                //string strEMP = "";
-                //foreach (DataRow dr in DT2.Rows)
-                //{
-                //    strEMP += " EMP_CD='" + dr[0].ToString() + "' OR";
-                //}
-                //strEMP = strEMP.Substring(0, strEMP.Length - 2);
-                //WriteLog("-->SelectSqlServerEmpSum:" + DT2.Rows.Count.ToString() + '\r', 1);
+              
 
                 //查询出progress数据库中的数据
                 string SQL = "SELECT EMP_CD, START_DATE, CLASS_CD from PUB.EMPCLASSR ";
@@ -871,7 +587,7 @@ catch
                 //cmd.Transaction = tx;
 
                 //连接oracle的数据库
-                String connsql = "data source=10.72.1.172/SCARD ;User Id=swipe;Password=mis_swipe;";
+                String connsql = "data source=192.168.78.154/SSGSDB ;User Id=swipe;Password=a2#ks#ssgs;";
                 OracleConnection OracleConn = new OracleConnection(connsql);
                 OracleConn.Open();
                 OracleTransaction ortx = OracleConn.BeginTransaction();
@@ -999,13 +715,13 @@ catch
                     
                     
 
-                    WriteLog("-->Update111_EmpClassOK:" + UpdateSumk + '\r', 1);
-                    WriteLog("-->insert111_EmpClassOK:" + InsertSumk + '\r', 1);
+                    WriteLog("-->Update155_EmpClassOK:" + UpdateSumk + '\r', 1);
+                    WriteLog("-->insert155_EmpClassOK:" + InsertSumk + '\r', 1);
                 }
                 catch (Exception ex)
                 {
                     ortx.Rollback();
-                    WriteLog("-->insert111_EmpClassError,Rollback :" + ex.Message + '\r', 2);
+                    WriteLog("-->insert155_EmpClassError,Rollback :" + ex.Message + '\r', 2);
                 }
                 finally
                 {
@@ -1014,317 +730,7 @@ catch
                 }
                 #endregion
             }
-            //else if (strBG == "ASBG")
-            //{
-            //    #region ASBG
-            //    //60.112
-               
-            //    DataTable DT1 = MySqlHelp.QueryDbAsbg(strSqlMySqlEmp);
-            //    if (DT1 == null)
-            //    {
-            //        WriteLog("-->Query 112ClassError" + '\r', 2);
-            //        return;
-            //    }
-
-            //    List<string> ClassArray3 = new List<string>();
-            //    foreach (DataRow dr in DT1.Rows)
-            //    {
-            //        ClassArray3.Add(dr[0].ToString() + Convert.ToDateTime(dr[1].ToString()).ToString("yyyyMMdd", System.Globalization.DateTimeFormatInfo.InvariantInfo) + dr[2].ToString());
-            //    }
-            //    List<string> ClassArray2 = new List<string>();
-            //    foreach (DataRow dr in DT1.Rows)
-            //    {
-            //        ClassArray2.Add(dr[0].ToString() + Convert.ToDateTime(dr[1].ToString()).ToString("yyyyMMdd", System.Globalization.DateTimeFormatInfo.InvariantInfo));
-            //    }
-            //    WriteLog("-->Query 112ClassSum:" + DT1.Rows.Count.ToString() + '\r', 1);
-
-            //    //String sql = "SELECT DISTINCT 編號  FROM V_RYBZ_TX"; // 查询语句
-            //    ////String sql = "select ygbh,fdate,bc from KQ_RECORD_BC where fdate>=CONVERT(varchar(100), GETDATE()-3, 111) and fdate<CONVERT(varchar(100), GETDATE()+2, 111) and ( " + strEMP + " )"; // 查询语句
-            //    //DataTable DT2 = sqlHelp.QuerySqlServerDB(sql);
-            //    //if (DT2 == null)
-            //    //{
-            //    //    WriteLog("-->Query SqlServerdeptError" + '\r', 2);
-            //    //    return;
-            //    //}
-            //    //else if (DT2.Rows.Count == 0)
-            //    //{
-            //    //    WriteLog("-->Query SqlServerdeptSum:0" + '\r', 2);
-            //    //    return;
-            //    //}
-            //    //string strEMP = "";
-            //    //foreach (DataRow dr in DT2.Rows)
-            //    //{
-            //    //    strEMP += " EMP_CD='" + dr[0].ToString() + "' OR";
-            //    //}
-            //    //strEMP = strEMP.Substring(0, strEMP.Length - 2);
-            //    //WriteLog("-->SelectSqlServerEmpSum:" + DT2.Rows.Count.ToString() + '\r', 1);
-
-            //    string SQL = "SELECT EMP_CD, START_DATE, CLASS_CD from PUB.EMPCLASSR ";
-            //    DataTable DT3 = ProHelp.QueryProgress(SQL);
-            //    if (DT3 == null)
-            //    {
-            //        WriteLog("-->Query ProgressEmpClassSumError" + '\r', 2);
-            //        return;
-            //    }
-            //    else if (DT3.Rows.Count == 0)
-            //    {
-            //        WriteLog("-->Query ProgressEmpClassSum:0" + '\r', 2);
-            //        return;
-            //    }
-            //    WriteLog("-->Query ProgressEmpClassSum:" + DT3.Rows.Count.ToString() + '\r', 1);
-
-            //    String connsql = "";
-            //    MySqlConnection MySqlConn = new MySqlConnection(connsql);
-            //    MySqlConn.Open();
-            //    MySqlTransaction tx = MySqlConn.BeginTransaction();
-            //    MySqlCommand cmd = new MySqlCommand();
-            //    //cmd.CommandTimeout = 300;
-            //    cmd.Connection = MySqlConn;
-            //    cmd.Transaction = tx;
-
-            //    int UpdateSumk = 0;
-            //    int InsertSumk = 0;
-            //    string strSQLUpdate = "";
-            //    string strSQLInsert = "insert into swipecard.emp_class VALUES ";
-            //    try
-            //    {
-            //        foreach (DataRow dr in DT3.Rows)
-            //        {
-                        
-            //                TimeSpan ts = DateTime.Now.Date - Convert.ToDateTime(dr[1].ToString());
-            //                int d = ts.Days;
-            //                string strClass = dr[2].ToString().Substring(0, dr[2].ToString().Length - 1);
-            //                List<string> list = strClass.Split(new string[] { "," }, StringSplitOptions.None).ToList<string>();
-            //                for (int i = 0; i < 2; i++)
-            //                {
-            //                    if ((d + i) >= list.Count) continue; 
-            //                    if (!ClassArray3.Contains(dr[0].ToString() + DateTime.Now.AddDays(i).ToString("yyyyMMdd", System.Globalization.DateTimeFormatInfo.InvariantInfo) + list[d + i]))
-            //                    {
-            //                        if (ClassArray2.Contains(dr[0].ToString() + DateTime.Now.AddDays(i).ToString("yyyyMMdd", System.Globalization.DateTimeFormatInfo.InvariantInfo)))
-            //                        {
-            //                            string sa = list[d + i] == "\\" ? "\\\\" : list[d + i];
-            //                            strSQLUpdate = "update swipecard.emp_class SET class_no ='" + sa + "',update_time=curdate() where ID='" + dr[0].ToString() + "'and emp_date='" + DateTime.Now.AddDays(i).ToString("yyyy/MM/dd", System.Globalization.DateTimeFormatInfo.InvariantInfo) + "'";
-            //                            cmd.CommandText = strSQLUpdate;
-            //                            cmd.ExecuteNonQuery();
-            //                            UpdateSumk++;
-            //                            //WriteLog("-->Update111_EmpClassOK:" + k + strSQLUpdate + '\r', 1);
-            //                        }
-            //                        else
-            //                        {
-            //                            ++InsertSumk;
-            //                            string sb = list[d + i] == "\\" ? "\\\\" : list[d + i];
-            //                            strSQLInsert += " ('" + dr[0].ToString() + "','"
-            //                                                 + DateTime.Now.AddDays(i).ToString("yyyy/MM/dd", System.Globalization.DateTimeFormatInfo.InvariantInfo) + "','"
-            //                                                 + sb + "',"
-            //                                                 + "curdate()" + "),";
-
-            //                            if (InsertSumk > 0 && InsertSumk % 2000 == 0)
-            //                            {
-            //                                strSQLInsert = strSQLInsert.Substring(0, strSQLInsert.Length - 1);
-            //                                cmd.CommandText = strSQLInsert;
-            //                                cmd.ExecuteNonQuery();
-
-            //                                strSQLInsert = "insert into swipecard.emp_class  VALUES ";
-            //                            }
-
-            //                        }
-            //                    }
-            //                }
-
-            //        }
-            //        if (InsertSumk % 2000 != 0)
-            //        {
-            //            strSQLInsert = strSQLInsert.Substring(0, strSQLInsert.Length - 1);
-            //            cmd.CommandText = strSQLInsert;
-            //            cmd.ExecuteNonQuery();
-                    
-            //            //tx.Commit();
-            //        }
-            //        //else
-            //        //{
-                       
-            //        //    tx.Commit();
-            //        //}
-            //        //如果emp_class有資料，但是班別為空，則給默認班別4
-            //        //如果emp_class有資料，但是班別為空，則給默認班別39
-            //        strSQLUpdate = "update swipecard.emp_class set class_no='39' where emp_date>=curdate() and emp_date<date_add(CURDATE(),interval 2 day) and class_no=''";
-            //        cmd.CommandText = strSQLUpdate;
-            //        cmd.ExecuteNonQuery();
-            //        tx.Commit();
-
-                    
-
-            //        WriteLog("-->Update112_EmpClassOK:" + UpdateSumk + '\r', 1);
-            //        WriteLog("-->insert112_EmpClassOK:" + InsertSumk + '\r', 1);
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        tx.Rollback();
-            //        WriteLog("-->insert112_EmpClassError,Rollback :" + ex.Message + '\r', 2);
-            //    }
-            //    finally
-            //    {
-            //        tx.Dispose();
-            //        MySqlConn.Close();
-            //    }
-            //    #endregion
-            //}
-            //else if (strBG == "JF")
-            //{
-            //    #region JF
-            //    //10.64.155.200
-
-            //    DataTable DT1 = MySqlHelp.Query155_200(strSqlMySqlEmp);
-            //    if (DT1 == null)
-            //    {
-            //        WriteLog("-->Query 112ClassError" + '\r', 2);
-            //        return;
-            //    }
-
-            //    List<string> ClassArray3 = new List<string>();
-            //    foreach (DataRow dr in DT1.Rows)
-            //    {
-            //        ClassArray3.Add(dr[0].ToString() + Convert.ToDateTime(dr[1].ToString()).ToString("yyyyMMdd", System.Globalization.DateTimeFormatInfo.InvariantInfo) + dr[2].ToString());
-            //    }
-            //    List<string> ClassArray2 = new List<string>();
-            //    foreach (DataRow dr in DT1.Rows)
-            //    {
-            //        ClassArray2.Add(dr[0].ToString() + Convert.ToDateTime(dr[1].ToString()).ToString("yyyyMMdd", System.Globalization.DateTimeFormatInfo.InvariantInfo));
-            //    }
-            //    WriteLog("-->Query 112ClassSum:" + DT1.Rows.Count.ToString() + '\r', 1);
-
-            //    //String sql = "SELECT DISTINCT 編號  FROM V_RYBZ_TX"; // 查询语句
-            //    ////String sql = "select ygbh,fdate,bc from KQ_RECORD_BC where fdate>=CONVERT(varchar(100), GETDATE()-3, 111) and fdate<CONVERT(varchar(100), GETDATE()+2, 111) and ( " + strEMP + " )"; // 查询语句
-            //    //DataTable DT2 = sqlHelp.QuerySqlServerDB(sql);
-            //    //if (DT2 == null)
-            //    //{
-            //    //    WriteLog("-->Query SqlServerdeptError" + '\r', 2);
-            //    //    return;
-            //    //}
-            //    //else if (DT2.Rows.Count == 0)
-            //    //{
-            //    //    WriteLog("-->Query SqlServerdeptSum:0" + '\r', 2);
-            //    //    return;
-            //    //}
-            //    //string strEMP = "";
-            //    //foreach (DataRow dr in DT2.Rows)
-            //    //{
-            //    //    strEMP += " EMP_CD='" + dr[0].ToString() + "' OR";
-            //    //}
-            //    //strEMP = strEMP.Substring(0, strEMP.Length - 2);
-            //    //WriteLog("-->SelectSqlServerEmpSum:" + DT2.Rows.Count.ToString() + '\r', 1);
-
-            //    string SQL = "SELECT EMP_CD, START_DATE, CLASS_CD from PUB.EMPCLASSR ";
-            //    DataTable DT3 = ProHelp.QueryProgress(SQL);
-            //    if (DT3 == null)
-            //    {
-            //        WriteLog("-->Query ProgressEmpClassSumError" + '\r', 2);
-            //        return;
-            //    }
-            //    else if (DT3.Rows.Count == 0)
-            //    {
-            //        WriteLog("-->Query ProgressEmpClassSum:0" + '\r', 2);
-            //        return;
-            //    }
-            //    WriteLog("-->Query ProgressEmpClassSum:" + DT3.Rows.Count.ToString() + '\r', 1);
-
-            //    String connsql = "server=10.64.155.200;userid=root;password=mysql;database=mysql;charset=utf8";
-            //    MySqlConnection MySqlConn = new MySqlConnection(connsql);
-            //    MySqlConn.Open();
-            //    MySqlTransaction tx = MySqlConn.BeginTransaction();
-            //    MySqlCommand cmd = new MySqlCommand();
-            //    //cmd.CommandTimeout = 300;
-            //    cmd.Connection = MySqlConn;
-            //    cmd.Transaction = tx;
-
-            //    int UpdateSumk = 0;
-            //    int InsertSumk = 0;
-            //    int Insert4 = 0;
-            //    string strSQLUpdate = "";
-            //    string strSQLInsert = "insert into swipecard.emp_class VALUES ";
-            //    try
-            //    {
-            //        foreach (DataRow dr in DT3.Rows)
-            //        {
-
-            //            TimeSpan ts = DateTime.Now.Date - Convert.ToDateTime(dr[1].ToString());
-            //            int d = ts.Days;
-            //            string strClass = dr[2].ToString().Substring(0, dr[2].ToString().Length - 1);
-            //            List<string> list = strClass.Split(new string[] { "," }, StringSplitOptions.None).ToList<string>();
-            //            for (int i = 0; i < 2; i++)
-            //            {
-                            
-            //                if ((d + i) >= list.Count) continue;
-            //                if (!ClassArray3.Contains(dr[0].ToString() + DateTime.Now.AddDays(i).ToString("yyyyMMdd", System.Globalization.DateTimeFormatInfo.InvariantInfo) + list[d + i]))
-            //                {
-            //                    if (ClassArray2.Contains(dr[0].ToString() + DateTime.Now.AddDays(i).ToString("yyyyMMdd", System.Globalization.DateTimeFormatInfo.InvariantInfo)))
-            //                    {
-            //                        string sa = list[d + i] == "\\" ? "\\\\" : list[d + i];
-            //                        strSQLUpdate = "update swipecard.emp_class SET class_no ='" + sa + "',update_time=curdate() where ID='" + dr[0].ToString() + "'and emp_date='" + DateTime.Now.AddDays(i).ToString("yyyy/MM/dd", System.Globalization.DateTimeFormatInfo.InvariantInfo) + "'";
-            //                        cmd.CommandText = strSQLUpdate;
-            //                        cmd.ExecuteNonQuery();
-            //                        UpdateSumk++;
-            //                        //WriteLog("-->Update111_EmpClassOK:" + k + strSQLUpdate + '\r', 1);
-            //                    }
-            //                    else
-            //                    {
-            //                        ++InsertSumk;
-            //                        string sb = list[d + i] == "\\" ? "\\\\" : list[d + i];
-            //                        strSQLInsert += " ('" + dr[0].ToString() + "','"
-            //                                             + DateTime.Now.AddDays(i).ToString("yyyy/MM/dd", System.Globalization.DateTimeFormatInfo.InvariantInfo) + "','"
-            //                                             + sb + "',"
-            //                                             + "curdate()" + "),";
-
-            //                        if (InsertSumk > 0 && InsertSumk % 2000 == 0)
-            //                        {
-            //                            strSQLInsert = strSQLInsert.Substring(0, strSQLInsert.Length - 1);
-            //                            cmd.CommandText = strSQLInsert;
-            //                            cmd.ExecuteNonQuery();
-
-            //                            strSQLInsert = "insert into swipecard.emp_class  VALUES ";
-            //                        }
-
-            //                    }
-            //                }
-            //            }
-
-            //        }
-            //        if (InsertSumk % 2000 != 0)
-            //        {
-            //            strSQLInsert = strSQLInsert.Substring(0, strSQLInsert.Length - 1);
-            //            cmd.CommandText = strSQLInsert;
-            //            cmd.ExecuteNonQuery();
-
-            //            //tx.Commit();
-            //        }
-            //        //else
-            //        //{
-
-            //        //    tx.Commit();
-            //        //}
-            //        //如果emp_class有資料，但是班別為空，則給默認班別4
-            //        strSQLUpdate = "update swipecard.emp_class set class_no='4' where emp_date>=curdate() and emp_date<date_add(CURDATE(),interval 2 day) and class_no=''";
-            //        cmd.CommandText = strSQLUpdate;
-            //        cmd.ExecuteNonQuery();
-            //        tx.Commit();
-            //        WriteLog("-->Update112_EmpClassOK:" + UpdateSumk + '\r', 1);
-            //        WriteLog("-->insert112_EmpClassOK:" + InsertSumk + '\r', 1);
-
-                    
-                    
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        tx.Rollback();
-            //        WriteLog("-->insert112_EmpClassError,Rollback :" + ex.Message + '\r', 2);
-            //    }
-            //    finally
-            //    {
-            //        tx.Dispose();
-            //        MySqlConn.Close();
-            //    }
-            //    #endregion
-            //}
+           
 
         }
         //抛转Progress数据库中pub.deptment2表的数据到oracle的SWIPE.DEPT_RELATION中
@@ -1336,7 +742,7 @@ catch
                 OracleHelp oracleHelp = new OracleHelp();
                 ProgressHelp progressHelp = new ProgressHelp();
                 //查询oracle数据库
-                string strSqlOracleEmp = "SELECT PARENT_DEPT, DEPID, DEPT_LEVEL, COSTID FROM DEPT_RELATION";
+                string strSqlOracleEmp = "SELECT PARENT_DEPT, DEPID, DEPT_LEVEL, COSTID,DEPT_NAME  FROM SWIPE.DEPT_RELATION ";
 
                 DataTable DT1 = oracleHelp.OrcaleQuery(strSqlOracleEmp);
                 //沒数据的时候返回的
@@ -1348,7 +754,8 @@ catch
 
                 //查询progress数据库
                 //\"start()\""
-                String sql = @"SELECT DEPT_UP, DEPT_CD,""LEVEL"", EXP_DEPT FROM pub.deptment2";
+                //\"ning\""
+                String sql = @"SELECT DEPT_UP, DEPT_CD,""LEVEL"", EXP_DEPT,DEPT_NAME FROM pub.deptment2 ";
                 
                 DataTable DT2 = progressHelp.QueryProgress(sql);
                 if (DT2 == null)
@@ -1363,7 +770,8 @@ catch
                 }
 
                 //连接oracle的数据库
-                String connsql = "data source=10.72.1.172/SCARD ;User Id=swipe;Password=mis_swipe;";
+                //data source=192.168.144.187/SCARD ;User Id=swipe;Password=mis_swipe;"
+                String connsql = "data source=192.168.78.154/SSGSDB ;User Id=swipe;Password=a2#ks#ssgs;";
                 OracleConnection OracleConn = new OracleConnection(connsql);
                 OracleConn.Open();
                 OracleTransaction ortx = OracleConn.BeginTransaction();
@@ -1371,11 +779,12 @@ catch
                 oracmd.Connection = OracleConn;
                 oracmd.Transaction = ortx;
 
+
+
                 //先删除oracle数据库中SWIPE.DEPT_RELATION表的数据
                 string strSQLDelete = "DELETE FROM DEPT_RELATION";
                 oracmd.CommandText = strSQLDelete;
                 oracmd.ExecuteNonQuery();
-                ortx.Commit();
                 int InsertSumk = 0;
                 string strSQLInsert = "insert all";
                 //把Progress数据库中的数据导入到oracle中
@@ -1383,13 +792,27 @@ catch
                 {
                     foreach (DataRow dr in DT2.Rows)
                     {
-
+                        //dr["DEPT_NAME"].ToString()
+                        //insert all INTO DEPT_RELATION (PARENT_DEPT,DEPID, DEPT_LEVEL, COSTID) VALUES('1592','1589','5','1589')
                         ++InsertSumk;
-                        strSQLInsert += " INTO DEPT_RELATION (PARENT_DEPT,DEPID, DEPT_LEVEL, COSTID) VALUES('" + dr["DEPT_UP"].ToString() + "','"
-                                                      + dr["DEPT_CD"].ToString() + "','"
-                                                      + dr["LEVEL"].ToString() + "','"
-                                                      + dr["EXP_DEPT"].ToString() + "')";
-                        if (InsertSumk > 0 && InsertSumk % 100 == 0)
+                        //strSQLInsert += " INTO DEPT_RELATION (PARENT_DEPT,DEPID, DEPT_LEVEL, COSTID) VALUES('" + dr["DEPT_UP"].ToString() + "','"
+                        //                              + dr["DEPT_CD"].ToString() + "','"
+                        //                              + dr["LEVEL"].ToString() + "','"
+                        //                              + dr["EXP_DEPT"].ToString() + "')";
+
+
+                        string DEPT_NAMEStr = "";
+                        if (dr["DEPT_NAME"].ToString().IndexOf("'") != -1) //判断字符串是否含有单引号,如：DEPT_NAME为 X'成型生產一課                      
+                            DEPT_NAMEStr = dr["DEPT_NAME"].ToString().Replace("'", "''");
+                        else
+                            DEPT_NAMEStr = dr["DEPT_NAME"].ToString();
+
+                        strSQLInsert += " INTO SWIPE.DEPT_RELATION (PARENT_DEPT,DEPID, DEPT_LEVEL, COSTID,DEPT_NAME) VALUES('" + dr["DEPT_UP"].ToString() + "','"
+                        + dr["DEPT_CD"].ToString() + "','"
+                        + dr["LEVEL"].ToString() + "','"
+                        + dr["EXP_DEPT"].ToString() + "','" + DEPT_NAMEStr + "')";
+
+                        if (InsertSumk > 0 && InsertSumk % 10 == 0)
                         {
                             //strSQLInsert = strSQLInsert.Substring(0, strSQLInsert.Length - 1);
                             strSQLInsert += " SELECT 1 FROM DUAL";
@@ -1398,30 +821,38 @@ catch
                             //ortx.Commit();
                             //strSQLInsert = "insert into swipecard.testemployee (ID,Name,depid,depname,Direct,cardid,costID,updateDate)  VALUES ";
                             strSQLInsert = "insert all";
+                           
                         }
+                       
                     }
 
-                    if (InsertSumk % 100 != 0)
+                    //WriteLog("-->InsertSumk:" + InsertSumk + '\r', 1);
+
+                    if (InsertSumk %  10 != 0)
                     {
                         // strSQLInsert = strSQLInsert.Substring(0, strSQLInsert.Length - 1);
                         strSQLInsert += " SELECT 1 FROM DUAL";
                         oracmd.CommandText = strSQLInsert;
                         oracmd.ExecuteNonQuery();
                         ortx.Commit();
+
+
+                    
                     }
                     else
                     {
                         ortx.Commit();
                     }
 
-
-                    WriteLog("-->insert_dept_relation__EmployeeOK:" + InsertSumk + '\r', 1);
+                
+                    WriteLog("-->insert_dept_relation_OK:" + InsertSumk + '\r', 1);
 
                 }
                 catch (Exception ex)
                 {
+                    
                     ortx.Rollback();
-                    WriteLog("-->insert_Progress_deptment2_Error,Rollback :" + ex.Message + '\r', 2);
+                    WriteLog("-->insert_dept_relation_Error,Rollback :" + ex.Message + '\r' + strSQLInsert, 2);
                 }
                 finally
                 {
@@ -1432,6 +863,8 @@ catch
 
 
         }
+
+  
         //更新Oracle数据库中星期天班别为默认班别502的为星期六的班别
         private void InsertMysql_empClassNull(string strBG)
         {
@@ -1448,7 +881,7 @@ catch
                 //获取当前日期对应得周日班别
                 //string SunSql = "select id,class_no from swipecard.emp_class where emp_date=DATE_FORMAT(subdate(curdate(),date_format(curdate(),'%w')-7),'%Y-%m-%d')";
                 // string SunSql = "select id,class_no from swipecard.emp_class where emp_date=DATE_FORMAT(subdate(curdate(),date_format(curdate(),'%w')),'%Y-%m-%d') and class_no='502'";
-                String connsql = "data source=10.72.1.172/SCARD ;User Id=swipe;Password=mis_swipe;";
+                String connsql = "data source=192.168.78.154/SSGSDB ;User Id=swipe;Password=a2#ks#ssgs;";
                 OracleConnection OracleConn = new OracleConnection(connsql);
                 OracleConn.Open();
                 OracleTransaction ortx = OracleConn.BeginTransaction();
@@ -1485,12 +918,12 @@ catch
                     oracmd.CommandText = strSQLInsert;
                     oracmd.ExecuteNonQuery();
                     ortx.Commit();
-                    WriteLog("-->insert152_emp_class:" + UpdateSumk + '\r', 1);
+                    WriteLog("-->insert155_emp_class:" + UpdateSumk + '\r', 1);
                 }
                 catch (Exception ex)
                 {
                     ortx.Rollback();
-                    WriteLog("-->insert152_emp_class,Rollback :" + ex.Message + '\r', 2);
+                    WriteLog("-->insert155_emp_class,Rollback :" + ex.Message + '\r', 2);
                 }
                 
 
@@ -1498,7 +931,8 @@ catch
 
             }
             //Progress中PUB.deptcsr表的数据到LMT_DEPT
-            private void InsertOracle_LMT_DEPT_Progress(string strBG) {
+
+        private void InsertOracle_LMT_DEPT_Progress(string strBG) {
             if (strBG == "CSBG")
             {
                 OracleHelp oracleHelp = new OracleHelp();
@@ -1529,7 +963,7 @@ catch
                 }
 
                 //连接oracle的数据库
-                String connsql = "data source=10.72.1.172/SCARD ;User Id=swipe;Password=mis_swipe;";
+                String connsql = "data source=192.168.78.154/SSGSDB ;User Id=swipe;Password=a2#ks#ssgs;";
                 OracleConnection OracleConn = new OracleConnection(connsql);
                 OracleConn.Open();
                 OracleTransaction ortx = OracleConn.BeginTransaction();
@@ -1538,7 +972,7 @@ catch
                 oracmd.Transaction = ortx;
 
                 //先删除oracle数据库中SWIPE.DEPT_RELATION表的数据
-                string strSQLDelete = "DELETE FROM DEPT_RELATION";
+                string strSQLDelete = "DELETE FROM LMT_DEPT";
                 oracmd.CommandText = strSQLDelete;
                 oracmd.ExecuteNonQuery();
 
@@ -1577,12 +1011,12 @@ catch
                     }
 
 
-                    WriteLog("-->insert_dept_relation__EmployeeOK:" + InsertSumk + '\r', 1);
+                    WriteLog("-->insert_LMT_DEPT_OK:" + InsertSumk + '\r', 1);
                 }
                 catch (Exception ex)
                 {
                     ortx.Rollback();
-                    WriteLog("-->insert_Progress_deptment2_Error,Rollback :" + ex.Message + '\r', 2);
+                    WriteLog("-->insert_LMT_DEPT_Error,Rollback :" + ex.Message + '\r', 2);
                 }
             }
         
@@ -1594,7 +1028,6 @@ catch
         private void InsertMySql_testemployee_SqlServer(string strBG)
         {
             SqlHelp sqlHelp = new SqlHelp();
-            MySqlHelper MySqlHelp = new MySqlHelper();
             ProgressHelp ProHelp = new ProgressHelp();
             OracleHelp oracleHelp = new OracleHelp();
             if (strBG == "CSBG")
@@ -1602,12 +1035,10 @@ catch
                 #region CSBG
                 //60.111
                 string strSqlMySqlEmp = "SELECT ID, NAME, DEPID, DEPNAME, DIRECT, CARDID,COSTID, ISONWORK FROM CSR_EMPLOYEE_ONE";
-                //string strSqlMySqlEmp = "select  ID, Name, depid, depname, Direct, cardid, costID, isOnWork from swipecard.testemployee";
-                //DataTable DT1 = MySqlHelp.QueryDBC(strSqlMySqlEmp);
                 DataTable DT1 = oracleHelp.OrcaleQuery(strSqlMySqlEmp);
                 if (DT1 == null)
                 {
-                    WriteLog("-->Query 111TestemployeeError" + '\r', 2);
+                    WriteLog("-->Query 155TestemployeeError" + '\r', 2);
                     return;
                 }
                 
@@ -1666,9 +1097,7 @@ catch
                 oracmd.Transaction = ortx;
                 int UpdateSumk = 0;
                 int InsertSumk = 0;
-                int Istatus = 0;
                 string strSQLUpdate = "";
-                string strSQLUpdateIswork = "";
                 //string strSQLInsert = "insert into swipecard.testemployee (ID,Name,depid,depname,Direct,cardid,costID,updateDate) VALUES ";
                 string strSQLInsert = "insert all";
                 try
@@ -1800,13 +1229,13 @@ catch
                         ortx.Commit();
                     }
 
-                    WriteLog("-->Update111_EmployeeOK:" + UpdateSumk + '\r', 1);
-                    WriteLog("-->insert111_EmployeeOK:" + InsertSumk + '\r', 1);
+                    WriteLog("-->Update155_EmployeeOK:" + UpdateSumk + '\r', 1);
+                    WriteLog("-->insert155_EmployeeOK:" + InsertSumk + '\r', 1);
                 }
                 catch (Exception ex)
                 {
                     ortx.Rollback();
-                    WriteLog("-->insert111_EmpClassError,Rollback :" + ex.Message + '\r', 2);
+                    WriteLog("-->insert155_EmpClassError,Rollback :" + ex.Message + '\r', 2);
                 }
                 finally
                 {
@@ -1816,183 +1245,13 @@ catch
                 #endregion
 
             }
-            //else if (strBG == "ASBG")
-            //{
-            //    //60.112
-            //    #region ASBG
-            //    string strSqlMySqlEmp = "select  ID, Name, depid, depname, Direct, cardid, costID, isOnWork from swipecard.testemployee";
-            //    DataTable DT1 = MySqlHelp.QueryDbAsbg(strSqlMySqlEmp);
-            //    if (DT1 == null)
-            //    {
-            //        WriteLog("-->Query 112TestemployeeError" + '\r', 2);
-            //        return;
-            //    }
-            //    DT1.PrimaryKey = new DataColumn[] { DT1.Columns["ID"] };//设置第一列为主键 
-
-            //    String sql = "SELECT [編號] id, [姓名] name, [部門編號] depid, [部門名稱] depname, [直間接] direct, [卡號] cardid, [課部門編號] costid FROM V_RYBZ_LZJ WHERE [更新標誌]='N'"; // 查询语句
-            //    //String sql = "select ygbh,fdate,bc from KQ_RECORD_BC where fdate>=CONVERT(varchar(100), GETDATE()-3, 111) and fdate<CONVERT(varchar(100), GETDATE()+2, 111) and ( " + strEMP + " )"; // 查询语句
-            //    DataTable DT2 = sqlHelp.QuerySqlServerDB112(sql);
-            //    if (DT2 == null)
-            //    {
-            //        WriteLog("-->Query SqlServerdeptError" + '\r', 2);
-            //        return;
-            //    }
-            //    else if (DT2.Rows.Count == 0)
-            //    {
-            //        WriteLog("-->Query SqlServerdeptSum:0" + '\r', 2);
-            //        return;
-
-            //    }
-            //    DT2.PrimaryKey = new DataColumn[] { DT2.Columns["id"] };
-
-            //    WriteLog("-->SelectSqlServerSum:" + DT2.Rows.Count.ToString() + '\r', 1);
-
-            //    //string SQL = "SELECT EMP_CD, EMP_NAME, DEPT_CD, DEPT_NAME, D_I_CD,'cardid', EXP_DEPT, EMP_STATUS FROM PUB.EMPR";
-            //    //DataTable DT3 = ProHelp.QueryProgress(SQL);
-            //    //if (DT3 == null)
-            //    //{
-            //    //    WriteLog("-->Query ProgressEMPRSumError" + '\r', 2);
-            //    //    return;
-            //    //}
-            //    //else if (DT3.Rows.Count == 0)
-            //    //{
-            //    //    WriteLog("-->Query ProgressEMPRSum:0" + '\r', 2);
-            //    //    return;
-            //    //}
-
-            //    //WriteLog("-->Query ProgressEMPRSum:" + DT3.Rows.Count.ToString() + '\r', 1);
-
-            //    String connsql = "server=192.168.60.112;userid=root;password=foxlink;database=;charset=utf8";
-            //    //String connsql = "server=10.64.155.200;userid=root;password=mysql;database=mysql;charset=utf8";
-            //    MySqlConnection MySqlConn = new MySqlConnection(connsql);
-            //    MySqlConn.Open();
-            //    MySqlTransaction tx = MySqlConn.BeginTransaction();
-            //    MySqlCommand cmd = new MySqlCommand();
-            //    //cmd.CommandTimeout = 300;
-            //    cmd.Connection = MySqlConn;
-            //    cmd.Transaction = tx;
-
-            //    int UpdateSumk = 0;
-            //    int InsertSumk = 0;
-            //    int Istatus = 0;
-            //    string strSQLUpdate = "";
-            //    string strSQLUpdateIswork = "";
-            //    string strSQLInsert = "insert into swipecard.testemployee (ID,Name,depid,depname,Direct,cardid,costID,updateDate) VALUES ";
-            //    try
-            //    {
-            //        //foreach (DataRow dr in DT1.Rows)
-            //        //{
-            //        //    DataRow MSdr = DT2.Rows.Find(dr["ID"].ToString());
-            //        //    if (MSdr == null)
-            //        //    {
-            //        //        strSQLUpdateIswork = "update swipecard.testemployee SET isOnWork =1,updateDate =curdate() where isOnWork=0 and ID = '" + dr["ID"].ToString() + "'";
-            //        //        cmd.CommandText = strSQLUpdateIswork;
-            //        //        int i = cmd.ExecuteNonQuery();
-            //        //        if (i > 0) { WriteLog("-->Update111_" + dr["ID"].ToString() + " Iswork=1OK:" + UpdateSumk + strSQLUpdate + '\r', 1); }
-            //        //    }
-
-            //        //}
-            //        foreach (DataRow dr in DT2.Rows)
-            //        {
-
-            //            DataRow Tempdr = DT1.Rows.Find(dr["id"].ToString());
-            //            //如果Tempdr为空说明Mysql中没有此员工，需要insert
-            //            //如果Tempdr不为空说明Mysql中存在此员工，继续判断是要Update还是Insert
-            //            if (Tempdr != null)
-            //            {
-            //                if (Convert.ToInt32(Tempdr["isOnWork"].ToString()) == 0)
-            //                {
-            //                    if (Tempdr["ID"].ToString() != dr["id"].ToString() || Tempdr["Name"].ToString() != dr["name"].ToString() ||
-            //                        Tempdr["depid"].ToString() != dr["depid"].ToString() || Tempdr["depname"].ToString() != dr["depname"].ToString() ||
-            //                        Tempdr["Direct"].ToString() != dr["direct"].ToString() || Tempdr["cardid"].ToString() != dr["cardid"].ToString() ||
-            //                        Tempdr["costID"].ToString() != dr["costid"].ToString())
-            //                    {
-            //                        //if (dr["EMP_STATUS"].ToString() == string.Empty)
-            //                        //{ Istatus = 0; }
-            //                        //else if (Convert.ToInt32(dr["EMP_STATUS"].ToString()) == 0)
-            //                        //{ Istatus = 1; }
-            //                        //else if (Convert.ToInt32(dr["EMP_STATUS"].ToString()) == 1)
-            //                        //{ Istatus = 0; }
-            //                        strSQLUpdate = "update swipecard.testemployee SET Name = '" + dr["name"].ToString() +
-            //                                                                      "',depid = '" + dr["depid"].ToString() +
-            //                                                                      "',depname = '" + dr["depname"].ToString() +
-            //                                                                      "',Direct = '" + dr["direct"].ToString() +
-            //                                                                      "',cardid = '" + dr["cardid"].ToString() +
-            //                                                                      "',costID = '" + dr["costid"].ToString() +
-            //                                                                      "',updateDate =curdate() WHERE ID = '" + dr["id"].ToString() + "' ";
-            //                        cmd.CommandText = strSQLUpdate;
-            //                        cmd.ExecuteNonQuery();
-            //                        UpdateSumk++;
-            //                        //WriteLog("-->Update111_EmpOK:" + UpdateSumk + strSQLUpdate + '\r', 1);
-            //                    }
-            //                }
-            //            }
-            //            else
-            //            {
-            //                //如果Tempder为空，说明Mysql中要Insert
-            //                ++InsertSumk;
-            //                strSQLInsert += " ('" + dr["id"].ToString() + "','"
-            //                                      + dr["name"].ToString() + "','"
-            //                                      + dr["depid"].ToString() + "','"
-            //                                      + dr["depname"].ToString() + "','"
-            //                                      + dr["direct"].ToString() + "','"
-            //                                      + dr["cardid"].ToString() + "','"
-            //                                      + dr["costid"].ToString() + "',"
-            //                                      + "curdate()" + "),";
-            //                //WriteLog("-->Insert111_EmpOK:" + InsertSumk + " ('" + dr["EMP_CD"].ToString() + "','"
-            //                //                      + dr["EMP_NAME"].ToString() + "','"
-            //                //                      + dr["DEPT_CD"].ToString() + "','"
-            //                //                      + dr["DEPT_NAME"].ToString() + "','"
-            //                //                      + dr["D_I_CD"].ToString() + "','"
-            //                //                      + SqlServerdr["kh"].ToString() + "','"
-            //                //                      + dr["EXP_DEPT"].ToString() + "',"
-            //                //                      + "curdate()" + '\r', 1);
-            //                if (InsertSumk > 0 && InsertSumk % 1000 == 0)
-            //                {
-            //                    strSQLInsert = strSQLInsert.Substring(0, strSQLInsert.Length - 1);
-            //                    cmd.CommandText = strSQLInsert;
-            //                    cmd.ExecuteNonQuery();
-
-            //                    strSQLInsert = "insert into swipecard.testemployee (ID,Name,depid,depname,Direct,cardid,costID,updateDate)  VALUES ";
-            //                }
-            //            }
-
-            //        }
-            //        if (InsertSumk % 1000 != 0)
-            //        {
-            //            strSQLInsert = strSQLInsert.Substring(0, strSQLInsert.Length - 1);
-            //            cmd.CommandText = strSQLInsert;
-            //            cmd.ExecuteNonQuery();
-            //            tx.Commit();
-            //        }
-            //        else
-            //        {
-            //            tx.Commit();
-            //        }
-
-            //        WriteLog("-->Update112_EmployeeOK:" + UpdateSumk + '\r', 1);
-            //        WriteLog("-->insert112_EmployeeOK:" + InsertSumk + '\r', 1);
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        tx.Rollback();
-            //        WriteLog("-->insert112_EmpClassError,Rollback :" + ex.Message + '\r', 2);
-            //    }
-            //    finally
-            //    {
-            //        tx.Dispose();
-            //        MySqlConn.Close();
-            //    }
-            //    #endregion
-
-            //}
+           
 
         }
         //從Progress數據庫更新員工資料
-        private void InsertMySql_testemployee_Progress3(string strBG)
+        private void InsertOracle_employee_Progress3(string strBG)
         {
             SqlHelp sqlHelp = new SqlHelp();
-            MySqlHelper MySqlHelp = new MySqlHelper();
             OracleHelp oraclehelp = new OracleHelp();
             ProgressHelp ProHelp = new ProgressHelp();
 
@@ -2007,30 +1266,34 @@ catch
                 DataTable DT1 = oraclehelp.OrcaleQuery_ONE(strSqlMySqlEmp);
                 if (DT1 == null)
                 {
-                    WriteLog("-->Query 111TestemployeeError" + '\r', 2);
+                    WriteLog("-->Query 155employeeError" + '\r', 2);
                     return;
                 }
                 DT1.PrimaryKey = new DataColumn[] { DT1.Columns["ID"] };//设置第一列为主键 
                 //sqlserver查询语句
                 String sql = "SELECT zgbh, icid FROM mf_employee where lrzx in ('IR','AI','PQ','MQ','PN')"; // 查询语句
+               // String sql = "SELECT zgbh, icid FROM mf_employee where icid <>'' ";//where lrzx in ('IR','AI','PQ','MQ','PN')"; // 查询语句
                 //String sql = "select ygbh,fdate,bc from KQ_RECORD_BC where fdate>=CONVERT(varchar(100), GETDATE()-3, 111) and fdate<CONVERT(varchar(100), GETDATE()+2, 111) and ( " + strEMP + " )"; // 查询语句
-                DataTable DT2 = sqlHelp.QuerySqlServerDB(sql);
+             
+
+                  DataTable DT2 = sqlHelp.QuerySqlServerDB(sql);
                 if (DT2 == null)
                 {
                     WriteLog("-->Query SqlServerdeptError" + '\r', 2);
                     return;
                 }
-                //else if (DT2.Rows.Count == 0)
-                //{
+
+               // else if (DT2.Rows.Count == 0)
+               // {
                 //    WriteLog("-->Query SqlServerdeptSum:0" + '\r', 2);
-                //    return;
+                 //   return;
 
-                //}
-                DT2.PrimaryKey = new DataColumn[] { DT2.Columns["zgbh"] }; //设置第一列为主列
+               // }
+                  DT2.PrimaryKey = new DataColumn[] { DT2.Columns["zgbh"] }; //设置第一列为主列
 
-                WriteLog("-->SelectSqlServerSum:" + DT2.Rows.Count.ToString() + '\r', 1);
+                 WriteLog("-->SelectSqlServerSum:" + DT2.Rows.Count.ToString() + '\r', 1);
                 //查询progress中的数据
-                string SQL = "SELECT emp.EMP_CD, emp.EMP_NAME, emp.DEPT_CD, dept.DEPT_NAME, emp.D_I_CD,emp.CRN, emp.EXP_DEPT, emp.EMP_STATUS FROM PUB.EMPR emp, PUB.DEPTMENT2 dept WHERE emp.DEPT_CD=dept.dept_cd";
+                string SQL = "SELECT emp.EMP_CD, emp.EMP_NAME, emp.DEPT_CD, dept.DEPT_NAME, emp.D_I_CD,emp.CRN, emp.EXP_DEPT, emp.EMP_STATUS FROM PUB.EMPR emp, PUB.DEPTMENT2 dept WHERE emp.DEPT_CD=dept.dept_cd ";// and emp.out_plant_date is null";
 
                 //string SQL = "SELECT EMP_CD, EMP_NAME, DEPT_CD, DEPT_NAME, D_I_CD, CRN, EXP_DEPT, EMP_STATUS FROM pub.EMPR WHERE SUBSTR(EXP_DEPT_NAME,1,2)='通訊'";
                 //string SQL = "SELECT EMP_CD, EMP_NAME, DEPT_CD, DEPT_NAME, D_I_CD, CRN, EXP_DEPT, EMP_STATUS FROM pub.EMPR ";
@@ -2048,17 +1311,9 @@ catch
                 DT3.PrimaryKey = new DataColumn[] { DT3.Columns["EMP_CD"] };//设置第一列为主键 
                 WriteLog("-->Query ProgressEMPRSum:" + DT3.Rows.Count.ToString() + '\r', 1);
 
-                //String connsql = "server=192.168.60.111;userid=root;password=foxlink;database=;charset=utf8";
-                ////String connsql = "server=10.64.155.200;userid=root;password=mysql;database=mysql;charset=utf8";
-                //MySqlConnection MySqlConn = new MySqlConnection(connsql);
-                //MySqlConn.Open();
-                //MySqlTransaction tx = MySqlConn.BeginTransaction();
-                //MySqlCommand cmd = new MySqlCommand();
-                ////cmd.CommandTimeout = 300;
-                //cmd.Connection = MySqlConn;
-                //cmd.Transaction = tx;
 
-                String connsql = "data source=10.72.1.172/SCARD ;User Id=swipe;Password=mis_swipe;";
+
+                String connsql = "data source=192.168.78.154/SSGSDB ;User Id=swipe;Password=a2#ks#ssgs;";
                 OracleConnection OracleConn = new OracleConnection(connsql);
                 OracleConn.Open();
                 OracleTransaction ortx = OracleConn.BeginTransaction();
@@ -2070,48 +1325,36 @@ catch
                 int InsertSumk = 0;
                 int Istatus = 0;
                 string strSQLUpdate = "";
-                string strSQLUpdateIswork = "";
                 //string strSQLInsert = "insert into swipecard.testemployee (ID,Name,depid,depname,Direct,cardid,costID,updateDate) VALUES ";
                 string strSQLInsert = "insert all";
                 try
                 {
-                    //foreach (DataRow dr in DT1.Rows)
-                    //{
-                    //    DataRow MSdr = DT3.Rows.Find(dr["ID"].ToString());
-                    //    if (MSdr == null)
-                    //    {
-                    //        strSQLUpdateIswork = "update swipecard.testemployee SET isOnWork =1,updateDate =curdate() where isOnWork=0 and ID = '" + dr["ID"].ToString() + "'";
-                    //        cmd.CommandText = strSQLUpdateIswork;
-                    //        cmd.ExecuteNonQuery();
-                    //        //int i = cmd.ExecuteNonQuery();
-                    //        //if (i > 0) { WriteLog("-->Update111_" + dr["ID"].ToString() + " Iswork=1 OK:" + UpdateSumk + strSQLUpdate + '\r', 1); }
-                    //    }
-
-                    //}
+                 
                     foreach (DataRow dr in DT3.Rows)
                     {
                        
                         string strCardID = "";
                         //DataRow[] Tempdr = DT1.Select("ID='" + dr["EMP_CD"].ToString() + "'");
-                        DataRow SqlServerdr = DT2.Rows.Find(dr["EMP_CD"].ToString());
-                        //如果SqlServerdr为空说明Sqlserver中不存在此员工，cardID设置为空,不为空则把sqlserver中的cardID给strCardID
-                        if (SqlServerdr != null)
-                        {
-                            if (SqlServerdr["icid"].ToString() != string.Empty)
-                            {
+                          DataRow SqlServerdr = DT2.Rows.Find(dr["EMP_CD"].ToString());
+                          //如果SqlServerdr为空说明Sqlserver中不存在此员工，cardID设置为空,不为空则把sqlserver中的cardID给strCardID
+                          if (SqlServerdr != null)
+                          {
+                              if (SqlServerdr["icid"].ToString() != string.Empty)
+                              {
 
-                                strCardID = SqlServerdr["icid"].ToString();
-                            }
-                            else
-                            {
-                                strCardID = dr["CRN"].ToString();
-                            }
-                        }
-                        else
-                        {
-                            strCardID = dr["CRN"].ToString();
+                                  strCardID = SqlServerdr["icid"].ToString();
+                              }
+                              else
+                              {
+                                  strCardID = dr["CRN"].ToString();
+                              }
+                          }
+                          else
+                          {
+                              strCardID = dr["CRN"].ToString();
 
-                        }
+                          }
+                      //  strCardID = dr["CRN"].ToString();
                         if (strCardID == "") continue;
                         DataRow Tempdr = DT1.Rows.Find(dr["EMP_CD"].ToString());
                         //如果SqlServerdr不为空说明sqlserver中存在此员工，继续判断是要Update还是Insert
@@ -2240,8 +1483,8 @@ catch
                         ortx.Commit();
                     }
 
-                    WriteLog("-->Update111_EmployeeOK:" + UpdateSumk + '\r', 1);
-                    WriteLog("-->insert111_EmployeeOK:" + InsertSumk + '\r', 1);
+                    WriteLog("-->Update155_EmployeeOK:" + UpdateSumk + '\r', 1);
+                    WriteLog("-->insert155_EmployeeOK:" + InsertSumk + '\r', 1);
                 }
                 catch (Exception ex)
                 {
@@ -2252,418 +1495,6 @@ catch
                 {
                     ortx.Dispose();
                     OracleConn.Close();
-                }
-                #endregion
-            }
-
-            //else if (strBG == "ASBG")
-            //{
-            //    #region ASBG
-            //    //60.112
-            //    string strSqlMySqlEmp = "select  ID, Name, depid, depname, Direct, cardid, costID, isOnWork from swipecard.testemployee";
-            //    DataTable DT1 = MySqlHelp.QueryDbAsbg(strSqlMySqlEmp);
-            //    if (DT1 == null)
-            //    {
-            //        WriteLog("-->Query 112TestemployeeError" + '\r', 2);
-            //        return;
-            //    }
-            //    DT1.PrimaryKey = new DataColumn[] { DT1.Columns["ID"] };//设置第一列为主键 
-
-            //    String sql = "SELECT 編號 bh, 卡號 kh FROM V_RYBZ_LZJ"; // 查询语句
-            //    //String sql = "select ygbh,fdate,bc from KQ_RECORD_BC where fdate>=CONVERT(varchar(100), GETDATE()-3, 111) and fdate<CONVERT(varchar(100), GETDATE()+2, 111) and ( " + strEMP + " )"; // 查询语句
-            //    DataTable DT2 = sqlHelp.QuerySqlServerDB112(sql);
-            //    if (DT2 == null)
-            //    {
-            //        WriteLog("-->Query SqlServerdeptError" + '\r', 2);
-            //        return;
-            //    }
-            //    //else if (DT2.Rows.Count == 0)
-            //    //{
-            //    //    WriteLog("-->Query SqlServerdeptSum:0" + '\r', 2);
-            //    //    return;
-
-            //    //}
-            //    DT2.PrimaryKey = new DataColumn[] { DT2.Columns["bh"] };
-
-            //    WriteLog("-->SelectSqlServerSum:" + DT2.Rows.Count.ToString() + '\r', 1);
-
-            //    string SQL = "SELECT EMP_CD, EMP_NAME, DEPT_CD, DEPT_NAME, D_I_CD, CRN, EXP_DEPT, EMP_STATUS FROM pub.EMPR WHERE SUBSTR(EXP_DEPT_NAME,1,3)='零組件'";
-            //    DataTable DT3 = ProHelp.QueryProgress(SQL);
-            //    if (DT3 == null)
-            //    {
-            //        WriteLog("-->Query ProgressEMPRSumError" + '\r', 2);
-            //        return;
-            //    }
-            //    else if (DT3.Rows.Count == 0)
-            //    {
-            //        WriteLog("-->Query ProgressEMPRSum:0" + '\r', 2);
-            //        return;
-            //    }
-            //    DT3.PrimaryKey = new DataColumn[] { DT3.Columns["EMP_CD"] };//设置第一列为主键
-            //    WriteLog("-->Query ProgressEMPRSum:" + DT3.Rows.Count.ToString() + '\r', 1);
-
-            //    //String connsql = "server=192.168.60.111;userid=root;password=foxlink;database=;charset=utf8";
-            //    String connsql = "server=192.168.60.112;userid=root;password=foxlink;database=;charset=utf8";
-            //    MySqlConnection MySqlConn = new MySqlConnection(connsql);
-            //    MySqlConn.Open();
-            //    MySqlTransaction tx = MySqlConn.BeginTransaction();
-            //    MySqlCommand cmd = new MySqlCommand();
-            //    //cmd.CommandTimeout = 300;
-            //    cmd.Connection = MySqlConn;
-            //    cmd.Transaction = tx;
-
-            //    int UpdateSumk = 0;
-            //    int InsertSumk = 0;
-            //    int Istatus = 0;
-            //    string strSQLUpdate = "";
-            //    string strSQLInsert = "insert into swipecard.testemployee (ID,Name,depid,depname,Direct,cardid,costID,updateDate) VALUES ";
-            //    try
-            //    {
-            //        string strSQLUpdateIswork = "";
-            //        //foreach (DataRow dr in DT1.Rows)
-            //        //{
-            //        //    DataRow MSdr = DT3.Rows.Find(dr["ID"].ToString());
-            //        //    if (MSdr == null)
-            //        //    {
-            //        //        strSQLUpdateIswork = "update swipecard.testemployee SET isOnWork =1,updateDate =curdate() where isOnWork=0 and ID = '" + dr["ID"].ToString() + "'";
-            //        //        cmd.CommandText = strSQLUpdateIswork;
-            //        //        cmd.ExecuteNonQuery();
-            //        //        //int i = cmd.ExecuteNonQuery();
-            //        //        //if (i > 0) { WriteLog("-->Update112_" + dr["ID"].ToString() + " Iswork=1 OK:" + UpdateSumk + strSQLUpdate + '\r', 1); }
-            //        //    }
-
-            //        //}
-            //        foreach (DataRow dr in DT3.Rows)
-            //        {
-            //            string strCardID = "";
-            //            //DataRow[] Tempdr = DT1.Select("ID='" + dr["EMP_CD"].ToString() + "'");
-            //            DataRow SqlServerdr = DT2.Rows.Find(dr["EMP_CD"].ToString());
-            //            //如果SqlServerdr为空说明Sqlserver中不存在此员工，cardID设置为空,不为空则把sqlserver中的cardID给strCardID
-            //            if (SqlServerdr != null)
-            //            {
-            //                if (SqlServerdr["kh"].ToString() != string.Empty)
-            //                {
-            //                    strCardID = SqlServerdr["kh"].ToString();
-            //                }
-            //                else
-            //                {
-            //                    strCardID = dr["CRN"].ToString();
-            //                }
-            //            }
-            //            else
-            //            {
-            //                strCardID = dr["CRN"].ToString();
-
-            //            }
-            //            DataRow Tempdr = DT1.Rows.Find(dr["EMP_CD"].ToString());
-            //            //如果SqlServerdr不为空说明sqlserver中存在此员工，继续判断是要Update还是Insert
-            //            //如果Tempdr不为空说明Mysql中存在此员工，继续判断是否需要Update
-            //            if (dr["EMP_STATUS"].ToString() == string.Empty)
-            //            { Istatus = 0; }
-            //            else
-            //            {
-            //                switch (Convert.ToInt32(dr["EMP_STATUS"].ToString()))
-            //                {
-            //                    case 1:
-            //                    case 8:
-            //                        Istatus = 0;
-            //                        break;
-            //                    case 2:
-            //                    case 3:
-            //                    case 4:
-            //                    case 5:
-            //                    case 6:
-            //                    case 7:
-            //                        Istatus = 1;
-            //                        break;
-            //                    default:
-            //                        Istatus = 0;
-            //                        break;
-
-            //                }
-            //            }
-            //            if (Tempdr != null)
-            //            {
-            //                if (Tempdr["ID"].ToString() != dr["EMP_CD"].ToString() || Tempdr["Name"].ToString() != dr["EMP_NAME"].ToString() ||
-            //                    Tempdr["depid"].ToString() != dr["DEPT_CD"].ToString() || Tempdr["depname"].ToString() != dr["DEPT_NAME"].ToString() ||
-            //                    Tempdr["Direct"].ToString() != dr["D_I_CD"].ToString() || Tempdr["cardid"].ToString() != strCardID ||
-            //                    Tempdr["costID"].ToString() != dr["EXP_DEPT"].ToString() || Tempdr["isOnWork"].ToString() != Istatus.ToString())
-            //                {
-            //                    //if (dr["EMP_STATUS"].ToString() == string.Empty)
-            //                    //{ Istatus = 0; }
-            //                    //else if (Convert.ToInt32(dr["EMP_STATUS"].ToString()) == 0)
-            //                    //{ Istatus = 1; }
-            //                    //else if (Convert.ToInt32(dr["EMP_STATUS"].ToString()) == 1)
-            //                    //{ Istatus = 0; }
-            //                    strSQLUpdate = "update swipecard.testemployee SET Name = '" + dr["EMP_NAME"].ToString() +
-            //                                                                  "',depid = '" + dr["DEPT_CD"].ToString() +
-            //                                                                  "',depname = '" + dr["DEPT_NAME"].ToString() +
-            //                                                                  "',Direct = '" + dr["D_I_CD"].ToString() +
-            //                                                                  "',cardid = '" + strCardID +
-            //                                                                  "',costID = '" + dr["EXP_DEPT"].ToString() +
-            //                                                                  "',isOnWork = " + Istatus + "  ,updateDate =curdate() WHERE ID = '" + dr["EMP_CD"].ToString() + "' ";
-            //                    cmd.CommandText = strSQLUpdate;
-            //                    cmd.ExecuteNonQuery();
-            //                    UpdateSumk++;
-            //                    //WriteLog("-->Update112_EmpOK:" + UpdateSumk + strSQLUpdate + '\r', 1);
-            //                }
-            //            }
-            //            else
-            //            {
-            //                //如果Tempder为空，说明Mysql中要Insert
-            //                ++InsertSumk;
-            //                strSQLInsert += " ('" + dr["EMP_CD"].ToString() + "','"
-            //                                      + dr["EMP_NAME"].ToString() + "','"
-            //                                      + dr["DEPT_CD"].ToString() + "','"
-            //                                      + dr["DEPT_NAME"].ToString() + "','"
-            //                                      + dr["D_I_CD"].ToString() + "','"
-            //                                      + strCardID + "','"
-            //                                      + dr["EXP_DEPT"].ToString() + "',"
-            //                                      + "curdate()" + "),";
-            //                //WriteLog("-->Insert112_EmpOK:" + InsertSumk + " ('" + dr["EMP_CD"].ToString() + "','"
-            //                //                      + dr["EMP_NAME"].ToString() + "','"
-            //                //                      + dr["DEPT_CD"].ToString() + "','"
-            //                //                      + dr["DEPT_NAME"].ToString() + "','"
-            //                //                      + dr["D_I_CD"].ToString() + "','"
-            //                //                      + SqlServerdr["kh"].ToString() + "','"
-            //                //                      + dr["EXP_DEPT"].ToString() + "',"
-            //                //                      + "curdate()" + '\r', 1);
-
-            //                if (InsertSumk > 0 && InsertSumk % 2000 == 0)
-            //                {
-            //                    strSQLInsert = strSQLInsert.Substring(0, strSQLInsert.Length - 1);
-            //                    cmd.CommandText = strSQLInsert;
-            //                    cmd.ExecuteNonQuery();
-
-            //                    strSQLInsert = "insert into swipecard.testemployee (ID,Name,depid,depname,Direct,cardid,costID,updateDate)  VALUES ";
-            //                }
-            //            }
-            //            //}
-            //        }
-            //        if (InsertSumk % 2000 != 0)
-            //        {
-            //            strSQLInsert = strSQLInsert.Substring(0, strSQLInsert.Length - 1);
-            //            cmd.CommandText = strSQLInsert;
-            //            cmd.ExecuteNonQuery();
-            //            tx.Commit();
-            //        }
-            //        else
-            //        {
-            //            tx.Commit();
-            //        }
-                   
-            //        WriteLog("-->Update112_EmployeeOK:" + UpdateSumk + '\r', 1);
-            //        WriteLog("-->insert112_EmployeeOK:" + InsertSumk + '\r', 1);
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        tx.Rollback();
-            //        WriteLog("-->insert112_EmpClassError,Rollback :" + ex.Message + '\r', 2);
-            //    }
-            //    finally
-            //    {
-            //        tx.Dispose();
-            //        MySqlConn.Close();
-            //    }
-            //    #endregion
-            //}
-
-            else if (strBG == "JF")
-            {
-                #region JF
-                //60.112
-                string strSqlMySqlEmp = "select  ID, Name, depid, depname, Direct, cardid, costID, isOnWork from swipecard.testemployee";
-                DataTable DT1 = MySqlHelp.Query155_200(strSqlMySqlEmp);
-                if (DT1 == null)
-                {
-                    WriteLog("-->Query 112TestemployeeError" + '\r', 2);
-                    return;
-                }
-                DT1.PrimaryKey = new DataColumn[] { DT1.Columns["ID"] };//设置第一列为主键 
-
-                String sql = "SELECT 編號 bh, 卡號 kh FROM V_RYBZ_TX"; // 查询语句
-                //String sql = "select ygbh,fdate,bc from KQ_RECORD_BC where fdate>=CONVERT(varchar(100), GETDATE()-3, 111) and fdate<CONVERT(varchar(100), GETDATE()+2, 111) and ( " + strEMP + " )"; // 查询语句
-                DataTable DT2 = sqlHelp.QuerySqlServerDB(sql);
-                if (DT2 == null)
-                {
-                    WriteLog("-->Query SqlServerdeptError" + '\r', 2);
-                    return;
-                }
-                //else if (DT2.Rows.Count == 0)
-                //{
-                //    WriteLog("-->Query SqlServerdeptSum:0" + '\r', 2);
-                //    return;
-
-                //}
-                DT2.PrimaryKey = new DataColumn[] { DT2.Columns["bh"] };
-
-                WriteLog("-->SelectSqlServerSum:" + DT2.Rows.Count.ToString() + '\r', 1);
-
-                string SQL = "SELECT EMP_CD, EMP_NAME, DEPT_CD, DEPT_NAME, D_I_CD, CRN, EXP_DEPT, EMP_STATUS FROM pub.EMPR WHERE SUBSTR(EXP_DEPT_NAME,1,2)='通訊'";
-                DataTable DT3 = ProHelp.QueryProgress(SQL);
-                if (DT3 == null)
-                {
-                    WriteLog("-->Query ProgressEMPRSumError" + '\r', 2);
-                    return;
-                }
-                else if (DT3.Rows.Count == 0)
-                {
-                    WriteLog("-->Query ProgressEMPRSum:0" + '\r', 2);
-                    return;
-                }
-                DT3.PrimaryKey = new DataColumn[] { DT3.Columns["EMP_CD"] };//设置第一列为主键
-                WriteLog("-->Query ProgressEMPRSum:" + DT3.Rows.Count.ToString() + '\r', 1);
-
-                //String connsql = "server=192.168.60.111;userid=root;password=foxlink;database=;charset=utf8";
-                String connsql = "server=10.64.155.200;userid=root;password=mysql;database=mysql;charset=utf8";
-                MySqlConnection MySqlConn = new MySqlConnection(connsql);
-                MySqlConn.Open();
-                MySqlTransaction tx = MySqlConn.BeginTransaction();
-                MySqlCommand cmd = new MySqlCommand();
-                //cmd.CommandTimeout = 300;
-                cmd.Connection = MySqlConn;
-                cmd.Transaction = tx;
-
-                int UpdateSumk = 0;
-                int InsertSumk = 0;
-                int Istatus = 0;
-                string strSQLUpdate = "";
-                string strSQLInsert = "insert into swipecard.testemployee (ID,Name,depid,depname,Direct,cardid,costID,updateDate) VALUES ";
-                try
-                {
-                    string strSQLUpdateIswork = "";
-                    foreach (DataRow dr in DT1.Rows)
-                    {
-                        DataRow MSdr = DT3.Rows.Find(dr["ID"].ToString());
-                        if (MSdr == null)
-                        {
-                            strSQLUpdateIswork = "update swipecard.testemployee SET isOnWork =1,updateDate =curdate() where isOnWork=0 and ID = '" + dr["ID"].ToString() + "'";
-                            cmd.CommandText = strSQLUpdateIswork;
-                            cmd.ExecuteNonQuery();
-                            //int i = cmd.ExecuteNonQuery();
-                            //if (i > 0) { WriteLog("-->Update112_" + dr["ID"].ToString() + " Iswork=1 OK:" + UpdateSumk + strSQLUpdate + '\r', 1); }
-                        }
-
-                    }
-                    foreach (DataRow dr in DT3.Rows)
-                    {
-                        string strCardID = "";
-                        //DataRow[] Tempdr = DT1.Select("ID='" + dr["EMP_CD"].ToString() + "'");
-                        DataRow SqlServerdr = DT2.Rows.Find(dr["EMP_CD"].ToString());
-                        //如果SqlServerdr为空说明Sqlserver中不存在此员工，cardID设置为空,不为空则把sqlserver中的cardID给strCardID
-                        if (SqlServerdr != null)
-                        {
-                            strCardID = SqlServerdr["kh"].ToString();
-                        }
-                        DataRow Tempdr = DT1.Rows.Find(dr["EMP_CD"].ToString());
-                        //如果SqlServerdr不为空说明sqlserver中存在此员工，继续判断是要Update还是Insert
-                        //如果Tempdr不为空说明Mysql中存在此员工，继续判断是否需要Update
-                        if (dr["EMP_STATUS"].ToString() == string.Empty)
-                        { Istatus = 0; }
-                        else
-                        {
-                            switch (Convert.ToInt32(dr["EMP_STATUS"].ToString()))
-                            {
-                                case 1:
-                                case 8:
-                                    Istatus = 0;
-                                    break;
-                                case 2:
-                                case 3:
-                                case 4:
-                                case 5:
-                                case 6:
-                                case 7:
-                                    Istatus = 1;
-                                    break;
-                                default:
-                                    Istatus = 0;
-                                    break;
-
-                            }
-                        }
-                        if (Tempdr != null)
-                        {
-                            if (Tempdr["ID"].ToString() != dr["EMP_CD"].ToString() || Tempdr["Name"].ToString() != dr["EMP_NAME"].ToString() ||
-                                Tempdr["depid"].ToString() != dr["DEPT_CD"].ToString() || Tempdr["depname"].ToString() != dr["DEPT_NAME"].ToString() ||
-                                Tempdr["Direct"].ToString() != dr["D_I_CD"].ToString() || Tempdr["cardid"].ToString() != strCardID ||
-                                Tempdr["costID"].ToString() != dr["EXP_DEPT"].ToString() || Tempdr["isOnWork"].ToString() != Istatus.ToString())
-                            {
-                                //if (dr["EMP_STATUS"].ToString() == string.Empty)
-                                //{ Istatus = 0; }
-                                //else if (Convert.ToInt32(dr["EMP_STATUS"].ToString()) == 0)
-                                //{ Istatus = 1; }
-                                //else if (Convert.ToInt32(dr["EMP_STATUS"].ToString()) == 1)
-                                //{ Istatus = 0; }
-                                strSQLUpdate = "update swipecard.testemployee SET Name = '" + dr["EMP_NAME"].ToString() +
-                                                                              "',depid = '" + dr["DEPT_CD"].ToString() +
-                                                                              "',depname = '" + dr["DEPT_NAME"].ToString() +
-                                                                              "',Direct = '" + dr["D_I_CD"].ToString() +
-                                                                              "',cardid = '" + strCardID +
-                                                                              "',costID = '" + dr["EXP_DEPT"].ToString() +
-                                                                              "',isOnWork = " + Istatus + "  ,updateDate =curdate() WHERE ID = '" + dr["EMP_CD"].ToString() + "' ";
-                                cmd.CommandText = strSQLUpdate;
-                                cmd.ExecuteNonQuery();
-                                UpdateSumk++;
-                                //WriteLog("-->Update112_EmpOK:" + UpdateSumk + strSQLUpdate + '\r', 1);
-                            }
-                        }
-                        else
-                        {
-                            //如果Tempder为空，说明Mysql中要Insert
-                            ++InsertSumk;
-                            strSQLInsert += " ('" + dr["EMP_CD"].ToString() + "','"
-                                                  + dr["EMP_NAME"].ToString() + "','"
-                                                  + dr["DEPT_CD"].ToString() + "','"
-                                                  + dr["DEPT_NAME"].ToString() + "','"
-                                                  + dr["D_I_CD"].ToString() + "','"
-                                                  + strCardID + "','"
-                                                  + dr["EXP_DEPT"].ToString() + "',"
-                                                  + "curdate()" + "),";
-                            //WriteLog("-->Insert112_EmpOK:" + InsertSumk + " ('" + dr["EMP_CD"].ToString() + "','"
-                            //                      + dr["EMP_NAME"].ToString() + "','"
-                            //                      + dr["DEPT_CD"].ToString() + "','"
-                            //                      + dr["DEPT_NAME"].ToString() + "','"
-                            //                      + dr["D_I_CD"].ToString() + "','"
-                            //                      + SqlServerdr["kh"].ToString() + "','"
-                            //                      + dr["EXP_DEPT"].ToString() + "',"
-                            //                      + "curdate()" + '\r', 1);
-
-                            if (InsertSumk > 0 && InsertSumk % 2000 == 0)
-                            {
-                                strSQLInsert = strSQLInsert.Substring(0, strSQLInsert.Length - 1);
-                                cmd.CommandText = strSQLInsert;
-                                cmd.ExecuteNonQuery();
-
-                                strSQLInsert = "insert into swipecard.testemployee (ID,Name,depid,depname,Direct,cardid,costID,updateDate)  VALUES ";
-                            }
-                        }
-                        //}
-                    }
-                    if (InsertSumk % 2000 != 0)
-                    {
-                        strSQLInsert = strSQLInsert.Substring(0, strSQLInsert.Length - 1);
-                        cmd.CommandText = strSQLInsert;
-                        cmd.ExecuteNonQuery();
-                        tx.Commit();
-                    }
-                    else
-                    {
-                        tx.Commit();
-                    }
-
-                    WriteLog("-->Update112_EmployeeOK:" + UpdateSumk + '\r', 1);
-                    WriteLog("-->insert112_EmployeeOK:" + InsertSumk + '\r', 1);
-                }
-                catch (Exception ex)
-                {
-                    tx.Rollback();
-                    WriteLog("-->insert112_EmpClassError,Rollback :" + ex.Message + '\r', 2);
-                }
-                finally
-                {
-                    tx.Dispose();
-                    MySqlConn.Close();
                 }
                 #endregion
             }

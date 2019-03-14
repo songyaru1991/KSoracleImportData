@@ -55,3 +55,51 @@ C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle
 C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Release\sftpUplod.csproj.CoreCompileInputs.cache
 C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Release\sftpUplod.exe
 C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\sftpUplod\obj\x86\Release\sftpUplod.pdb
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\oracle\sftpUplod\bin\Release\sftpUplod.exe.config
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\oracle\sftpUplod\bin\Release\sftpUplod.exe
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\oracle\sftpUplod\bin\Release\sftpUplod.pdb
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\oracle\sftpUplod\obj\x86\Release\sftpUplod.csprojResolveAssemblyReference.cache
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\oracle\sftpUplod\obj\x86\Release\sftpUplod.Form1.resources
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\oracle\sftpUplod\obj\x86\Release\sftpUplod.Properties.Resources.resources
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\oracle\sftpUplod\obj\x86\Release\sftpUplod.csproj.GenerateResource.Cache
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\oracle\sftpUplod\obj\x86\Release\sftpUplod.csproj.CoreCompileInputs.cache
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\oracle\sftpUplod\obj\x86\Release\sftpUplod.exe
+C:\软件\sftpUplod - empclass -study(Oracle)\sftpUplod - empclass -study(Oracle)\oracle\sftpUplod\obj\x86\Release\sftpUplod.pdb
+D:\MASoracleImportData\sftpUplod\bin\Release\sftpUplod.exe.config
+D:\MASoracleImportData\sftpUplod\bin\Release\sftpUplod.exe
+D:\MASoracleImportData\sftpUplod\bin\Release\sftpUplod.pdb
+D:\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.csprojResolveAssemblyReference.cache
+D:\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.Form1.resources
+D:\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.Properties.Resources.resources
+D:\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.csproj.GenerateResource.Cache
+D:\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.csproj.CoreCompileInputs.cache
+D:\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.exe
+D:\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.pdb
+E:\C#程序\oracle抛转程式\MAS\MASoracleImportData\sftpUplod\bin\Release\sftpUplod.exe.config
+E:\C#程序\oracle抛转程式\MAS\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.exe
+E:\C#程序\oracle抛转程式\MAS\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.pdb
+E:\C#程序\oracle抛转程式\MAS\MASoracleImportData\sftpUplod\bin\Release\sftpUplod.exe
+E:\C#程序\oracle抛转程式\MAS\MASoracleImportData\sftpUplod\bin\Release\sftpUplod.pdb
+E:\C#程序\oracle抛转程式\MAS\MASoracleImportData\sftpUplod\bin\Release\Oracle.ManagedDataAccess.dll
+E:\C#程序\oracle抛转程式\MAS\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.Form1.resources
+E:\C#程序\oracle抛转程式\MAS\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.Properties.Resources.resources
+E:\C#程序\oracle抛转程式\MAS\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.csproj.GenerateResource.Cache
+E:\C#程序\oracle抛转程式\MAS\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.csprojResolveAssemblyReference.cache
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\MASoracleImportData\sftpUplod\bin\Release\sftpUplod.exe.config
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\MASoracleImportData\sftpUplod\bin\Release\sftpUplod.exe
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\MASoracleImportData\sftpUplod\bin\Release\sftpUplod.pdb
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\MASoracleImportData\sftpUplod\bin\Release\Oracle.ManagedDataAccess.dll
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.Form1.resources
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.Properties.Resources.resources
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.csproj.GenerateResource.Cache
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.exe
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\MASoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.pdb
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\KSoracleImportData\sftpUplod\bin\Release\sftpUplod.exe.config
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\KSoracleImportData\sftpUplod\bin\Release\sftpUplod.exe
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\KSoracleImportData\sftpUplod\bin\Release\sftpUplod.pdb
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\KSoracleImportData\sftpUplod\bin\Release\Oracle.ManagedDataAccess.dll
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\KSoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.Form1.resources
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\KSoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.Properties.Resources.resources
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\KSoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.csproj.GenerateResource.Cache
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\KSoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.exe
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\KSoracleImportData\sftpUplod\obj\x86\Release\sftpUplod.pdb
