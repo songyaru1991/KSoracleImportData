@@ -54,3 +54,7 @@ C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\KSorac
 C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\KSoracleImportData\sftpUplod\obj\x86\Debug\sftpUplod.csproj.GenerateResource.Cache
 C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\KSoracleImportData\sftpUplod\obj\x86\Debug\sftpUplod.exe
 C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\KSoracleImportData\sftpUplod\obj\x86\Debug\sftpUplod.pdb
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\KSORACLE\KSoracleImportData\sftpUplod\obj\x86\Debug\sftpUplod.csprojResolveAssemblyReference.cache
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\宋亚茹工作交接\KSORACLE\KSoracleImportData\sftpUplod\bin\Debug\sftpUplod.exe.config
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\宋亚茹工作交接\KSORACLE\KSoracleImportData\sftpUplod\obj\x86\Debug\sftpUplod.exe
+C:\Users\Yaru_Song\Desktop\工时管理系统资料\交接资料\宋亚茹工作交接\KSORACLE\KSoracleImportData\sftpUplod\obj\x86\Debug\sftpUplod.pdb

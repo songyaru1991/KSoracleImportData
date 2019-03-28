@@ -47,11 +47,13 @@ namespace sftpUplod
             #region 抛转资料到Oracle中       
 
            // InsertOracle_dept_relation_Progress("CSBG");
+           // InsertOracle_employee_Progress3("CSBG");
 
+           // Oracle_testswipecardtimeTOprogress_CARDSR();
             #endregion
            
 
-         //   this.Close();
+         //  this.Close();
 
 
         }
@@ -201,13 +203,12 @@ namespace sftpUplod
 
             if (DateTime.Now.ToString("HH:mm") == "10:00")
             {
-              //  MySql_testswipecardtimeTOprogress_CARDSR("CSBG");
+                Oracle_testswipecardtimeTOprogress_CARDSR();
 
             }
             if (DateTime.Now.ToString("HH:mm") == "10:20")
             {
-               // Mysql_rawToProgress("CSBG");
-              //  Mysql_rawToProgress("ASBG");
+                Oracle_rawToProgress();
             }
 
             if (DateTime.Now.Minute == 30 || DateTime.Now.Minute == 00)
@@ -1272,7 +1273,7 @@ namespace sftpUplod
                 DT1.PrimaryKey = new DataColumn[] { DT1.Columns["ID"] };//设置第一列为主键 
                 //sqlserver查询语句
                 String sql = "SELECT zgbh, icid FROM mf_employee where lrzx in ('IR','AI','PQ','MQ','PN')"; // 查询语句
-               // String sql = "SELECT zgbh, icid FROM mf_employee where icid <>'' ";//where lrzx in ('IR','AI','PQ','MQ','PN')"; // 查询语句
+              //  String sql = "SELECT zgbh, icid FROM mf_employee where icid <>'' ";//where lrzx in ('IR','AI','PQ','MQ','PN')"; // 查询语句
                 //String sql = "select ygbh,fdate,bc from KQ_RECORD_BC where fdate>=CONVERT(varchar(100), GETDATE()-3, 111) and fdate<CONVERT(varchar(100), GETDATE()+2, 111) and ( " + strEMP + " )"; // 查询语句
              
 
@@ -1293,27 +1294,30 @@ namespace sftpUplod
 
                  WriteLog("-->SelectSqlServerSum:" + DT2.Rows.Count.ToString() + '\r', 1);
                 //查询progress中的数据
-                string SQL = "SELECT emp.EMP_CD, emp.EMP_NAME, emp.DEPT_CD, dept.DEPT_NAME, emp.D_I_CD,emp.CRN, emp.EXP_DEPT, emp.EMP_STATUS FROM PUB.EMPR emp, PUB.DEPTMENT2 dept WHERE emp.DEPT_CD=dept.dept_cd ";// and emp.out_plant_date is null";
+                 string SQL = "SELECT emp.EMP_CD, emp.EMP_NAME, emp.DEPT_CD, dept.DEPT_NAME, emp.D_I_CD,emp.CRN, emp.EXP_DEPT, emp.EMP_STATUS FROM PUB.EMPR emp, PUB.DEPTMENT2 dept WHERE emp.DEPT_CD=dept.dept_cd";// and emp.out_plant_date is null";
 
                 //string SQL = "SELECT EMP_CD, EMP_NAME, DEPT_CD, DEPT_NAME, D_I_CD, CRN, EXP_DEPT, EMP_STATUS FROM pub.EMPR WHERE SUBSTR(EXP_DEPT_NAME,1,2)='通訊'";
                 //string SQL = "SELECT EMP_CD, EMP_NAME, DEPT_CD, DEPT_NAME, D_I_CD, CRN, EXP_DEPT, EMP_STATUS FROM pub.EMPR ";
                 DataTable DT3 = ProHelp.QueryProgress(SQL);
                 if (DT3 == null)
                 {
-                    WriteLog("-->Query ProgressEMPRSumError" + '\r', 2);
+                    WriteLog("-->Query ProgressEmployeeSumError" + '\r', 2);
                     return;
                 }
                 else if (DT3.Rows.Count == 0)
                 {
-                    WriteLog("-->Query ProgressEMPRSum:0" + '\r', 2);
+                    WriteLog("-->Query ProgressEmployeeSum:0" + '\r', 2);
                     return;
                 }
                 DT3.PrimaryKey = new DataColumn[] { DT3.Columns["EMP_CD"] };//设置第一列为主键 
-                WriteLog("-->Query ProgressEMPRSum:" + DT3.Rows.Count.ToString() + '\r', 1);
+                WriteLog("-->Query ProgressEmployeeSum:" + DT3.Rows.Count.ToString() + '\r', 1);
 
 
 
                 String connsql = "data source=192.168.78.154/SSGSDB ;User Id=swipe;Password=a2#ks#ssgs;";
+
+              //  String connsql = "data source= 10.72.1.172/scard ;User Id=swipe;Password=mis_swipe;";
+               
                 OracleConnection OracleConn = new OracleConnection(connsql);
                 OracleConn.Open();
                 OracleTransaction ortx = OracleConn.BeginTransaction();
@@ -1329,7 +1333,7 @@ namespace sftpUplod
                 string strSQLInsert = "insert all";
                 try
                 {
-                 
+   
                     foreach (DataRow dr in DT3.Rows)
                     {
                        
@@ -1352,10 +1356,20 @@ namespace sftpUplod
                           else
                           {
                               strCardID = dr["CRN"].ToString();
+                             // Sqlserver中不存在此员工,则此员工为离职状态
+                              if (dr["CRN"].ToString() == null)
+                              {
+                                  String strSQLUpdateIswork = "update CSR_EMPLOYEE SET isOnWork =1,updateDate =sysdate where isOnWork=0 and ID = '" + dr["EMP_CD"].ToString() + "'";
+                                  oracmd.CommandText = strSQLUpdateIswork;
+                                  oracmd.ExecuteNonQuery();
+                                  UpdateSumk++;
+                              }
+                             
 
                           }
+
                       //  strCardID = dr["CRN"].ToString();
-                        if (strCardID == "") continue;
+                          if (strCardID == "") continue;
                         DataRow Tempdr = DT1.Rows.Find(dr["EMP_CD"].ToString());
                         //如果SqlServerdr不为空说明sqlserver中存在此员工，继续判断是要Update还是Insert
                         //如果Tempdr不为空说明Oracle中存在此员工，继续判断是否需要Update
@@ -1365,8 +1379,7 @@ namespace sftpUplod
                         {
                             switch (Convert.ToInt32(dr["EMP_STATUS"].ToString()))
                             {
-                                case 1:
-                                case 8:
+                                case 1:                              
                                     Istatus = 0;
                                     break;
                                 case 2:
@@ -1375,6 +1388,7 @@ namespace sftpUplod
                                 case 5:
                                 case 6:
                                 case 7:
+                                case 8:
                                     Istatus = 1;
                                     break;
                                 default:
@@ -1410,7 +1424,7 @@ namespace sftpUplod
                                                                               "',Direct = '" + dr["D_I_CD"].ToString() +
                                                                               "',cardid = '" + strCardID +
                                                                               "',costID = '" + dr["EXP_DEPT"].ToString() +
-                                                                              "',isOnWork = " + Istatus + "  ,updateDate =to_date(to_char(SYSDATE,'YYYY/MM/DD'),'YYYY/MM/DD') WHERE ID = '" + dr["EMP_CD"].ToString() + "' ";
+                                                                              "',isOnWork = " + Istatus + "  ,updateDate =sysdate WHERE ID = '" + dr["EMP_CD"].ToString() + "' ";
                                 oracmd.CommandText = strSQLUpdate;
                                 oracmd.ExecuteNonQuery();
                                 UpdateSumk++;
@@ -1443,7 +1457,7 @@ namespace sftpUplod
                                                   + dr["D_I_CD"].ToString() + "','"
                                                   + strCardID + "','"
                                                   + dr["EXP_DEPT"].ToString() + "',"
-                                                  + "to_date(to_char(SYSDATE,'YYYY/MM/DD')" + ",'YYYY/MM/DD'))";
+                                                  + "SYSDATE)";
                             //ORA-01400: 无法将 NULL 插入 ("SWIPE"."CSR_EMPLOYEE_ONE"."CARDID")
 
                             //WriteLog("-->Insert111_EmpOK:" + InsertSumk + " ('" + dr["EMP_CD"].ToString() + "','"
@@ -1489,7 +1503,7 @@ namespace sftpUplod
                 catch (Exception ex)
                 {
                     ortx.Rollback();
-                    WriteLog("-->insert_Progress_EmpClassError,Rollback :" + ex.Message + '\r', 2);
+                    WriteLog("-->insert155_EmployeeError,Rollback :" + ex.Message + '\r', 2);
                 }
                 finally
                 {
@@ -1501,7 +1515,228 @@ namespace sftpUplod
 
 
         }
+
+        private void Oracle_rawToProgress()
+        {
+            string sql = @"SELECT id,
+       cardid,
+       swipecardtime,
+       sysdate update_time 
+  FROM swipe.raw_record
+ WHERE swipecardtime >=
+          to_date(to_char(TRUNC(sysdate-1),'yyyy/mm/dd')|| ' 10:00:00','yyyy/mm/dd HH24:MI:SS')
+       AND swipecardtime <
+              to_date(to_char(TRUNC(sysdate),'yyyy/mm/dd')|| ' 10:00:00','yyyy/mm/dd HH24:MI:SS') AND record_status!='4' and record_status!='8'";
+            string result = "NG";
+
+            OracleHelp OraclelHelp = new OracleHelp();
+            ProgressHelp ProHelp = new ProgressHelp();
+
+            #region CSBG
+            DataTable DT2 = OraclelHelp.OrcaleQuery(sql);
+            if (DT2 == null)
+            {
+                WriteLog("-->Query OracleRawError" + '\r', 2);
+                return;
+            }//result = "NG: Query OracleRawError"; }
+            else if (DT2.Rows.Count == 0) { WriteLog("-->Query OracleRawSum:0" + '\r', 2); return; }//result = "NG: Query OracleRawSum:0"; }
+            WriteLog("-->Query OracleRawSum:" + DT2.Rows.Count.ToString() + '\r', 1);
+
+            string ControlString1 = "DSN=KSHR;UID=csruser;PWD=csruser";
+            OdbcConnection odbcCon = new OdbcConnection(ControlString1);
+            odbcCon.Open();
+            OdbcTransaction tx = odbcCon.BeginTransaction();
+            OdbcCommand cmd = new OdbcCommand();
+            cmd.Connection = odbcCon;
+            cmd.Transaction = tx;
+            try
+            {
+                string sa = "";
+                string sb = "";
+                int InsertSumk = 0;
+                foreach (DataRow dr in DT2.Rows)
+                {
+                    sa = dr["id"].Equals(DBNull.Value) ? "NULL" : "'" + dr["id"].ToString() + "'";
+                    sb = dr["cardid"].Equals(DBNull.Value) ? "NULL" : "'" + dr["cardid"].ToString() + "'";
+                    string strSQL = "insert into pub.CARDSR2 (EMP_CD,CardID,SwipeCardTime,UPDATE_TIME)  VALUES  (" + sa + ","
+                                                                                                                   + sb + ",'"
+                                                                                                                   + Convert.ToDateTime(dr["swipecardtime"].ToString()).ToString("yyyy/MM/dd HH:mm:ss") + "','"
+                                                                                                                   + Convert.ToDateTime(dr["update_time"].ToString()).ToString("yyyy/MM/dd HH:mm:ss") + "')";
+
+                    cmd.CommandText = strSQL;
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                        ++InsertSumk;
+                    }
+                    catch (System.Exception ex)
+                    {
+                        string s = ex.Message.Trim().Substring(ex.Message.Trim().Length - 6, 5);
+                        if (s != "16949")
+                        {
+                            WriteLog("-->OracleRawInsertError " + ex.Message + " " + strSQL + '\r', 2);
+                            // strInsertError += "OracleRawInsertError" + ex.Message + '\r';
+                        }
+                        continue;
+                    }
+                   
+                }
+                tx.Commit();
+                //   result = "OK: OracleRawToProgress";
+                WriteLog("-->OracleRawToProgressOK,共insert进CARDSR2中"+InsertSumk+"笔原始刷卡記錄" + '\r', 1);
+            }
+            catch (System.Exception ex)
+            {
+                WriteLog("-->OracleRawToProgressErrorRollback" + ex.Message + '\r', 2);
+                //   result = "NG: OracleRawToProgressErrorRollback" + ex.Message;
+                tx.Rollback();
+            }
+            finally
+            {
+                tx.Dispose();
+                odbcCon.Close();
+
+            }
+            #endregion
+
+            // return result;
+
+
+
+        }
+
+
+        private void Oracle_testswipecardtimeTOprogress_CARDSR()
+        {
+            //            string sql = @"SELECT cardtime.ID , cardtime.RecordID, cardtime.CardID, cardtime.name, cardtime.SwipeCardTime, cardtime.SwipeCardTime2, cardtime.CheckState, cardtime.PROD_LINE_CODE, cardtime.WorkshopNo, cardtime.PRIMARY_ITEM_NO, cardtime.RC_NO, cardtime.Shift, cardtime.OvertimeState, cardtime.overtimeType, cardtime.overtimeCal 
+            //              FROM  swipecard.testswipecardtime cardtime
+            //             WHERE   (   (DATE_FORMAT(cardtime.swipecardtime, '%Y%m%d') =
+            //                               DATE_SUB(CURDATE(), INTERVAL 1 DAY))
+            //                        OR (    DATE_FORMAT(cardtime.swipecardtime2, '%Y%m%d') =
+            //                                   DATE_SUB(CURDATE(), INTERVAL 1 DAY)
+            //                            AND cardtime.SwipeCardTime IS NULL)
+            //                        OR (    DATE_FORMAT(cardtime.swipecardtime2, '%Y%m%d') = CURDATE()
+            //                            AND shift = 'N'))";
+            string sql = @"SELECT  T.EMP_ID,
+         T.SWIPECARDTIME,
+         T.SWIPECARDTIME2,
+         T.CHECKSTATE,
+         T.PROD_LINE_CODE,
+         T.WORKSHOPNO,
+         T.PRIMARY_ITEM_NO,
+         T.RC_NO,
+         T.SHIFT
+  FROM SWIPE.CSR_SWIPECARDTIME T WHERE T.SWIPE_DATE=TO_CHAR(SYSDATE-2,'YYYY-MM-DD')";
+
+            OracleHelp OraclelHelp = new OracleHelp();
+            ProgressHelp ProHelp = new ProgressHelp();
+            string result = "NG";
+            #region CSBG
+
+            //string sql = "select emp.ID,cardtime.* from swipecard.testemployee emp, swipecard.testswipecardtime cardtime where emp.cardid = cardtime.CardID and cardtime.SwipeCardTime>='2017/8/15 00:00' and  cardtime.SwipeCardTime<'2017/8/16 00:00'";
+            //string sql = "select emp.ID,cardtime.* from swipecard.testemployee emp, swipecard.testswipecardtime cardtime where emp.cardid = cardtime.CardID and ((DATE_FORMAT(swipecardtime, '%Y%m%d')=curdate()-1) or (DATE_FORMAT(swipecardtime2, '%Y%m%d')=curdate()-1 and cardtime.Shift='N' and cardtime.SwipeCardTime is null))";
+            DataTable DT2 = OraclelHelp.OrcaleQuery(sql);
+            if (DT2 == null)
+            {
+                WriteLog("-->Query OracleCardTimeError" + '\r', 2);
+                return;
+            }//result = "NG: Query OracleCardTimeError"; }
+            else if (DT2.Rows.Count == 0)
+            {
+                WriteLog("-->Query OracleCardTimeSum:0" + '\r', 2);
+                return;
+            }//result = "NG: Query OracleCardTimeSum:0"; }
+
+            //DT2.PrimaryKey = new DataColumn[] { DT2.Columns["RecordID"] };//设置RecordID为主键 .
+            WriteLog("-->Query OracleCardTimeSum:" + DT2.Rows.Count.ToString() + '\r', 1);
+
+            //DataTable DT3 = ProHelp.QueryProgress(sql2);
+            //if (DT3 == null)
+            //{
+            //    WriteLog("-->Query ProgressCardsrError" + '\r', 2);
+            //    return;
+            //}
+            //DT3.PrimaryKey = new DataColumn[] { DT3.Columns["RecordID"] };//设置RecordID为主键 
+
+            //WriteLog("-->Query ProgressEmpClassSum:" + DT3.Rows.Count.ToString() + '\r', 1);
+
+            string ControlString1 = "DSN=KSHR;UID=csruser;PWD=csruser";
+            OdbcConnection odbcCon = new OdbcConnection(ControlString1);
+            odbcCon.Open();
+            OdbcTransaction tx = odbcCon.BeginTransaction();
+            OdbcCommand cmd = new OdbcCommand();
+            cmd.Connection = odbcCon;
+            cmd.Transaction = tx;
+            try
+            {
+
+                string sa = "";
+                string sb = "";
+                string ss = "";
+                int InsertSumk = 0;
+                foreach (DataRow dr in DT2.Rows)
+                {
+                    //DataRow Progressdr = DT3.Rows.Find(dr["RecordID"].ToString());
+                    //if (Progressdr == null)
+                    //{
+                    //ss = dr[0].Equals(DBNull.Value) ? "NULL" : dr[0].ToString();
+                    sa = dr[1].Equals(DBNull.Value) ? "NULL" : "'" + Convert.ToDateTime(dr[1].ToString()).ToString("yyyy/MM/dd HH:mm:ss") + "'";
+                    sb = dr[2].Equals(DBNull.Value) ? "NULL" : "'" + Convert.ToDateTime(dr[2].ToString()).ToString("yyyy/MM/dd HH:mm:ss") + "'";
+                    string strSQL = "insert into pub.CARDSR (EMP_CD,swipecardtime,swipecardtime2,checkstate,prod_line_code,workshopno,primary_item_no,rc_no,shift)  VALUES  ('"
+
+                                                                         + dr[0].ToString() + "',"
+
+                                                                         + sa + ","
+                                                                         + sb + ",'"
+                                                                         + dr[3].ToString() + "','"
+                                                                         + dr[4].ToString() + "','"
+                                                                         + dr[5].ToString() + "','"
+                                                                         + dr[6].ToString() + "','"
+                                                                         + dr[7].ToString() + "','"
+
+                                                                         + dr[8].ToString() + "')";
+
+                    cmd.CommandText = strSQL;
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                        ++InsertSumk;
+                    }
+                    catch (System.Exception ex)
+                    {
+                        WriteLog("-->OracleCardTimeInsertError " + strSQL + '\r', 2);
+                        // strInsertError += "OracleCardTimeInsertError " + ex.Message + '\r';
+                        continue;
+                    }
+                    //}
+
+                }
+
+
+                tx.Commit();
+                // result = "OK: OracleCardTimeToProgress";
+                WriteLog("-->OracleCardTimeToProgressOK,共insert进CARDSR中"+InsertSumk+"笔刷卡記錄" + '\r', 1);
+
+
+
+            }
+            catch (System.Exception ex)
+            {
+                WriteLog("-->OracleCardTimeToProgressErrorRollback" + ex.Message + '\r', 2);
+                //  result = "NG: OracleCardTimeToProgressErrorRollback" + ex.Message;
+                tx.Rollback();
+            }
+            finally
+            {
+                tx.Dispose();
+                odbcCon.Close();
+
+            }
+            // return result;
+            #endregion
+        }
   
+
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
         }
