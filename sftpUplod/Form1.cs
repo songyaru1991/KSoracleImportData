@@ -48,8 +48,6 @@ namespace sftpUplod
 
            // InsertOracle_dept_relation_Progress("CSBG");
            // InsertOracle_employee_Progress3("CSBG");
-
-           // Oracle_testswipecardtimeTOprogress_CARDSR();
             #endregion
            
 
@@ -1567,7 +1565,6 @@ namespace sftpUplod
                     try
                     {
                         cmd.ExecuteNonQuery();
-                        ++InsertSumk;
                     }
                     catch (System.Exception ex)
                     {
@@ -1579,11 +1576,11 @@ namespace sftpUplod
                         }
                         continue;
                     }
-                   
+                    ++InsertSumk;
                 }
                 tx.Commit();
                 //   result = "OK: OracleRawToProgress";
-                WriteLog("-->OracleRawToProgressOK,共insert进CARDSR2中"+InsertSumk+"笔原始刷卡記錄" + '\r', 1);
+                WriteLog("-->OracleRawToProgressOK,共insert进CARDSR2中InsertSumk笔原始刷卡記錄" + '\r', 1);
             }
             catch (System.Exception ex)
             {
@@ -1715,7 +1712,7 @@ namespace sftpUplod
 
                 tx.Commit();
                 // result = "OK: OracleCardTimeToProgress";
-                WriteLog("-->OracleCardTimeToProgressOK,共insert进CARDSR中"+InsertSumk+"笔刷卡記錄" + '\r', 1);
+                WriteLog("-->OracleCardTimeToProgressOK,共insert进CARDSR中insert進" + InsertSumk + "笔原始刷卡記錄" + '\r', 1);
 
 
 

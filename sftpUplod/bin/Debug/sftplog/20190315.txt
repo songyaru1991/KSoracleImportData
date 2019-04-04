@@ -1,0 +1,133 @@
+11:23:56:6192392 Raw To Progress===================
+11:23:57:7242413 -->SelectSqlServerSum:8589
+11:24:16:3541499 -->Query ProgressEMPRSum:1
+11:24:58:3776289 -->Update155_EmployeeOK:0
+11:24:58:3836332 -->insert155_EmployeeOK:0
+11:24:59:5470831 timer1_Tick定时器开始工作:
+11:25:06:1328400 Raw To Progress===================
+11:25:07:2008190 -->SelectSqlServerSum:8589
+11:25:23:1943716 -->Query ProgressEMPRSum:1
+11:31:33:4590653 Raw To Progress===================
+11:31:34:5058884 -->SelectSqlServerSum:8589
+11:32:07:4126600 -->Query ProgressEMPRSum:1
+11:38:09:1138802 Raw To Progress===================
+11:38:10:2010549 -->SelectSqlServerSum:8589
+11:38:14:8078272 -->Query ProgressEMPRSum:1
+11:38:37:5812262 -->insert_Progress_EmpClassError,Rollback :ORA-01407: 无法更新 ("SWIPE"."CSR_EMPLOYEE"."CARDID") 为 NULL
+13:36:11:1324096 Raw To Progress===================
+13:36:12:2806776 -->SelectSqlServerSum:8579
+13:36:21:4996672 -->Query ProgressEMPRSum:1
+13:41:13:7775335 Raw To Progress===================
+13:41:14:8464758 -->SelectSqlServerSum:8579
+13:41:17:0053693 -->Query ProgressEMPRSum:1
+13:41:17:2406682 -->insert_Progress_EmpClassError,Rollback :ORA-00904: "CURDATE": 标识符无效
+13:41:42:5962015 Raw To Progress===================
+13:41:44:1487833 -->SelectSqlServerSum:8579
+13:41:45:9456985 -->Query ProgressEMPRSum:1
+13:42:09:6318152 -->Update155_EmployeeOK:0
+13:42:09:6438357 -->insert155_EmployeeOK:0
+13:43:30:5166374 Raw To Progress===================
+13:43:31:5656980 -->SelectSqlServerSum:8579
+13:43:34:7308541 -->Query ProgressEMPRSum:1
+13:43:54:3307132 -->Update155_EmployeeOK:0
+13:43:54:3447341 -->insert155_EmployeeOK:0
+13:49:48:0469008 Raw To Progress===================
+13:49:48:8189913 -->SelectSqlServerSum:8579
+13:49:56:1607095 -->Query ProgressEMPRSum:69798
+13:49:56:3303474 -->insert_Progress_EmpClassError,Rollback :ORA-00001: 违反唯一约束条件 (SWIPE.SYS_C0011560)
+13:51:12:6125475 Raw To Progress===================
+13:51:13:3757818 -->SelectSqlServerSum:8579
+13:51:18:5065680 -->Query ProgressEMPRSum:69798
+13:51:18:9956831 -->insert_Progress_EmpClassError,Rollback :ORA-00001: 违反唯一约束条件 (SWIPE.SYS_C0011560)
+13:52:26:1960023 Raw To Progress===================
+13:52:51:2137990 -->SelectSqlServerSum:8579
+13:53:04:6867142 -->Query ProgressEMPRSum:69798
+14:01:40:6322376 Raw To Progress===================
+14:01:44:1800830 -->SelectSqlServerSum:8579
+14:01:49:3565297 -->Query ProgressEMPRSum:69798
+14:01:49:5076382 -->insert155_EmployeeError,Rollback :ORA-00001: 违反唯一约束条件 (SWIPE.SYS_C0011560)
+14:02:42:8664937 Raw To Progress===================
+14:02:45:8098611 -->SelectSqlServerSum:5323
+14:02:51:6687938 -->Query ProgressEMPRSum:69798
+14:02:51:8751645 -->insert155_EmployeeError,Rollback :ORA-00001: 违反唯一约束条件 (SWIPE.SYS_C0011560)
+14:03:41:0287702 Raw To Progress===================
+14:03:54:3712886 -->SelectSqlServerSum:5323
+14:04:00:9614772 -->Query ProgressEMPRSum:69798
+14:04:01:1526013 -->insert155_EmployeeError,Rollback :ORA-00001: 违反唯一约束条件 (SWIPE.SYS_C0011560)insert all INTO CSR_EMPLOYEE (ID,NAME,DEPID,DEPNAME,DIRECT,CARDID,COSTID,UPDATEDATE) VALUES('00005K','張青','M0027','車用-製造-資材-採購課','I','1799125254','M0027',to_date(to_char(SYSDATE,'YYYY/MM/DD'),'YYYY/MM/DD')) INTO CSR_EMPLOYEE (ID,NAME,DEPID,DEPNAME,DIRECT,CARDID,COSTID,UPDATEDATE) VALUES('00007','文敬東','8125','總管理處-資訊-華東-資訊一部','I','1727872330','8125',to_date(to_char(SYSDATE,'YYYY/MM/DD'),'YYYY/MM/DD')) INTO CSR_EMPLOYEE (ID,NAME,DEPID,DEPNAME,DIRECT,CARDID,COSTID,UPDATEDATE) VALUES('00008K','周文超','M0027','車用-製造-資材-採購課','I','2465445280','M0027',to_date(to_char(SYSDATE,'YYYY/MM/DD'),'YYYY/MM/DD')) INTO CSR_EMPLOYEE (ID,NAME,DEPID,DEPNAME,DIRECT,CARDID,COSTID,UPDATEDATE) VALUES('00009','夏春堯','M0036','車用-製造-製工-製工四課','I','3038478042','M0036',to_date(to_char(SYSDATE,'YYYY/MM/DD'),'YYYY/MM/DD')) INTO CSR_EMPLOYEE (ID,NAME,DEPID,DEPNAME,DIRECT,CARDID,COSTID,UPDATEDATE) VALUES('00011','焦名燕','7532','總管理處-供應鏈-供應鏈-物流課','I','2677335563','7532',to_date(to_char(SYSDATE,'YYYY/MM/DD'),'YYYY/MM/DD')) INTO CSR_EMPLOYEE (ID,NAME,DEPID,DEPNAME,DIRECT,CARDID,COSTID,UPDATEDATE) VALUES('00016','顧國華','2800','總管理處-人資行政-昆山-行政-清潔交通課','I','0871133450','2800',to_date(to_char(SYSDATE,'YYYY/MM/DD'),'YYYY/MM/DD')) INTO CSR_EMPLOYEE (ID,NAME,DEPID,DEPNAME,DIRECT,CARDID,COSTID,UPDATEDATE) VALUES('00018','施冬華','3153','總管理處-人資行政-昆山-安全稽查課','I','2472800560','3153',to_date(to_char(SYSDATE,'YYYY/MM/DD'),'YYYY/MM/DD')) INTO CSR_EMPLOYEE (ID,NAME,DEPID,DEPNAME,DIRECT,CARDID,COSTID,UPDATEDATE) VALUES('00028','沈棟梁','M0026','車用-製造-資材-資材課','I','2640407564','M0026',to_date(to_char(SYSDATE,'YYYY/MM/DD'),'YYYY/MM/DD')) INTO CSR_EMPLOYEE (ID,NAME,DEPID,DEPNAME,DIRECT,CARDID,COSTID,UPDATEDATE) VALUES('00032','童健','M0035','車用-製造-製工-製工三課','I','3393167062','M0035',to_date(to_char(SYSDATE,'YYYY/MM/DD'),'YYYY/MM/DD')) INTO CSR_EMPLOYEE (ID,NAME,DEPID,DEPNAME,DIRECT,CARDID,COSTID,UPDATEDATE) VALUES('00039','蔣美花','5483','通訊-元件-昆山-品保部-QS&DCC課','I','3393346390','5483',to_date(to_char(SYSDATE,'YYYY/MM/DD'),'YYYY/MM/DD')) SELECT 1 FROM DUAL
+14:04:50:0810034 Raw To Progress===================
+14:04:52:7458549 -->SelectSqlServerSum:5323
+14:04:57:7901040 -->Query ProgressEMPRSum:69798
+14:08:21:3044565 Raw To Progress===================
+14:08:40:1642893 -->SelectSqlServerSum:5323
+14:08:43:7924270 -->Query ProgressEMPRSum:1
+14:09:34:6228073 -->Update155_EmployeeOK:1
+14:09:34:6468232 -->insert155_EmployeeOK:0
+14:10:52:8333491 Raw To Progress===================
+14:10:55:5758119 -->SelectSqlServerSum:5323
+14:11:00:4900750 -->Query ProgressEMPRSum:69798
+14:12:31:5102099 Raw To Progress===================
+14:12:35:6357357 -->SelectSqlServerSum:5323
+14:12:40:7944175 -->Query ProgressEMPRSum:69798
+14:14:44:0416504 Raw To Progress===================
+14:14:45:1154486 -->SelectSqlServerSum:5323
+14:14:50:4452405 -->Query ProgressEMPRSum:69798
+14:27:16:9616044 Raw To Progress===================
+14:27:18:0601752 -->SelectSqlServerSum:5323
+14:27:23:1545065 -->Query ProgressEmployeeSum:69798
+14:30:22:7629696 Raw To Progress===================
+14:30:23:8004516 -->SelectSqlServerSum:5323
+14:30:28:7272856 -->Query ProgressEmployeeSum:69798
+14:35:36:5398620 Raw To Progress===================
+14:35:37:5684079 -->SelectSqlServerSum:5323
+14:35:37:6509849 -->Query ProgressEmployeeSum:1
+14:35:37:7036041 -->Update155_EmployeeOK:1
+14:35:37:7086087 -->insert155_EmployeeOK:0
+14:36:14:1012566 Raw To Progress===================
+14:36:15:2335532 -->SelectSqlServerSum:5323
+14:36:15:3131358 -->Query ProgressEmployeeSum:1
+14:36:34:2312368 -->Update155_EmployeeOK:1
+14:36:34:2412291 -->insert155_EmployeeOK:0
+14:36:39:4249308 Raw To Progress===================
+14:36:40:4521069 -->SelectSqlServerSum:5323
+14:36:40:5306656 -->Query ProgressEmployeeSum:1
+14:36:42:5024205 -->Update155_EmployeeOK:1
+14:36:42:5125687 -->insert155_EmployeeOK:0
+14:37:18:7661457 Raw To Progress===================
+14:37:19:7941818 -->SelectSqlServerSum:5323
+14:37:19:8637496 -->Query ProgressEmployeeSum:1
+14:37:47:2711024 Raw To Progress===================
+14:37:48:3371000 -->SelectSqlServerSum:5323
+14:37:48:4161588 -->Query ProgressEmployeeSum:1
+14:42:50:0940248 Raw To Progress===================
+14:42:51:1469728 -->SelectSqlServerSum:5323
+14:42:56:2571396 -->Query ProgressEmployeeSum:69798
+14:46:07:0041802 Raw To Progress===================
+14:46:12:3151664 -->SelectSqlServerSum:5323
+14:46:31:7300586 Raw To Progress===================
+14:46:37:0388574 -->SelectSqlServerSum:5323
+14:47:13:8231173 Raw To Progress===================
+14:47:19:2087057 -->SelectSqlServerSum:5323
+14:53:27:7896726 Raw To Progress===================
+14:53:28:8529510 -->SelectSqlServerSum:5323
+14:53:34:6979641 -->Query ProgressEmployeeSum:69798
+14:53:38:0535574 -->Update155_EmployeeOK:0
+14:53:38:0660662 -->insert155_EmployeeOK:0
+14:54:01:2831941 Raw To Progress===================
+14:54:02:3362995 -->SelectSqlServerSum:5323
+14:54:08:4594550 -->Query ProgressEmployeeSum:69798
+14:59:27:0414843 Raw To Progress===================
+14:59:28:1145710 -->SelectSqlServerSum:5323
+14:59:28:1966320 -->Query ProgressEmployeeSum:1
+14:59:59:1778067 -->Update155_EmployeeOK:1
+14:59:59:1878140 -->insert155_EmployeeOK:0
+15:00:22:5148677 Raw To Progress===================
+15:00:23:5569643 -->SelectSqlServerSum:5323
+15:00:29:2327054 -->Query ProgressEmployeeSum:69798
+15:04:20:1428518 -->Update155_EmployeeOK:64711
+15:04:21:4631396 -->insert155_EmployeeOK:0
+15:43:50:3304900 Raw To Progress===================
+15:43:51:4277013 -->SelectSqlServerSum:5323
+15:43:56:9035934 -->Query ProgressEmployeeSum:69798
+16:13:49:3122335 Raw To Progress===================
+16:13:50:7046320 -->SelectSqlServerSum:5323
+16:13:56:5457654 -->Query ProgressEmployeeSum:69798

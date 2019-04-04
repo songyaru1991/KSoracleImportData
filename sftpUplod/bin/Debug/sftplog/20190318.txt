@@ -1,0 +1,24 @@
+09:11:40:2230591 Raw To Progress===================
+09:11:41:2919765 -->SelectSqlServerSum:5219
+09:11:47:2591162 -->Query ProgressEmployeeSum:69917
+09:23:59:6367253 Raw To Progress===================
+09:24:00:6905012 -->SelectSqlServerSum:5219
+09:24:06:5246748 -->Query ProgressEmployeeSum:69917
+09:25:39:4197464 Raw To Progress===================
+09:25:40:4987909 -->SelectSqlServerSum:5219
+09:25:45:3702205 -->Query ProgressEmployeeSum:69917
+09:30:23:7236742 Raw To Progress===================
+09:30:24:8033881 -->SelectSqlServerSum:5219
+09:30:31:1721931 -->Query ProgressEmployeeSum:69917
+09:30:53:9865808 -->Update155_EmployeeOK:1234
+09:30:54:0155949 -->insert155_EmployeeOK:0
+09:31:56:6989886 Raw To Progress===================
+09:31:57:5662859 -->SelectSqlServerSum:5219
+09:32:02:9771289 -->Query ProgressEmployeeSum:69917
+09:32:07:6255396 -->Update155_EmployeeOK:0
+09:32:07:6347135 -->insert155_EmployeeOK:7151
+09:34:03:2813950 Raw To Progress===================
+09:34:04:2736167 -->SelectSqlServerSum:5219
+09:34:10:2211456 -->Query ProgressEmployeeSum:69917
+09:34:19:4543354 -->Update155_EmployeeOK:4143
+09:34:19:4803226 -->insert155_EmployeeOK:0

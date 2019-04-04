@@ -1,0 +1,65 @@
+03:31:47:7387129 Raw To Progress===================
+03:29:55:7045172 timer1_Tick定时器开始工作:
+03:29:07:7057857 Raw To Progress===================
+03:29:08:9337868 timer1_Tick定时器开始工作:
+03:30:09:9655125 -->SelectSqlServerSum:4932
+03:30:15:5506333 -->Query ProgressEMPRSum:67374
+03:30:16:0113061 -->Update155_EmployeeOK:0
+03:30:16:0193118 -->insert155_EmployeeOK:0
+03:29:48:8525367 Raw To Progress===================
+03:29:49:6757086 timer1_Tick定时器开始工作:
+03:30:50:6639557 -->SelectSqlServerSum:4932
+03:30:56:0493955 -->Query ProgressEMPRSum:67374
+03:30:56:5097839 -->Update155_EmployeeOK:0
+03:30:56:5187902 -->insert155_EmployeeOK:0
+03:29:50:3468176 Raw To Progress===================
+03:29:51:8606934 timer1_Tick定时器开始工作:
+03:29:58:7672759 Raw To Progress===================
+03:29:59:6804614 timer1_Tick定时器开始工作:
+03:30:59:6872691 2现在时间:2019/02/22 3:30:59
+03:31:00:6761336 -->SelectSqlServerSum:4932
+03:31:05:3231731 -->Query ProgressEMPRSum:67374
+03:31:06:2042889 -->Update155_EmployeeOK:0
+03:31:06:2157970 -->insert155_EmployeeOK:0
+03:29:31:5163102 Raw To Progress===================
+03:29:32:4454054 timer1_Tick定时器开始工作:
+03:29:43:8815622 Raw To Progress===================
+03:29:44:5813693 timer1_Tick定时器开始工作:
+03:30:44:5787872 现在时间:03:30
+03:30:44:5837897 2现在时间:2019/02/22 3:30:44
+03:30:45:5489758 -->SelectSqlServerSum:4932
+03:30:51:7564943 -->Query ProgressEMPRSum:67374
+03:30:52:2014265 -->Update155_EmployeeOK:0
+03:30:52:2219288 -->insert155_EmployeeOK:0
+03:31:44:5810739 现在时间:03:31
+03:32:09:9887871 Pause Read...
+03:32:11:5329772 timer1_Tick定时器开始工作:
+15:29:26:8268549 Raw To Progress===================
+15:29:29:8127681 timer1_Tick定时器开始工作:
+15:30:29:8253256 现在时间:15:30
+15:30:30:6073792 -->Query 155ClassSum:14603
+15:30:32:9849144 -->Query ProgressEmpClassSum:58253
+15:30:38:7013525 -->Update_ORACLE_EmpClassOK:31
+15:30:38:7138611 -->insert_ORACLE_EmpClassOK:7551
+15:30:38:9930597 -->insert_LMT_DEPT_OK:757
+15:30:42:7362898 -->insert_dept_relation_OK:14296
+15:30:42:7457968 2现在时间:2019/02/22 15:30:42
+15:30:43:1200628 -->SelectSqlServerSum:4932
+15:30:47:9435906 -->Query ProgressEMPRSum:67374
+15:30:48:3448784 -->Update155_EmployeeOK:0
+15:30:48:3543851 -->insert155_EmployeeOK:0
+03:29:32:4473550 Raw To Progress===================
+03:29:33:5749152 timer1_Tick定时器开始工作:
+03:30:33:5782285 现在时间:03:30
+03:30:33:5962416 3:30现在时间:2019/02/22 3:30:33
+03:30:34:4563513 -->Query 155ClassSum:22154
+03:30:37:0994048 -->Query ProgressEmpClassSum:58253
+03:30:38:8553320 -->Update155_EmpClassOK:58
+03:30:38:8719092 -->insert155_EmpClassOK:0
+03:30:39:0794236 -->insert_LMT_DEPT_OK:757
+03:30:42:7326820 -->insert_dept_relation_OK:14296
+03:30:42:7396865 2现在时间:2019/02/22 3:30:42
+03:30:43:1109506 -->SelectSqlServerSum:4932
+03:30:47:9978072 -->Query ProgressEMPRSum:67374
+03:30:48:4044422 -->Update155_EmployeeOK:0
+03:30:48:4109643 -->insert155_EmployeeOK:0

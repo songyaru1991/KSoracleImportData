@@ -1,0 +1,9 @@
+10:07:50:3258128 Raw To Progress===================
+2019/04/01 10:07:51 2019/04/01 10:07:51-->Query 111 Error:ORA-00904: "EMP_ID": 标识符无效
+10:07:51:0913782 -->Query 155employeeError
+10:08:16:4938969 Raw To Progress===================
+2019/04/01 10:08:17 2019/04/01 10:08:17-->Query 111 Error:ORA-00904: "EMP_ID": 标识符无效
+10:08:17:1110220 -->Query 155employeeError
+10:09:52:4044186 Raw To Progress===================
+10:09:53:0384669 -->SelectSqlServerSum:0
+10:09:53:1734353 -->Query ProgressEmployeeSum:2

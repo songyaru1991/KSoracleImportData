@@ -1,0 +1,162 @@
+00:00:05:8488245 -->SelectSqlServerSum:5496
+00:00:09:3175769 -->Query ProgressEmployeeSum:70060
+00:00:09:9269624 -->Update155_EmployeeOK:0
+00:00:09:9269624 -->insert155_EmployeeOK:0
+00:30:05:7743669 -->SelectSqlServerSum:5496
+00:30:09:2273461 -->Query ProgressEmployeeSum:70060
+00:30:09:8054745 -->Update155_EmployeeOK:0
+00:30:09:8211269 -->insert155_EmployeeOK:0
+01:00:05:8246141 -->SelectSqlServerSum:5496
+01:00:09:2152486 -->Query ProgressEmployeeSum:70060
+01:00:09:8246238 -->Update155_EmployeeOK:0
+01:00:09:8402782 -->insert155_EmployeeOK:0
+01:30:05:7656194 -->SelectSqlServerSum:5485
+01:30:09:1406400 -->Query ProgressEmployeeSum:70060
+01:30:09:7031452 -->Update155_EmployeeOK:0
+01:30:09:7187622 -->insert155_EmployeeOK:0
+02:00:05:8160263 -->SelectSqlServerSum:5485
+02:00:09:2379128 -->Query ProgressEmployeeSum:70060
+02:00:09:8629905 -->Update155_EmployeeOK:0
+02:00:09:8629905 -->insert155_EmployeeOK:0
+02:30:05:7726599 -->SelectSqlServerSum:5485
+02:30:09:1945520 -->Query ProgressEmployeeSum:70060
+02:30:09:7726799 -->Update155_EmployeeOK:0
+02:30:09:7883046 -->insert155_EmployeeOK:0
+03:00:05:8074303 -->SelectSqlServerSum:5485
+03:00:09:7293606 -->Query ProgressEmployeeSum:70060
+03:00:10:2762037 -->Update155_EmployeeOK:0
+03:00:10:2918131 -->insert155_EmployeeOK:0
+03:30:05:8109667 -->Query 155ClassSum:15871
+03:30:07:0609656 -->Query ProgressEmpClassSum:60926
+08:49:22:1921804 Raw To Progress===================
+08:49:23:6453075 timer1_Tick定时器开始工作:
+09:00:24:7247387 -->SelectSqlServerSum:5436
+09:00:28:2560943 -->Query ProgressEmployeeSum:70060
+09:00:28:8184700 -->Update155_EmployeeOK:1
+09:00:28:8184700 -->insert155_EmployeeOK:0
+09:30:23:9938694 -->SelectSqlServerSum:5437
+09:30:27:7444824 -->Query ProgressEmployeeSum:70060
+09:30:28:3845034 -->Update155_EmployeeOK:1
+09:30:28:4001261 -->insert155_EmployeeOK:0
+10:00:23:7161402 -->Query OracleCardTimeSum:2840
+10:00:28:5130185 -->OracleCardTimeToProgressOK
+10:00:29:1848828 -->SelectSqlServerSum:5437
+10:00:32:9817970 -->Query ProgressEmployeeSum:70060
+10:00:33:5599131 -->Update155_EmployeeOK:0
+10:00:33:5755255 -->insert155_EmployeeOK:0
+10:20:23:7653690 -->Query OracleRawSum:10436
+10:20:42:4062066 -->OracleRawToProgressOK
+10:30:24:0165290 -->SelectSqlServerSum:5437
+10:30:27:2665535 -->Query ProgressEmployeeSum:70060
+10:30:27:8446680 -->Update155_EmployeeOK:0
+10:30:27:8603931 -->insert155_EmployeeOK:0
+11:00:24:0669938 -->SelectSqlServerSum:5437
+11:00:27:4263251 -->Query ProgressEmployeeSum:70060
+11:00:28:0513353 -->Update155_EmployeeOK:0
+11:00:28:0669436 -->insert155_EmployeeOK:0
+11:30:23:9454583 -->SelectSqlServerSum:5437
+11:30:27:2892171 -->Query ProgressEmployeeSum:70060
+11:30:27:8829651 -->Update155_EmployeeOK:0
+11:30:27:8987383 -->insert155_EmployeeOK:0
+12:00:23:9958800 -->SelectSqlServerSum:5437
+12:00:27:2302480 -->Query ProgressEmployeeSum:70060
+12:00:27:8396627 -->Update155_EmployeeOK:0
+12:00:27:8553330 -->insert155_EmployeeOK:0
+12:30:23:9524916 -->SelectSqlServerSum:5434
+12:30:27:2337604 -->Query ProgressEmployeeSum:70060
+12:30:27:8118744 -->Update155_EmployeeOK:0
+12:30:27:8275012 -->insert155_EmployeeOK:0
+13:00:23:9872743 -->SelectSqlServerSum:5434
+13:00:27:2216439 -->Query ProgressEmployeeSum:70060
+13:00:28:2997725 -->Update155_EmployeeOK:0
+13:00:28:3154028 -->insert155_EmployeeOK:0
+13:30:23:9907851 -->SelectSqlServerSum:5434
+13:30:27:7096336 -->Query ProgressEmployeeSum:70060
+13:30:28:2720487 -->Update155_EmployeeOK:0
+13:30:28:2877554 -->insert155_EmployeeOK:0
+14:00:23:9943036 -->SelectSqlServerSum:5434
+14:00:27:2443075 -->Query ProgressEmployeeSum:70060
+14:00:27:8224339 -->Update155_EmployeeOK:0
+14:00:27:8224339 -->insert155_EmployeeOK:0
+14:30:23:9353719 -->SelectSqlServerSum:5434
+14:30:27:2634517 -->Query ProgressEmployeeSum:70060
+14:30:27:8884537 -->Update155_EmployeeOK:14
+14:30:27:9040753 -->insert155_EmployeeOK:0
+15:00:24:0482028 -->SelectSqlServerSum:5434
+15:00:27:4075946 -->Query ProgressEmployeeSum:70060
+15:00:28:0169995 -->Update155_EmployeeOK:0
+15:00:28:0169995 -->insert155_EmployeeOK:3
+15:30:25:5204839 -->Query 155ClassSum:15871
+15:30:29:4423645 -->Query ProgressEmpClassSum:61017
+15:30:39:3017672 -->Update_ORACLE_EmpClassOK:38
+15:30:39:3173894 -->insert_ORACLE_EmpClassOK:8052
+15:30:39:8173901 -->insert_LMT_DEPT_OK:757
+15:30:48:8798956 -->insert_dept_relation_OK:14330
+15:30:49:3330269 -->SelectSqlServerSum:5434
+15:30:58:7080536 -->Query ProgressEmployeeSum:70060
+15:30:59:3330617 -->Update155_EmployeeOK:10
+15:30:59:3486792 -->insert155_EmployeeOK:0
+16:00:23:9458683 -->SelectSqlServerSum:5434
+16:00:27:3208874 -->Query ProgressEmployeeSum:70060
+16:00:27:9146369 -->Update155_EmployeeOK:0
+16:00:27:9302790 -->insert155_EmployeeOK:1
+16:30:23:9806567 -->SelectSqlServerSum:5434
+16:30:27:1681578 -->Query ProgressEmployeeSum:70060
+16:30:27:7931618 -->Update155_EmployeeOK:1
+16:30:27:8087844 -->insert155_EmployeeOK:0
+17:00:23:9841741 -->SelectSqlServerSum:5587
+17:00:27:2498130 -->Query ProgressEmployeeSum:70175
+17:00:27:8904372 -->Update155_EmployeeOK:0
+17:00:27:9060470 -->insert155_EmployeeOK:112
+17:30:23:9564386 -->SelectSqlServerSum:5587
+17:30:27:2533228 -->Query ProgressEmployeeSum:70175
+17:30:27:8940058 -->Update155_EmployeeOK:6
+17:30:27:9095721 -->insert155_EmployeeOK:0
+18:00:23:9755910 -->SelectSqlServerSum:5587
+18:00:27:1943445 -->Query ProgressEmployeeSum:70175
+18:00:27:7724672 -->Update155_EmployeeOK:0
+18:00:27:7880960 -->insert155_EmployeeOK:0
+18:30:23:9634704 -->SelectSqlServerSum:5587
+18:30:27:2447524 -->Query ProgressEmployeeSum:70175
+18:30:27:8541164 -->Update155_EmployeeOK:0
+18:30:27:8697698 -->insert155_EmployeeOK:0
+19:00:23:9826140 -->SelectSqlServerSum:5587
+19:00:27:2326405 -->Query ProgressEmployeeSum:70175
+19:00:27:8264141 -->Update155_EmployeeOK:0
+19:00:27:8420342 -->insert155_EmployeeOK:0
+19:30:23:9548990 -->SelectSqlServerSum:5587
+19:30:27:1892793 -->Query ProgressEmployeeSum:70175
+19:30:27:7986796 -->Update155_EmployeeOK:0
+19:30:27:8142828 -->insert155_EmployeeOK:0
+20:00:23:9271772 -->SelectSqlServerSum:5587
+20:00:27:1459287 -->Query ProgressEmployeeSum:70175
+20:00:27:7396757 -->Update155_EmployeeOK:0
+20:00:27:7554565 -->insert155_EmployeeOK:0
+20:30:24:0244265 -->SelectSqlServerSum:5587
+20:30:27:1806945 -->Query ProgressEmployeeSum:70175
+20:30:27:8057651 -->Update155_EmployeeOK:0
+20:30:27:8214098 -->insert155_EmployeeOK:0
+21:00:23:9810842 -->SelectSqlServerSum:5587
+21:00:27:2467205 -->Query ProgressEmployeeSum:70175
+21:00:27:8092140 -->Update155_EmployeeOK:0
+21:00:27:8248392 -->insert155_EmployeeOK:0
+21:30:23:9846093 -->SelectSqlServerSum:5587
+21:30:27:4533581 -->Query ProgressEmployeeSum:70175
+21:30:28:0627292 -->Update155_EmployeeOK:0
+21:30:28:0783765 -->insert155_EmployeeOK:0
+22:00:23:9881267 -->SelectSqlServerSum:5587
+22:00:27:3162552 -->Query ProgressEmployeeSum:70175
+22:00:27:9256617 -->Update155_EmployeeOK:0
+22:00:27:9412823 -->insert155_EmployeeOK:0
+22:30:24:0072689 -->SelectSqlServerSum:5587
+22:30:27:3666560 -->Query ProgressEmployeeSum:70175
+22:30:27:9760461 -->Update155_EmployeeOK:0
+22:30:28:0072786 -->insert155_EmployeeOK:0
+23:00:23:9795517 -->SelectSqlServerSum:5587
+23:00:27:2139336 -->Query ProgressEmployeeSum:70175
+23:00:27:8233001 -->Update155_EmployeeOK:0
+23:00:27:8233001 -->insert155_EmployeeOK:0
+23:30:23:9986734 -->SelectSqlServerSum:5587
+23:30:27:3737052 -->Query ProgressEmployeeSum:70175
+23:30:28:0145259 -->Update155_EmployeeOK:0
+23:30:28:0299515 -->insert155_EmployeeOK:0

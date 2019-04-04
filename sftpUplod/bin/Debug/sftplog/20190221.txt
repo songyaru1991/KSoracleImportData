@@ -1,0 +1,12 @@
+08:29:00:0139129 Raw To Progress===================
+08:29:01:4490465 timer1_Tick定时器开始工作:
+08:30:02:1244658 -->Query 155ClassSum:0
+08:30:05:7082075 -->Query ProgressEmpClassSum:58073
+08:30:13:0222063 -->Update155_EmpClassOK:0
+08:30:13:0322134 -->insert155_EmpClassOK:14495
+08:30:14:3151701 -->insert_dept_relation__EmployeeOK:757
+08:30:21:1594168 -->insert_dept_relation__EmployeeOK:14296
+08:30:21:5677145 -->SelectSqlServerSum:5079
+08:30:28:0913318 -->Query ProgressEMPRSum:67164
+08:30:29:7438251 -->Update155_EmployeeOK:283
+08:30:29:7538325 -->insert155_EmployeeOK:815

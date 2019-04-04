@@ -1,0 +1,8 @@
+08:39:47:6635783 Raw To Progress===================
+08:39:48:7657656 -->SelectSqlServerSum:5219
+08:39:54:0433991 -->Query ProgressEmployeeSum:69917
+08:39:57:4264567 -->Update155_EmployeeOK:1229
+08:39:57:4504843 -->insert155_EmployeeOK:0
+09:10:03:0775346 Raw To Progress===================
+09:10:04:2248332 -->SelectSqlServerSum:5219
+09:10:10:7531646 -->Query ProgressEmployeeSum:69917

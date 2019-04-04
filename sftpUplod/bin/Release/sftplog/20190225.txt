@@ -1,0 +1,86 @@
+00:00:03:3676911 -->SelectSqlServerSum:5088
+00:00:06:8522643 -->Query ProgressEMPRSum:67890
+00:00:07:3989713 -->Update155_EmployeeOK:0
+00:00:07:3989713 -->insert155_EmployeeOK:0
+00:30:03:2618367 -->SelectSqlServerSum:5088
+00:30:06:5899810 -->Query ProgressEMPRSum:67890
+00:30:07:1524842 -->Update155_EmployeeOK:0
+00:30:07:1524842 -->insert155_EmployeeOK:0
+01:00:03:1716499 -->SelectSqlServerSum:5088
+01:00:06:9372660 -->Query ProgressEMPRSum:67890
+01:00:07:4997605 -->Update155_EmployeeOK:0
+01:00:07:5153785 -->insert155_EmployeeOK:0
+01:30:03:2063778 -->SelectSqlServerSum:5016
+01:30:06:3313980 -->Query ProgressEMPRSum:67890
+01:30:06:8939006 -->Update155_EmployeeOK:0
+01:30:06:9095453 -->insert155_EmployeeOK:0
+02:00:03:3661679 -->SelectSqlServerSum:5016
+02:00:07:2880505 -->Query ProgressEMPRSum:67890
+02:00:07:8349223 -->Update155_EmployeeOK:0
+02:00:07:8505593 -->insert155_EmployeeOK:0
+02:30:03:1977931 -->SelectSqlServerSum:5016
+02:30:06:3384451 -->Query ProgressEMPRSum:67890
+02:30:06:8853129 -->Update155_EmployeeOK:0
+02:30:06:9009381 -->insert155_EmployeeOK:0
+03:00:03:1700755 -->SelectSqlServerSum:5016
+03:00:06:4825865 -->Query ProgressEMPRSum:67890
+03:00:10:9826318 -->Update155_EmployeeOK:2896
+03:00:10:9982191 -->insert155_EmployeeOK:0
+03:30:03:2204634 -->Query 155ClassSum:15536
+03:30:04:4237761 -->Query ProgressEmpClassSum:58605
+03:30:12:1736467 -->Update155_EmpClassOK:56
+03:30:12:1892678 -->insert155_EmpClassOK:7768
+03:30:12:4079840 -->insert_LMT_DEPT_OK:757
+03:30:17:2986284 -->insert_dept_relation_OK:14296
+03:30:17:5954947 -->SelectSqlServerSum:4996
+03:30:20:8612253 -->Query ProgressEMPRSum:67890
+03:30:24:2986750 -->Update155_EmployeeOK:2896
+03:30:24:3142910 -->insert155_EmployeeOK:0
+04:00:03:1927801 -->SelectSqlServerSum:4996
+04:00:06:4427513 -->Query ProgressEMPRSum:67890
+04:00:06:9899390 -->Update155_EmployeeOK:0
+04:00:07:0055863 -->insert155_EmployeeOK:0
+04:30:03:1962622 -->SelectSqlServerSum:4996
+04:30:06:3368963 -->Query ProgressEMPRSum:67890
+04:30:06:9151333 -->Update155_EmployeeOK:0
+04:30:06:9308470 -->insert155_EmployeeOK:0
+05:00:03:2157049 -->SelectSqlServerSum:4996
+05:00:06:4654145 -->Query ProgressEMPRSum:67890
+05:00:07:0122924 -->Update155_EmployeeOK:0
+05:00:07:0279591 -->insert155_EmployeeOK:0
+05:30:03:2190452 -->SelectSqlServerSum:4996
+05:30:06:3440469 -->Query ProgressEMPRSum:67890
+05:30:06:9376894 -->Update155_EmployeeOK:0
+05:30:06:9689603 -->insert155_EmployeeOK:0
+06:00:03:1755600 -->SelectSqlServerSum:4996
+06:00:06:3005796 -->Query ProgressEMPRSum:67890
+06:00:06:8787142 -->Update155_EmployeeOK:0
+06:00:06:8943291 -->insert155_EmployeeOK:0
+06:30:03:2261799 -->SelectSqlServerSum:4996
+06:30:10:4759883 -->Query ProgressEMPRSum:67890
+06:30:11:0540962 -->Update155_EmployeeOK:0
+06:30:11:0697337 -->insert155_EmployeeOK:0
+07:00:03:2451188 -->SelectSqlServerSum:4996
+07:00:06:8545068 -->Query ProgressEMPRSum:67890
+07:00:07:4013965 -->Update155_EmployeeOK:0
+07:00:07:4170258 -->insert155_EmployeeOK:0
+07:30:03:2330064 -->SelectSqlServerSum:4996
+07:30:10:8736633 -->Query ProgressEMPRSum:67890
+07:30:11:4361541 -->Update155_EmployeeOK:0
+07:30:11:4517758 -->insert155_EmployeeOK:0
+08:00:03:2208924 -->SelectSqlServerSum:4996
+08:00:06:4085686 -->Query ProgressEMPRSum:67890
+08:00:06:9866786 -->Update155_EmployeeOK:0
+08:00:07:0021476 -->insert155_EmployeeOK:0
+08:30:03:2869369 -->SelectSqlServerSum:4996
+08:30:06:4588158 -->Query ProgressEMPRSum:67891
+08:30:07:0369395 -->Update155_EmployeeOK:0
+08:30:07:0682161 -->insert155_EmployeeOK:0
+09:00:03:2435730 -->SelectSqlServerSum:4996
+09:00:06:4935780 -->Query ProgressEMPRSum:67891
+09:00:07:1029507 -->Update155_EmployeeOK:0
+09:00:07:1186010 -->insert155_EmployeeOK:0
+09:30:03:2627244 -->SelectSqlServerSum:4996
+09:30:06:4189873 -->Query ProgressEMPRSum:67891
+09:30:06:9658483 -->Update155_EmployeeOK:0
+09:30:06:9814817 -->insert155_EmployeeOK:0

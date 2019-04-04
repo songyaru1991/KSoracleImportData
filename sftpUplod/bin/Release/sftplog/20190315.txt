@@ -1,0 +1,31 @@
+11:17:27:8507677 Raw To Progress===================
+11:17:29:0288904 -->SelectSqlServerSum:5330
+11:17:34:0835141 -->Query ProgressEMPRSum:69798
+11:17:34:5420324 -->Update155_EmployeeOK:0
+11:17:34:5620283 -->insert155_EmployeeOK:0
+11:17:35:9463779 timer1_Tick定时器开始工作:
+11:18:57:1681257 Raw To Progress===================
+11:18:58:1690759 -->SelectSqlServerSum:5330
+11:19:11:4453607 Raw To Progress===================
+11:19:12:6495174 -->SelectSqlServerSum:5330
+11:20:12:2073878 Raw To Progress===================
+11:20:13:2765189 -->SelectSqlServerSum:8589
+11:20:18:4230816 -->Query ProgressEMPRSum:69798
+11:20:20:1631360 -->Update155_EmployeeOK:367
+11:20:20:1761423 -->insert155_EmployeeOK:813
+11:20:22:9716957 timer1_Tick定时器开始工作:
+11:23:50:5866500 Raw To Progress===================
+11:23:51:6418601 -->SelectSqlServerSum:8589
+14:17:40:2334870 Raw To Progress===================
+14:17:41:3555409 -->SelectSqlServerSum:5323
+14:17:46:4903126 -->Query ProgressEMPRSum:69798
+14:25:24:1083186 Raw To Progress===================
+14:25:25:1650787 -->SelectSqlServerSum:5323
+14:25:30:8238808 -->Query ProgressEmployeeSum:69798
+15:45:21:5351854 Raw To Progress===================
+15:45:22:5717629 -->SelectSqlServerSum:5323
+15:45:29:0839668 -->Query ProgressEmployeeSum:69798
+16:27:50:9214796 Raw To Progress===================
+16:27:52:0086873 -->SelectSqlServerSum:5382
+16:27:57:5533801 -->Query ProgressEmployeeSum:69866
+16:29:31:2360076 Raw To Progress===================
